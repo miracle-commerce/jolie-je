@@ -17,7 +17,7 @@
             {% if block.type == "style" %}
             <div class="">
                 <a href="{{ block.settings.style_link }}" class="object-hover">
-                    <img src="{{ block.settings.style_image | img_url: 'master'}}" alt="{{ block.settings.style_name }}" width="100%">
+                    <img src="{{ block.settings.style_image | img_url: 'master'}}" alt="{{ block.settings.style_name }}" width="100%" loading="lazy">
                     <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.style_name }}</div>
                 </a>
             </div>

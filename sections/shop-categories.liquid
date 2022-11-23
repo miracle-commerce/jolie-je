@@ -18,7 +18,7 @@
             {% if block.type == "category" %}
             <div class="">
                 <a href="{{ block.settings.cat_link }}" class="object-hover">
-                    <img src="{{ block.settings.cat_image | img_url: 'master'}}" alt="{{ block.settings.cat_name }}" width="100%">
+                    <img src="{{ block.settings.cat_image | img_url: 'master'}}" alt="{{ block.settings.cat_name }}" width="100%" loading="lazy">
                   <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.cat_name }} ></div>
                 </a>             
             </div>
@@ -35,7 +35,7 @@
             {% if block.type == "category" %}
             <div class="col-6">
                 <a href="{{ block.settings.cat_link }}" class="object-hover">
-                    <img src="{{ block.settings.cat_image | img_url: 'master'}}" width="100%">
+                    <img src="{{ block.settings.cat_image | img_url: 'master'}}" width="100%" loading="lazy">
                   <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.cat_name }} ></div>
                 </a>
               

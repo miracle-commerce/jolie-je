@@ -50,9 +50,9 @@
 
                     <a href="{{ myblog.url }}">
                        {%- if block.settings.custom_image -%}
-                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%">
+                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%" loading="lazy">
                          {% else %}
-                        <img src="{{ myblog.image.src | img_url: 'original' }}" width="100%">
+                        <img src="{{ myblog.image.src | img_url: 'original' }}" width="100%" loading="lazy">
                       {% endif %}
                         <h4 class="tea-head">{{myblog.title }}</h4>
                         <p class="tea-text1">{{ myblog.articles_count }} articles</p>
@@ -83,9 +83,9 @@
 
                         <a href="{{ myblog.url }}">
                        {%- if block.settings.custom_image -%}
-                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%">
+                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%" loading="lazy">
                          {% else %}
-                        <img src="{{ myblog.image.src | img_url: 'original' }}" width="100%">
+                        <img src="{{ myblog.image.src | img_url: 'original' }}" width="100%" loading="lazy">
                       {% endif %}
                         <h4 class="tea-head">{{myblog.title }}</h4>
                         <p class="tea-text1">{{ myblog.articles_count }} articles</p>
