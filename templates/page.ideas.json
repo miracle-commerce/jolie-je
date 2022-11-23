@@ -1,0 +1,131 @@
+{
+  "sections": {
+    "165530442235f9df9a": {
+      "type": "idea-about-me",
+      "settings": {
+        "about_me_img": "shopify:\/\/shop_images\/Idea_Page_Pictures_2x3_4.jpg",
+        "heading": "The Idea",
+        "description": "Hi, I'm Alyssa Jolie. <br><br> This is my belly jewelry collection. <br><br> There's something about the boost of confidence belly jewelry gives you no matter how formal or casual your outfit. For me, fashion isn't just something you put on; it's how we express ourselves. <br><br> My belly jewelry is the centerpiece of any outfit. <br><br> But as many of you fashionistas know, experimenting with different looks and outfits is easier said than done. Changing your belly ring frequently can be extremely painful.  <br><br> Jolie Co stems out of my desire to create a sophisticated collection of fine belly rings and dangly charms that are interchangeable, so that you can mix and match to create your own personal look as often as you want. <br><br> I am on a mission to make a statement, so let’s make a statement together."
+      }
+    },
+    "00035db2-d730-42ea-a79b-62b84ecca0eb": {
+      "type": "images",
+      "disabled": true,
+      "settings": {
+        "col_image1": "shopify:\/\/shop_images\/Collection_3.jpg",
+        "col_image2": "shopify:\/\/shop_images\/Collection_2.jpg"
+      }
+    },
+    "2d7bf8ac-6a36-4d00-ab04-416bcd28a248": {
+      "type": "text-content",
+      "settings": {
+        "heading": "Superior Quality and Craftmanship",
+        "description": "I am incredibly passionate about the craftmanship of my jewelry! <br><br>\nQuality craftmanship is not just a promise…it’s an integral part of every single aspect of manufacturing. It’s about<br> combining processes, state-of-the-art equipment, and the skill of master artisans.<br><br>  \nBut quality goes beyond craftmanship. It’s everything from the materials and stones to the very commitment to a<br> positive experience when you buy a Jolie Co product.   \n<br><br>\nWe only use precious metals, natural semi-precious stones, and highest quality moissanite synthetic stones.     \n<br><br>\nEvery piece is handcrafted by master artisans with care. I hope you like what we have created."
+      }
+    },
+    "1ba9908a-2fbb-47cf-a58a-8b5bc5e70a33": {
+      "type": "video-autoplay",
+      "settings": {
+        "video_url": "https:\/\/player.vimeo.com\/video\/764297459"
+      }
+    },
+    "1655304040c9b34b84": {
+      "type": "right-image-left-text",
+      "blocks": {
+        "165530404080455a43-0": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Idea_Page_Pictures_2x3_3.jpg",
+            "row_heading": "Precious Metals",
+            "row_des": "With all the fashion wants, it's easy to overlook what you're wearing on your belly. <br><br> How do you feel after your done accessorizing your outfit in all the right ways, from the designer purse to shoes and earrings…but put on a surgical steel dangly belly ring? <br><br>  Your navel is a sensitive and intimate area. <br><br>  It’s not just the luxurious look of a gold belly ring…it’s how it makes you feel and the sense of comfort about wearing a piece of jewelry that is safe for your body. <br><br>Precious metals are soft and can be sculpted to create stunning jewelry that lasts a lifetime. It adds a touch of elegance to even the most casual outfit.",
+            "btn-name": "",
+            "btn_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "165530404080455a43-0"
+      ],
+      "settings": {
+        "show_heading_des": false,
+        "heading": "",
+        "des": ""
+      }
+    },
+    "ddf781c4-b389-4bcb-9eaf-87d9f11b3b40": {
+      "type": "text-content",
+      "settings": {
+        "heading": "Stones with meaning & a sophisticated sparkle",
+        "description": "When it comes to stones, I chose natural semi-precious and moissanite stones. Natural stones are beautiful and have a unique meaning, while moissanite have a sophisticated sparkle that lasts forever and often difficult to tell apart from diamonds. So, which is better?<br><br>Well, it depends on what you're looking for. If you're just interested in the sparkle, then moissanite are truly exquisite stones that will complement any outfit. <br><br>But if you're looking for something more personal with a little more meaning, there is no denying that natural stones are beautiful, even if you do not believe in the healing powers or spiritual benefits of these stones.<br><br>  Or better yet, you can do something totally unique and combine both.  The Jolie belly rings and dangly charms are interchangeable so you can get both the sparkle and add some color with ease."
+      }
+    },
+    "7d37b0d3-75d8-4896-9068-8dd55cef065a": {
+      "type": "idea-section",
+      "settings": {
+        "about_me_img": "shopify:\/\/shop_images\/Web_Blogs_25.jpg",
+        "heading": "I am just getting started! So, let’s get on this journey together.",
+        "des": "<br>Here’s my promise to you:<br><br>>> You will never get bored. Check-in regularly for new designs. <br><br>>> For me, a fair pricing model is more than an approach to business; it’s my vision for how business should be done. <br><br>>> Have questions? We aim to always be available via our live chat or better yet,<b> DM me personally at @itsalyssajolie <\/b> <br><br>>> In the unlikely event a piece slipped through our quality control and there’s a manufacturing defect? You can rest assured it will be immediately replaced. <br><br>>> Change your mind and want a refund? I would hate to see you go, but don’t worry, there will be no hassles! <br><br>>> All jewelry is packaged with care. A personalized note can be included at no charge. <br><br>>> As a Jolie Co customer you will be automatically entered in our loyalty program and of course you will be rewarded when you share your experience with others. <br><br>Let’s get started today! <br>XOXO, Alyssa Jolie<\/p>"
+      }
+    },
+    "011465ad-3a6d-4011-a59e-135512b9b417": {
+      "type": "the-tea-articles",
+      "blocks": {
+        "template--15748137156787__011465ad-3a6d-4011-a59e-135512b9b417-166661178550e14c59-0": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/why-is-moissanite-such-a-hot-stone-for-belly-jewelry"
+          }
+        },
+        "9496b753-801f-4bae-a638-308e34fc6e3a": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/Measure_Blog_SM_1908a7d6-8957-4068-991f-5e4a3f465f42.jpg",
+            "show_date": true,
+            "select_article": "knowledge-base\/what-size-should-my-belly-ring-be"
+          }
+        },
+        "6bcc255d-066b-4c26-a378-8f4c5d5d4dc7": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/fine-belly-jewelry-what-s-the-fuss"
+          }
+        },
+        "8682a322-65bb-4188-a2bc-c24f7b8bfa85": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/Blog7Small_e3e35917-0758-4633-bc4f-a706c7504b0c.jpg",
+            "show_date": true,
+            "select_article": "inspiration\/natural-stones-and-their-meaning"
+          }
+        }
+      },
+      "block_order": [
+        "template--15748137156787__011465ad-3a6d-4011-a59e-135512b9b417-166661178550e14c59-0",
+        "9496b753-801f-4bae-a638-308e34fc6e3a",
+        "6bcc255d-066b-4c26-a378-8f4c5d5d4dc7",
+        "8682a322-65bb-4188-a2bc-c24f7b8bfa85"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/blogs\/inspiration"
+      }
+    }
+  },
+  "order": [
+    "165530442235f9df9a",
+    "00035db2-d730-42ea-a79b-62b84ecca0eb",
+    "2d7bf8ac-6a36-4d00-ab04-416bcd28a248",
+    "1ba9908a-2fbb-47cf-a58a-8b5bc5e70a33",
+    "1655304040c9b34b84",
+    "ddf781c4-b389-4bcb-9eaf-87d9f11b3b40",
+    "7d37b0d3-75d8-4896-9068-8dd55cef065a",
+    "011465ad-3a6d-4011-a59e-135512b9b417"
+  ]
+}

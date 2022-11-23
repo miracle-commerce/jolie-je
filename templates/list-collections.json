@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "1657562527a333d26a": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "des": "",
+        "standard_size": "",
+        "additional_knobs": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657562527a333d26a"
+  ]
+}

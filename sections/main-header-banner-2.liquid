@@ -1,0 +1,71 @@
+<div class="container-fluid bg-gray "> 
+  <div class="row">
+  
+    <div class="col-sm-8">
+      <div>
+        <img class="d-none d-md-block" src="{{ section.settings.image | img_url: 'master'}}" width="100%">
+        <img class="d-block d-md-none" src="{{ section.settings.mobile_image | image_url }}" width="100%" />
+      </div>
+    </div>
+   <div class="col-sm-4 p-5" style="align-self:center;">
+    
+     <h3 style="color:#4A234E" class="heading-3 mb-5">{{ section.settings.heading }}</h3>
+     <p class="mb-5">{{ section.settings.description }}</p>
+      <a class="btn-link float-right" href="{{ section.settings.btn_link }}">{{ section.settings.btn_name }}</a>
+    </div>
+  </div>
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "Header Banner V2",
+	"class": "section",
+    "settings": [
+	{
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+        {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mix & Match Mobile image",
+      "info": "Size of image 560px x 600px"
+        },
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "description",
+      "label": "Description"
+    },
+	{
+      "type": "text",
+      "id": "btn_name",
+      "label": "Button "
+    },
+	{
+          "type": "url",
+          "id": "btn_link",
+          "label": "Shop Link"
+   	}
+    
+  ],
+	"presets": [
+    {
+      "name": "Header Banner V2"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

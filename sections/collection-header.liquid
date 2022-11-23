@@ -1,0 +1,148 @@
+<style>
+        .shop {
+            background: #F8F8F8;
+            padding: 5%;
+        }
+
+        .shop p {
+            color: #777777;
+        }
+
+        .shop h4.heading-2 {
+            color: #4A234E;
+        }
+
+        .horizontal-line-custom {
+            width: 100%;
+        }
+
+        .horizontal-line-custom span {
+            height: 1px;
+            width: 72%;
+            background-color: #4A234E;
+            display: block;
+            float: right;
+            margin-top: 3%;
+            position: relative;
+        }
+
+        .horizontal-line-custom span:after {
+            content: url("https://cdn.shopify.com/s/files/1/0623/8991/1731/files/icon.png");
+            margin-left: 50%;
+            margin-top: -1%;
+            position: absolute;
+        }
+
+        .heading-color-purple {
+            color: #4A234E !important;
+        }
+    </style>
+    <div class="shopify-section shop">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="heading-2 ">{{ section.settings.heading}}</h4>
+                    <p class="">
+                      {{ section.settings.des}}
+                   
+                    </p>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <img src="{{ section.settings.image1 | img_url: 'master'}}" class="mt-4 img-fluid"/>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="{{ section.settings.image2 | img_url: 'master'}}" class="mt-4 img-fluid"/>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <img src="{{ section.settings.image3 | img_url: 'master'}}" class="mt-4 img-fluid"/>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <img src="{{ section.settings.image4 | img_url: 'master'}}" class="mt-4 img-fluid"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="horizontal-line-custom">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-3 text-center">
+                            <p class="heading-color-purple">{{ section.settings.standard_size}}</p>
+                        </div>
+                        <div class="col-md-9 text-center">
+                            <p class="heading-color-purple mb-0">{{ section.settings.additional_knobs}}</p>
+                            <small class="heading-color-purple">*sold separately</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+{% schema %}
+  {
+    "name": "Collection Header",
+    "settings": [
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "des",
+      "label": "Description"
+    },
+	{
+      "type": "image_picker",
+      "id": "image1",
+      "label": "10mm Size Image"
+    },
+	{
+      "type": "image_picker",
+      "id": "image2",
+      "label": "11mm Size Image"
+    },
+	{
+      "type": "image_picker",
+      "id": "image3",
+      "label": "12mm Size Image"
+    },
+	{
+      "type": "image_picker",
+      "id": "image4",
+      "label": "14mm Size Image"
+    },
+	{
+      "type": "text",
+      "id": "standard_size",
+      "label": "Standard Size"
+    },
+	{
+      "type": "text",
+      "id": "additional_knobs",
+      "label": "Additional Knobs"
+    }
+	
+	],
+	"presets": [
+    {
+      "name": "Collection Header"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

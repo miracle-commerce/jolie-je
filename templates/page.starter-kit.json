@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "16600640297a407208": {
+      "type": "main-header-banner",
+      "blocks": {
+        "1660064029cb14d258-0": {
+          "type": "slider",
+          "settings": {
+            "mix_match_banner_image": "shopify:\/\/shop_images\/Web_Accessories_Coming_Soon_Page_936fc5b5-fd15-4529-958a-9b877965702c.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Web_Mix_Match_Mobile_Banner_1.jpg",
+            "heading": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660064029cb14d258-0"
+      ],
+      "settings": {
+      }
+    },
+    "1655291544532199b4": {
+      "type": "main-header-banner-2",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/test_banner2.png",
+        "heading": "Starter Kits  Thinking to get your belly button pierced?",
+        "description": "I have created this easy-to use kit, to help your belly ring fit comfortably and be able to spice up your look during healing.",
+        "btn_name": "",
+        "btn_link": "#"
+      }
+    }
+  },
+  "order": [
+    "16600640297a407208",
+    "1655291544532199b4"
+  ]
+}

@@ -1,0 +1,20 @@
+
+    
+
+       <div class="d-flex mb-5 mt-5 align-items-center">
+       
+         <div class="col-lg-4">
+          <img src="{{ article.image.src | image_url }}" width="100%" class="img-fluid"/>
+         </div>
+         <div class="col-lg-8">
+          
+      <p >{{ article.tags }}</p>
+      <h4 class="heading-4"> {{ article.title | truncate: 50 | escape }}</h4>
+           <div>{{ article.content | strip_html | truncatewords: 30 }}</div>
+           <div class="float-right mt-5">
+           <a class="b-button" href="{{ article.url }}">Read all</a>
+           </div>
+         </div>
+       
+       </div>
+     

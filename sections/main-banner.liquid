@@ -1,0 +1,147 @@
+<div class="container-fluid main-banner p-4 p-md-0 bg-gray" id="main-slider">
+  
+  {% if section.blocks.size > 0 %}
+  {% for block in section.blocks %}
+  {% if block.type == "Slider" %}
+  
+  <div class="main-slider">
+    <div class="container p-0">
+     <div class="row">
+       
+        <div class="col-sm-12 col-md-12 col-lg-6 order-1  pt-5 pb-0 d-md-none">
+        <div class="main-banner-left p-0">
+        <h2 class="main-banner-heading mb-5"> {{ block.settings.custom_liquid }}</h2>
+         
+         </div>  
+      </div>
+      
+      <div class="col-sm-12 col-md-12 col-lg-6 order-2 order-md-1 order-sm-2  pt-5 pb-5">
+        <div class="main-banner-left p-4 p-md-0">
+        <h2 class="main-banner-heading mb-5 mb-md-0 d-none d-md-block"> {{ block.settings.custom_liquid }}</h2>
+          <p class="btn-banner mt-3 mt-md-5"><a href="{{ block.settings.button_link }}" class="main-banner-link"> {{ block.settings.button_label | escape }}</a></p>
+          <p class="col-img-banner mt-5"><a href="{{ block.settings.button_link }}" class="main-banner-collection-link">
+            <img class="main-banner-collection-img" src="{{ block.settings.col_img | image_url: width:159 }}" alt="{{ block.settings.custom_liquid }}" /></a></p>
+         </div>  
+      </div>
+      
+      <div class="col-sm-12 col-md-12 col-lg-6 order-1 order-md-2 order-sm-1 main-slider-right">
+        <div class="main-banner-right row" style="background-image: url('{{ block.settings.image | image_url: width: 1500 }}')">        
+       
+           {%- if block.settings.image != blank and block.settings.image_2 != blank -%}
+          <div class="col-md-6 p-0">
+            <img style="height: {{ section.settings.image.height }}"
+                 class="img-fluid"
+            src="{{ block.settings.image | image_url: width: 1500 }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+            alt="{{ block.settings.custom_liquid }}"
+            loading="lazy"
+            height=""
+          >
+          </div>
+           <div class="col-md-6 p-0">
+           <img style="height: {{ section.settings.image.height }}"
+                class="img-fluid"
+            src="{{ block.settings.image_2 | image_url: width: 1500 }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+            alt="{{ block.settings.custom_liquid }}"
+            loading="lazy"
+       
+            height=""
+          >
+          </div>
+          
+          {%- else if block.settings.image_2 == blank -%}
+           <img style="height: {{ section.settings.image.height }}" class="d-none"
+            src="{{ block.settings.image | image_url: width: 1500 }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt="{{ block.settings.custom_liquid }}"
+            loading="lazy"
+          
+            height=""
+          >
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  
+</div>
+  
+  {% endif %}            
+  {% endfor %}  
+  {% endif %}
+  
+  
+  </div>
+
+
+{% schema %}
+{
+  "name": "Main Banner",
+  "class": "section",
+  "settings": [
+    
+  ],
+	"blocks": [
+ 
+	{
+	  "type": "Slider",
+      "name": "Slider",
+      "settings": [
+		{
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-with-text.settings.image.label"
+    },{
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Second image"
+    },
+	{
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "Heading"
+      
+    },
+	{
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.image-with-text.blocks.button.settings.button_label.label"
+         
+     },
+     {
+       "type": "url",
+       "id": "button_link",
+       "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+      },
+		{
+      "type": "image_picker",
+      "id": "col_img",
+      "label": "Collection Image"
+         
+     }
+
+	
+	]
+	}
+	],
+
+  "presets": [
+    {
+      "name": "Main Banner",
+ 		"blocks": [
+      {
+          "type": "Slider"
+        }
+       
+        
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+

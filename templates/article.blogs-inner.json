@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "1655482472ddf353fe": {
+      "type": "page-title",
+      "settings": {
+        "heading": "The Tea",
+        "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+      }
+    },
+    "165547237842106195": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "16554692606ac590c5": {
+      "type": "blog-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1655482472ddf353fe",
+    "165547237842106195",
+    "16554692606ac590c5"
+  ]
+}

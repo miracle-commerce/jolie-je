@@ -1,0 +1,44 @@
+<div class="section-spacing">       
+  <div class="container p-4 p-md-0">   
+    
+    <div class="col-md-12 p-0 mt-3 mt-md-0">               
+      <h2 class="heading-3 mb-3 mb-md-5">{{ section.settings.heading }}</h2>          
+    </div>  
+          
+      <div class="col-md-12 p-0">              
+        <p class="">{{ section.settings.description }}</p>          
+      </div>
+    
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Text Content",
+    "settings": [
+      {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+	{
+      "type": "liquid",
+      "id": "description",
+      "label": "Description"
+    }
+      
+    ],
+  "presets": [
+    {
+      "name": "Text Content"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

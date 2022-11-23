@@ -1,0 +1,120 @@
+
+<div class="spacing">
+  
+   {%- if section.settings.show_heading_des -%}
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12 p-0 text-left">
+                <h4 class="heading-2 ">{{ section.settings.section-heading }}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 p-0">
+                <p class="">
+                    {{ section.settings.section-description }}
+                </p>
+            </div>
+        </div>
+    </div>
+  {%- endif -%}
+    
+  <div class="container pb-5">
+    <div class="row">
+  
+     <div class="col-lg-6 center-content mb-5 mb-md-0 pl-md-0 order-2 order-md-1">
+    
+       <h3 class="heading-3 mb-5">{{ section.settings.video-heading }}</h3>
+       <p class="text-color mb-5">{{ section.settings.video-description }}</p>
+       <p class="text-default-color mb-5 text-purple">{{ section.settings.video-description-2 }}</p>
+       
+       <a class="b-button" href="{{ section.settings.btn_link }}">{{ section.settings.btn-name }}</a>
+      
+    </div>
+    
+    <div class="col-lg-6 pr-md-0 order-1 order-md-2 mb-5 mb-md-0">
+    
+     <div style="padding:56.25% 0 0 0;position:relative;">
+  <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?autoplay=1&amp;autopause=0&amp;loop=1&amp;player_id=0&amp;app_id=58479;muted=1;background=1" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="final edit 01">  
+  </iframe>
+</div>
+      
+    </div> 
+  
+    </div>  
+  </div> 
+    
+</div>
+ <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+{% schema %}
+{
+  "name": "Video with content Left",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+	{
+      "type": "checkbox",
+      "id": "show_heading_des",
+      "default": true,
+      "label": "Show Heading & Description"
+    },
+	{
+      "type": "text",
+      "id": "section-heading",
+      "label": "t:sections.video.settings.heading.label"
+    },
+	{
+      "type": "text",
+      "id": "section-description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "video-heading",
+      "label": "t:sections.video.settings.heading.label"
+    },
+	{
+      "type": "text",
+      "id": "video-description",
+      "label": "Description"
+    },
+	{
+      "type": "text",
+      "id": "video-description-2",
+      "label": "Description"
+    },
+	{
+      "type": "text",
+      "id": "btn-name",
+      "label": "Buttom Name"
+    },
+	{
+          "type": "url",
+          "id": "btn_link",
+          "label": "Button Link"
+   	},
+          {
+   "id": "video_url",
+   "type": "video_url",
+   "label": "Video URL",
+   "accept":  ["vimeo"],
+   "default": "https://player.vimeo.com/video/746642106",
+   "info": "Place the link here",
+   "placeholder": "Place you Vimeo video url here"
+          },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "t:sections.video.settings.description.label",
+      "info": "t:sections.video.settings.description.info"
+    }
+    
+  ],
+  "presets": [
+    {
+      "name": "Video with content Left"
+    }
+  ]
+}
+{% endschema %}

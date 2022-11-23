@@ -1,0 +1,118 @@
+<div class="section-spacing">
+<div class="container p-md-0 pb-5">
+        <div class="shop-col-t">
+            <h4 class="heading-2">{{ section.settings.col_heading }}</h4>
+        </div>
+        <div class="d-block d-md-flex mb-5">
+            <div class="col-md-9 p-0 d-none d-md-block">
+                <p class="">{{ section.settings.col_des }}</p>
+            </div>
+            <div class="col-md-3 text-right text-md-right mt-4 mt-md-0 pr-0 d-none d-md-block">
+                <a class="btn-link float-none float-md-right" href="{{ section.settings.col_link }}">{{ section.settings.btn_name }}</a>
+            </div>
+        </div>
+        <div class="d-flex shop-collection-slider mt-5 mt-md-0">
+            {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+            {% if block.type == "collection" %}
+            <div class="">
+                <a href="{{ block.settings.col_link }}" class="object-hover">
+                    <img src="{{ block.settings.col_image | img_url: 'master'}}" alt="{{ block.settings.col_name }}" width="100%">
+                    <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.col_name }}</div>
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+        </div>
+  
+   <div class="col-md-12 text-center pt-5 d-block d-md-none">
+                <a class="btn-link float-none float-md-right" href="{{ section.settings.col_link }}">{{ section.settings.btn_name }}</a>
+            </div>
+    </div>
+
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Shop Collections",
+  "class": "section",
+  "settings": [
+	{
+      "type": "text",
+      "id": "col_heading",
+      "label": "Collection Name"
+    },
+	{
+      "type": "text",
+      "id": "col_des",
+      "label": "Collection Description"
+    },
+	{
+      "type": "text",
+      "id": "btn_name",
+      "label": "Button text"
+    },
+	{
+          "type": "url",
+          "id": "col_link",
+          "label": "See all collection"
+   	}
+    
+  ],
+  "blocks": [
+ 
+	{
+	  "type": "collection",
+      "name": "Collection",
+      "settings": [
+
+	{
+      "type": "image_picker",
+      "id": "col_image",
+      "label": "Collection image"
+    	},
+	{
+      "type": "text",
+      "id": "col_name",
+      "label": "Collection name"
+    },
+	{
+       "type": "url",
+       "id": "col_link",
+       "label": "Collection link"  
+	}
+	
+
+		]
+		}
+		
+    
+  ],
+  "presets": [
+    {
+      "name": "Shop Collections",
+      "blocks": [
+      {
+          "type": "collection"
+        }
+       
+        
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+
+
+{% endjavascript %}

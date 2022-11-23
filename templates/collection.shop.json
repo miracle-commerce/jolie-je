@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "1655321988ece2b5e6": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "heading": "Adustable Bars",
+        "des": "All Jolie bars come in the standard size of 10mm. Need a different size? The bar is adjustable, just add your desired knob to cart to adjust for size.",
+        "image1": "shopify:\/\/shop_images\/image_b7f1abf8-0f8a-4cc1-a8dd-56e6cb7e9940.png",
+        "image2": "shopify:\/\/shop_images\/image_1_a9a8d7ba-e29f-4266-80bd-f7834011d295.png",
+        "image3": "shopify:\/\/shop_images\/image_2_691c6f8e-6dde-4919-8731-ee626f2758f5.png",
+        "image4": "shopify:\/\/shop_images\/image_3_5b01a8b8-9c67-4a5e-8f80-3a0c10244bbe.png",
+        "standard_size": "Standard Size",
+        "additional_knobs": "Additional Knobs Available"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "16558133089068ecd1": {
+      "type": "instagram-feed-heading",
+      "settings": {
+      }
+    },
+    "1655813306bcd66183": {
+      "type": "apps",
+      "blocks": {
+        "f6b511ed-caf9-47ed-9663-d2e6ba74cf30": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "f6b511ed-caf9-47ed-9663-d2e6ba74cf30"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "165632295926b5b11d": {
+      "type": "the-tea",
+      "blocks": {
+        "1656322959ca53462e-0": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/20221019-Blog5_BottomOfPage_7cc926eb-219a-44a4-825f-27e5ce4c5fff.jpg",
+            "blog_name": "Why is moissanite such a hot stone for belly jewelry?",
+            "blog_link": "shopify:\/\/blogs\/inspiration\/why-is-moissanite-such-a-hot-stone-for-belly-jewelry",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "d2bc7e34-c64f-4517-87b7-ed170c84ab9b": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/20221019-Blog11_Samall-2.jpg",
+            "blog_name": "What is Gold Vermeil?",
+            "blog_link": "shopify:\/\/blogs\/knowledge-base\/what-is-gold-vermeil",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "a83f3036-0f8f-48d4-8cc6-2aa44c4d4c7b": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/20220925-Fine_Jewelry_165bd589-4253-46d8-8dd0-a4db86f29efa.jpg",
+            "blog_name": "Fine belly jewelry, what’s the fuss?",
+            "blog_link": "shopify:\/\/blogs\/inspiration\/fine-belly-jewelry-what-s-the-fuss",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "75664026-1a9a-48a6-94fe-0eb550a10277": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/Measure_Blog_SM_1908a7d6-8957-4068-991f-5e4a3f465f42.jpg",
+            "blog_name": "What size should my belly ring be?",
+            "blog_link": "shopify:\/\/blogs\/knowledge-base\/what-size-should-my-belly-ring-be",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        }
+      },
+      "block_order": [
+        "1656322959ca53462e-0",
+        "d2bc7e34-c64f-4517-87b7-ed170c84ab9b",
+        "a83f3036-0f8f-48d4-8cc6-2aa44c4d4c7b",
+        "75664026-1a9a-48a6-94fe-0eb550a10277"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/blogs\/inspiration"
+      }
+    }
+  },
+  "order": [
+    "1655321988ece2b5e6",
+    "banner",
+    "product-grid",
+    "16558133089068ecd1",
+    "1655813306bcd66183",
+    "165632295926b5b11d"
+  ]
+}

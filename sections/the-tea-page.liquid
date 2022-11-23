@@ -1,0 +1,84 @@
+{% assign blog_handles = "news,empowerment" | split: "," %}
+
+  {%- section 'page-title' -%}
+  
+<div class="pt-5 mt-5">
+
+  <div class="container tea-page">
+  
+  <div class="row mb-5">
+  	
+    <div class="col-lg-4 tea-cat bg-gray p-5">
+      
+      <h3 class="heading-3">Empowerment</h3>
+      <ul>
+        <li>What you need to know</li>
+        <li>Readiness</li>
+        <li>Talking to your parents</li>
+        <li>Getting to know you</li>
+      </ul>
+      
+      
+      <h3 class="heading-3">Inspiration</h3>
+      <ul>
+        <li>Styles</li>
+        <li>Expression</li>
+        <li>Celebrities</li>
+   
+      </ul>
+      
+      
+      <h3 class="heading-3">After-Care</h3>
+      <ul>
+        <li>After-care by Type</li>
+      
+      </ul>
+      
+      
+      <h3 class="heading-3">Studios</h3>
+      <ul>
+        <li>Our partners</li>
+        <li>How to find a good studio in your area</li>
+      
+      </ul>
+      
+      
+        <h3 class="heading-3">Featured Articles</h3>
+      
+      <img src="https://cdn.shopify.com/s/files/1/0623/8991/1731/files/photo.png?v=1654773895"/>
+      
+      <h4 class="heading-4">What you need to know</h4>
+      <h4 class="heading-4">What to consider before getting a belly button piercing?</h4>
+      <p>We ship to the following countries! Kindly note that we do not ship to PO Boxes, APO or FPO addresses at this time.</p>
+      
+    </div>
+    
+     <div class="col-lg-8">
+      
+        {% for handle in blog_handles %}
+
+        {% for article in blogs[handle].articles %}
+
+       <div class="row mb-5">
+       
+         <div class="col-lg-4">
+          <img src="{{ article.image.src | image_url }}" width="100%" class="img-fluid"/>
+         </div>
+         <div class="col-lg-8">
+          
+      <p >{{ article.tags }}</p>
+      <h4 class="heading-4"> {{ article.title | truncate: 50 | escape }}</h4>
+           <div>{{ article.content | strip_html | truncatewords: 30 }}</div>
+           <div class="float-right">
+           <a class="b-button" href="{{ article.url }}">Read all</a>
+           </div>
+         </div>
+       
+       </div>
+          {% endfor %}
+
+  {% endfor %}
+    </div>
+  </div>  
+</div>
+</div>

@@ -1,0 +1,256 @@
+{
+  "sections": {
+    "16551087635205c807": {
+      "type": "main-banner",
+      "blocks": {
+        "59b25fcd-a2fe-4da3-a681-b7556dcb79d3": {
+          "type": "Slider",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC_4343-Edit_copy3.jpg",
+            "custom_liquid": "Fine Belly<br>\nJewelry & <br>Accessories",
+            "button_label": "Shop the collections",
+            "button_link": "shopify:\/\/collections\/shop-all",
+            "col_img": "shopify:\/\/shop_images\/Jolie_Logo_4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "59b25fcd-a2fe-4da3-a681-b7556dcb79d3"
+      ],
+      "settings": {
+      }
+    },
+    "16557334637f9ccc6d": {
+      "type": "insta-section",
+      "disabled": true,
+      "settings": {
+        "left_text": "Designed by:",
+        "center_text": "@itsalyssajolie",
+        "right_text": "",
+        "link": "https:\/\/www.instagram.com\/itsalyssajolie\/"
+      }
+    },
+    "165969973023f637c8": {
+      "type": "new-arrival",
+      "disabled": true,
+      "settings": {
+        "heading": "New Arrivals",
+        "new_arrivals_description": "Please check in regularly as there are many new designs in development.  I hope you like what we have created.",
+        "new_arrival_link": "shopify:\/\/collections\/new-arrivals",
+        "heading_size": "h1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1655113256c3f219a4": {
+      "type": "shop-collection",
+      "blocks": {
+        "1655113256a45c6584-0": {
+          "type": "collection",
+          "settings": {
+            "col_image": "shopify:\/\/shop_images\/Collection_3.jpg",
+            "col_name": "Like a Diamond",
+            "col_link": "shopify:\/\/collections\/luminescence"
+          }
+        },
+        "34529730-dff0-45e4-9f1b-8c7c09166c40": {
+          "type": "collection",
+          "settings": {
+            "col_image": "shopify:\/\/shop_images\/Collection_2.jpg",
+            "col_name": "Raw Beauty",
+            "col_link": "shopify:\/\/collections\/raw-beauty"
+          }
+        }
+      },
+      "block_order": [
+        "1655113256a45c6584-0",
+        "34529730-dff0-45e4-9f1b-8c7c09166c40"
+      ],
+      "settings": {
+        "col_heading": "Shop Collections",
+        "col_des": "Add a little luxury to your style with our collections of belly jewelry.",
+        "btn_name": "See all",
+        "col_link": "shopify:\/\/collections"
+      }
+    },
+    "1655109120be6ab870": {
+      "type": "shop-categories",
+      "blocks": {
+        "16551091196bccfae5-0": {
+          "type": "category",
+          "settings": {
+            "cat_image": "shopify:\/\/shop_images\/Home_Page___Bars3.jpg",
+            "cat_name": "Jolie Belly Rings",
+            "cat_link": "shopify:\/\/collections\/jolie-belly-rings"
+          }
+        },
+        "d119e609-3ebf-4a1e-a3e3-0a1a15dbc7ba": {
+          "type": "category",
+          "settings": {
+            "cat_image": "shopify:\/\/shop_images\/Home_Page___Charms2.jpg",
+            "cat_name": "Jolie Charms",
+            "cat_link": "shopify:\/\/collections\/jolie-charms"
+          }
+        },
+        "3a547992-901e-4863-83f1-2c8690fc3228": {
+          "type": "category",
+          "settings": {
+            "cat_image": "shopify:\/\/shop_images\/Home_Page___aCCESSORIES3.jpg",
+            "cat_name": "Accessories",
+            "cat_link": "shopify:\/\/pages\/starter-kits"
+          }
+        }
+      },
+      "block_order": [
+        "16551091196bccfae5-0",
+        "d119e609-3ebf-4a1e-a3e3-0a1a15dbc7ba",
+        "3a547992-901e-4863-83f1-2c8690fc3228"
+      ],
+      "settings": {
+        "cat_heading": "Shop Categories",
+        "cat_des": "<b>The classic belly ring re-imagined. <\/b><br>Wear it alone or add charms to create endless combinations.",
+        "btn_name": "See all",
+        "categories_link": "shopify:\/\/collections\/shop-all"
+      }
+    },
+    "1655113562d44c90ed": {
+      "type": "style-edit",
+      "blocks": {
+        "1655113562099b1002-0": {
+          "type": "style",
+          "settings": {
+            "style_image": "shopify:\/\/shop_images\/Style_Edit1.jpg",
+            "style_name": "",
+            "style_link": "#"
+          }
+        },
+        "c5f40527-ad93-4b17-938e-1859106e89c9": {
+          "type": "style",
+          "settings": {
+            "style_image": "shopify:\/\/shop_images\/Home_Page_Style_Edit2.jpg",
+            "style_name": "",
+            "style_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "1655113562099b1002-0",
+        "c5f40527-ad93-4b17-938e-1859106e89c9"
+      ],
+      "settings": {
+        "style_heading": "Style Edit",
+        "style_des": "Mix & match our designs to create your own personalized look. See how we did it in the Style Edit!",
+        "btn_name": "See all",
+        "style_link": "shopify:\/\/pages\/style-edit"
+      }
+    },
+    "1655114486197990df": {
+      "type": "instagram-feed-heading",
+      "settings": {
+      }
+    },
+    "1655114276bed71fa0": {
+      "type": "apps",
+      "blocks": {
+        "258425bb-bfcc-4391-b3dd-b4aa2346b9d0": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "258425bb-bfcc-4391-b3dd-b4aa2346b9d0"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "16551197318dfb0ae2": {
+      "type": "about-me",
+      "settings": {
+        "about_me_img": "shopify:\/\/shop_images\/Idea_Page_Pictures_2x3_4.jpg",
+        "heading": "Hi, I'm Alyssa Jolie.",
+        "sdes": "This is my belly jewelry collection.",
+        "des": "Jolie Co stems out of my desire to create a sophisticated collection of fine belly rings and dangly charms that are interchangeable, so that you can mix and match to create your own personal look as often as you want.",
+        "btn_name": "Read my story",
+        "btn_link": "shopify:\/\/pages\/idea",
+        "about_crystal_img": "shopify:\/\/shop_images\/Jolie_Logo_10.jpg",
+        "heading_cry": "The Jolie Experience",
+        "des_cry": "We want every step of your Jolie Co experience to be memorable, from start to finish. The experience with Jolie Co lies in every touch point with the company.  The quality commitment is everything from the service you receive to the quality of the very items you purchase.",
+        "btn_name_cry": "Read all",
+        "btn_link_cry": "shopify:\/\/pages\/material-quality"
+      }
+    },
+    "b2c4fa8c-fc63-45ee-9fb2-590c0fe2971f": {
+      "type": "the-tea-categories",
+      "blocks": {
+        "template--15736874107059__b2c4fa8c-fc63-45ee-9fb2-590c0fe2971f-1666610106d07e0929-0": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/20221019-Web_Blogs_19.jpg",
+            "selected_blog": "inspiration"
+          }
+        },
+        "87aec5b4-1d97-4de6-a485-8aee0660d3bb": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/BlogSmall1.jpg",
+            "selected_blog": "knowledge-base"
+          }
+        },
+        "3dc92771-184b-4371-a8b9-3463849dd5e6": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/20221019-Web_Blogs_22.jpg",
+            "selected_blog": "after-care"
+          }
+        },
+        "818a8766-52c2-440e-9132-30b28ba33fb2": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/BlogSmall2_3a6364e2-567a-44ff-9c72-ba9e12dcebda.jpg",
+            "selected_blog": "studios"
+          }
+        }
+      },
+      "block_order": [
+        "template--15736874107059__b2c4fa8c-fc63-45ee-9fb2-590c0fe2971f-1666610106d07e0929-0",
+        "87aec5b4-1d97-4de6-a485-8aee0660d3bb",
+        "3dc92771-184b-4371-a8b9-3463849dd5e6",
+        "818a8766-52c2-440e-9132-30b28ba33fb2"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/pages\/the-tea"
+      }
+    }
+  },
+  "order": [
+    "16551087635205c807",
+    "16557334637f9ccc6d",
+    "165969973023f637c8",
+    "1655113256c3f219a4",
+    "1655109120be6ab870",
+    "1655113562d44c90ed",
+    "1655114486197990df",
+    "1655114276bed71fa0",
+    "16551197318dfb0ae2",
+    "b2c4fa8c-fc63-45ee-9fb2-590c0fe2971f"
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "sections": {
+    "1655293112adc9e5f2": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1655293054c5407b2c": {
+      "type": "style-edit-gallery",
+      "disabled": true,
+      "blocks": {
+        "1655293054e3396697-0": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/KimK.jpg",
+            "heading1": "Orb Moissanite Belly Ring",
+            "link_1": "shopify:\/\/products\/orb-belly-ring",
+            "sub_heading1": "Double Charm",
+            "link_2": "shopify:\/\/products\/copy-of-asscher-belly-ring",
+            "image2": "shopify:\/\/shop_images\/Jesus_white_bikini.jpg",
+            "heading2": "text",
+            "link_3": "",
+            "sub_heading2": "text",
+            "link_4": ""
+          }
+        },
+        "e4a0a6e1-3641-4790-92ab-54922c108242": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Black_Bikini_with_white_shirt.jpg",
+            "heading1": "text",
+            "link_1": "",
+            "sub_heading1": "text",
+            "link_2": "",
+            "image2": "shopify:\/\/shop_images\/PradeSUN.jpg",
+            "heading2": "text",
+            "link_3": "",
+            "sub_heading2": "text",
+            "link_4": ""
+          }
+        },
+        "dab2ac72-50f2-4e0f-877f-2ff31a69378d": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Black_Bikini.jpg",
+            "heading1": "text",
+            "link_1": "",
+            "sub_heading1": "text",
+            "link_2": "",
+            "image2": "shopify:\/\/shop_images\/Blue_Shorts_Drept.jpg",
+            "heading2": "text",
+            "link_3": "",
+            "sub_heading2": "text",
+            "link_4": ""
+          }
+        },
+        "5312e220-37b0-4ae0-8110-d7f4255ee188": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Harbour.jpg",
+            "heading1": "text",
+            "link_1": "",
+            "sub_heading1": "text",
+            "link_2": "",
+            "image2": "shopify:\/\/shop_images\/Fix_blue_jeans.jpg",
+            "heading2": "text",
+            "link_3": "",
+            "sub_heading2": "text",
+            "link_4": ""
+          }
+        },
+        "9f5a3087-016b-4074-8d0f-2fb16eec73e4": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Beige_Set.jpg",
+            "heading1": "text",
+            "link_1": "",
+            "sub_heading1": "text",
+            "link_2": "",
+            "image2": "shopify:\/\/shop_images\/Ballerina.jpg",
+            "heading2": "text",
+            "link_3": "",
+            "sub_heading2": "text",
+            "link_4": ""
+          }
+        },
+        "7c99a9f3-268d-4d19-9791-5b072743b1dc": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Megan_Markle_Pic.jpg",
+            "heading1": "text",
+            "link_1": "",
+            "sub_heading1": "text",
+            "link_2": "",
+            "image2": "shopify:\/\/shop_images\/Tie_Die_Set.jpg",
+            "heading2": "text",
+            "link_3": "",
+            "sub_heading2": "text",
+            "link_4": ""
+          }
+        },
+        "855d241e-2488-43da-8676-5db7bf57f8df": {
+          "type": "Gallery",
+          "disabled": true,
+          "settings": {
+            "heading1": "",
+            "link_1": "",
+            "sub_heading1": "",
+            "link_2": "",
+            "heading2": "",
+            "link_3": "",
+            "sub_heading2": "",
+            "link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "1655293054e3396697-0",
+        "e4a0a6e1-3641-4790-92ab-54922c108242",
+        "dab2ac72-50f2-4e0f-877f-2ff31a69378d",
+        "5312e220-37b0-4ae0-8110-d7f4255ee188",
+        "9f5a3087-016b-4074-8d0f-2fb16eec73e4",
+        "7c99a9f3-268d-4d19-9791-5b072743b1dc",
+        "855d241e-2488-43da-8676-5db7bf57f8df"
+      ],
+      "settings": {
+        "sty_heading": "Style edit",
+        "sty_des": "Styling the Jolie Belly Ring and Charms :)"
+      }
+    },
+    "1655293123e707d10d": {
+      "type": "the-tea",
+      "disabled": true,
+      "blocks": {
+        "1655293123739f423a-0": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/item_detail_10.png",
+            "blog_name": "What to consider before getting a belly button piercing?",
+            "blog_link": "",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "dbde98b4-ebd2-4be9-9cdb-5ee1f267952e": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/item_detail_7.png",
+            "blog_name": "What to consider before getting a belly button piercing?",
+            "blog_link": "",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "c8f3c11d-8292-4184-a4b8-3bb37bfbd086": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/item_detail_8.png",
+            "blog_name": "What to consider before getting a belly button piercing?",
+            "blog_link": "",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "2244e26d-569d-468f-b7ae-7f10bb24aca0": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/item_detail_7.png",
+            "blog_name": "What to consider before getting a belly button piercing?",
+            "blog_link": "",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        }
+      },
+      "block_order": [
+        "1655293123739f423a-0",
+        "dbde98b4-ebd2-4be9-9cdb-5ee1f267952e",
+        "c8f3c11d-8292-4184-a4b8-3bb37bfbd086",
+        "2244e26d-569d-468f-b7ae-7f10bb24aca0"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/pages\/the-tea"
+      }
+    }
+  },
+  "order": [
+    "1655293112adc9e5f2",
+    "main",
+    "1655293054c5407b2c",
+    "1655293123e707d10d"
+  ]
+}

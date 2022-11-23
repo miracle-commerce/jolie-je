@@ -1,0 +1,92 @@
+  <h4 class="heading-4 text-center">{{ article.tags }}</h4> 
+      <h3 class="heading-3 text-center">
+        {{ article.title | escape }}
+     
+     <!--      <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ article.author }}</span>
+              </span> -->
+      </h3>  
+  
+      <h3 class="heading-4 text-center">
+      
+        <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+   
+      </h3>
+        
+      <div class="img-big mb-5 article-img">     
+        <img
+                src="{{ article.image | image_url: width: 1100 }}"
+                loading="lazy"
+                width="100%"
+                height="{{ article.image.height }}"
+                alt="{{ article.image.alt | escape }}"
+                class="w-100 img-fluid">    
+      </div>  
+      
+      <p> {{ article.content }}</p>
+
+      <div class="share-block">
+    
+        <ul class="justify-content-center">
+       
+          <li><a href="http://www.pinterest.com/pin/create/button/?url={{ shop.url }}{{ article.url }}&media={{ article.image | image_url: width: 1100 }}" target="_blank">Pin</a></li>
+        
+          <li><a href="https://twitter.com/share?text={{article.title}}&url={{ shop.url }}{{article.url}}">Tweet</a></li>
+        
+          <li><a href="mailto:?subject=I wanted you to read this blog&amp;body=Check out this blog {{article.url}}" title="Share by Email ">Email</a></li>
+    
+        </ul>
+
+      </div>
+
+      
+      <div class="post-buttons">
+    
+        <div class="row">
+
+          {% if blog.previous_article %}
+          <div class="col-6 col-md-6">
+            <a href="{{ blog.previous_article }}" class="previous round">
+              <img src="https://cdn.shopify.com/s/files/1/0623/8991/1731/files/arrow-left.png"/> <span>Previous</span></a>
+          </div>    
+             {% else %}
+             <div class="col-6 col-md-6">
+            
+             </div>  
+             {% endif %}
+
+          {% if blog.next_article %}
+          <div class="col-6 col-md-6 text-right">           
+            <a href="{{ blog.next_article }}" class="next round"><span>Next</span> 
+              <img src="https://cdn.shopify.com/s/files/1/0623/8991/1731/files/arrow-right.png"/></a>       
+          </div>  
+          {% else %}
+              <div class="col-6 col-md-6 text-right">
+              
+          </div>
+             {% endif %}
+          
+        </div>
+      </div>  
+ 
+
+
+
+{% schema %}
+  {
+    "name": "Blog Content",
+    "settings": [
+	],
+  	"presets": [
+    {
+      "name": "Blog Content"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

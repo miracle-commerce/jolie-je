@@ -1,0 +1,96 @@
+{
+  "sections": {
+    "1653390534ab4232cf": {
+      "type": "page-title",
+      "settings": {
+        "heading": "Fair Pricing",
+        "des": "We aim to make fine belly jewelry accessible by as many as possible."
+      }
+    },
+    "165367719529bd290d": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1653304274745e4108": {
+      "type": "left-image-right-content",
+      "blocks": {
+        "ad6fe85e-3d09-4884-9955-0bbff04492b1": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Web_The_Idea_Pics_7.jpg",
+            "row_heading": "As consumers, we appreciate transparency from brands.",
+            "row_des": "We want to know the products we are buying are priced fairly. Too often, brands will mark up their products more just to offset the discounts and incentives. While this may benefit the brand, it doesn't always benefit the consumer. Why worry about minimums and conditions to take advantage of incentives – how about a fair price from the start? <br><br> Our markups are fair. But it not just about markups it’s also about being competitive.  <br><br> We are committed to the lowest pricing necessary to be profitable - pay a fair price to our partners and of course, continue innovating and expanding our line.  When you get rewarded for your loyalty or a referral, it is right out of our bottom line, not something you have already paid for! <br><br>",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ad6fe85e-3d09-4884-9955-0bbff04492b1"
+      ],
+      "settings": {
+        "show_heading_des": true,
+        "heading": "",
+        "des": ""
+      }
+    },
+    "01098485-844e-43a4-8052-38c1535e1ce8": {
+      "type": "the-tea-articles",
+      "blocks": {
+        "template--15790580859059__01098485-844e-43a4-8052-38c1535e1ce8-16666114164a3f1b70-0": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/why-is-moissanite-such-a-hot-stone-for-belly-jewelry"
+          }
+        },
+        "59bf0385-aef3-4bd3-a422-be3300c5b407": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/Blog7Small.jpg",
+            "show_date": true,
+            "select_article": "inspiration\/natural-stones-and-their-meaning"
+          }
+        },
+        "82121c3e-8de6-4846-9dee-9b21f3cced84": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "after-care\/signs-your-belly-button-piercing-is-healed"
+          }
+        },
+        "f8081dc0-c8ce-4088-a036-9d369ea75d3d": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/20221019-Blog11_Samall-2.jpg",
+            "show_date": true,
+            "select_article": "knowledge-base\/what-is-gold-vermeil"
+          }
+        }
+      },
+      "block_order": [
+        "template--15790580859059__01098485-844e-43a4-8052-38c1535e1ce8-16666114164a3f1b70-0",
+        "59bf0385-aef3-4bd3-a422-be3300c5b407",
+        "82121c3e-8de6-4846-9dee-9b21f3cced84",
+        "f8081dc0-c8ce-4088-a036-9d369ea75d3d"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/blogs\/inspiration"
+      }
+    }
+  },
+  "order": [
+    "1653390534ab4232cf",
+    "165367719529bd290d",
+    "1653304274745e4108",
+    "01098485-844e-43a4-8052-38c1535e1ce8"
+  ]
+}

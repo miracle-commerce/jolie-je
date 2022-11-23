@@ -1,0 +1,222 @@
+  <style>
+        .faq-left-block {
+            background: #F8F8F8;
+            padding: 3%;
+        }
+
+        .faq-left-block ul {
+            list-style-type: none;
+        }
+
+        .heading-hr:before {
+            content: "";
+            display: block;
+            width: 55%;
+            height: 1px;
+            background: #DDCCDF;
+            left: 45%;
+            top: 18px;
+            position: relative;
+        }
+        .faq-accordion{
+            padding: 3%;
+        }
+        .faq-accordion .btn{
+            font-size: 16px;
+            font-family: Italiana;
+            text-align: left;
+            width: 100%;
+        }
+
+        .faq-accordion .btn i{
+         float: right;
+        }
+        .accordion>.card{
+            border: transparent;
+        }
+        .accordion>.card>.card-header{
+            background-color: transparent;
+            border: transparent;
+            padding: 0;
+        }
+    </style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container p-5 p-md-3" id="faq-head">            
+   <div class="row ">              
+     <div class="col-lg-12 p-0 text-left">
+       <h4 class="heading-2 ">{{ section.settings.heading}}</h4>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-md-8 p-0">
+       <p class="">
+        {{ section.settings.des}}
+       </p>
+     </div>
+   </div>
+</div>
+
+ 
+   
+<div class="shopify-section p-5 p-md-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 faq-left-block">
+                    <h3 class="heading-3">Browse by topic</h3>
+                    
+                    <div class="faq-left-block-links">
+                        <ul class="p-0">
+                                                     
+                          {% if section.blocks.size > 0 %}                       
+                          {% for block in section.blocks %}                        
+                          {% if block.type == "category" %}
+                              {% assign cat_n_id = block.settings.category_name |  replace: ' ', '-' %}
+                           {% assign cat_id = cat_n_id |  replace: '&', 'and' %}
+
+                          <li><a class="collapsed" data-toggle="collapse"  data-cat-id="{{ cat_id }}" href="#{{ block.settings.collapse_id}}">{{ block.settings.category_name}}</a></li>
+                     
+                          
+                                
+                          {% endif %}
+                          {% endfor %}
+                          {% endif %}
+                          
+                          
+                        </ul>
+                      
+                        <a href="https://jolie-je.myshopify.com/pages/contact-us" class="btn-link mt-5 float-left">Contact Us</a>
+                    </div> 
+                  
+                  
+                </div>
+
+                <div class="col-lg-8 faq-accordion">
+                    <h3 class="heading-3 heading-hr" id="faq-heading"></h3>
+                  
+                  
+                  <div class="accordion-custom mt-5">
+                    <div id="accordion" class="accordion">
+                      <div class="card mb-0">
+                        <!-- 1 -->
+
+                        {% if section.blocks.size > 0 %}
+                        {% for block in section.blocks %}
+                        {% if block.type == "faq" %}
+
+
+                         {% assign cat_question_id = block.settings.collapse_id |  replace: '&', 'and' %}
+                        
+                        <div class="card-header collapsed mb-4" data-toggle="collapse" href="#{{ cat_question_id }}-{{forloop.index}}" data-category-id="{{ cat_question_id }}">
+                          <a class="card-title">
+                            {{ block.settings.question}}
+                          </a>
+                        </div>
+                        <div id="{{ cat_question_id }}-{{forloop.index}}" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>
+                               {{ block.settings.answer}}
+                            </p>
+                          </div>
+                        </div>
+                        {% endif %}
+            			{% endfor %}
+            			{% endif %}
+                        
+
+
+                      </div>
+                    </div>
+                  </div>
+                  
+   				 </div>
+            </div>
+        </div>
+    </div>
+
+
+{% schema %}
+ 
+ {
+    "name": "Faq Page",
+    "settings": [
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "des",
+      "label": "Description"
+    }
+	],
+	"blocks": [
+ 
+	{
+	  "type": "faq",
+      "name": "faq",
+      "settings": [
+	{
+      "type": "text",
+      "id": "question",
+      "label": "FAQ Question"
+    },
+        {
+      "type": "liquid",
+      "id": "answer",
+      "label": "FAQ Answer"
+    },
+	{
+      "type": "text",
+      "id": "collapse_id",
+      "label": "Category ID (remove spaces with dashes( - ) )"
+    }
+		
+
+	]
+	},
+	{
+	  "type": "category",
+      "name": "category",
+      "settings": [
+	{
+      "type": "text",
+      "id": "category_name",
+      "label": "Category Name"
+    }
+	]
+	}
+		 
+  ],
+
+  	"presets": [
+    {
+      "name": "Faq Page"
+    }
+  ]
+  }
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+$(document).ready(function () {
+        //Add a minus icon to the collapse element that is open by default
+        $('.collapse.show').each(function () {
+            $(this).parent().find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        });
+
+        //Toggle plus/minus icon on show/hide of collapse element
+        $('.collapse').on('shown.bs.collapse', function () {
+            $(this).parent().find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hidden.bs.collapse', function () {
+            $(this).parent().find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+
+{% endjavascript %}

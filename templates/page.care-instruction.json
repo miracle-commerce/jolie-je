@@ -1,0 +1,154 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1653395998d13e725d": {
+      "type": "page-title",
+      "settings": {
+        "heading": "Care Instructions",
+        "des": "Our pieces are crafted with only the finest materials.  We use stones that are beautifully cut, polished to perfection for long lasting wearability - not just as an accessory but also durable through everyday life's adventures!"
+      }
+    },
+    "1653399962eae4e144": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "165339636245d3f3f2": {
+      "type": "video-column",
+      "settings": {
+        "heading_main": "Tips & Tricks Videos",
+        "des": "Each Starter Set comes with three additional knobs so that you can adjust your belly bar to fit snuggly as your piercing heals.",
+        "video_title_1": "How to change the knob",
+        "video_title_2": "How to attach the extension",
+        "cover_image": "shopify:\/\/shop_images\/item_detail_11.png",
+        "cover_image1": "shopify:\/\/shop_images\/item_detail_9.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url1": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU&t=1s",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 32,
+        "padding_bottom": 40
+      }
+    },
+    "16533960063a1775e1": {
+      "type": "left-image-right-content",
+      "blocks": {
+        "165339600609b49af5-0": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/material.png",
+            "row_heading": "Titanium",
+            "row_des": "Is an incredibly strong and durable metal that will never tarnish and is completely free of nickel, making it perfect for initial piercings.  If you care for your titanium, it will stay looking good forever.<br> <b>How to take care of your Titanium Jewelry:<\/b><ul> <li>clean with warm water and detergent-free soap<\/li> <li>wipe dry with soft cloth<\/li> <li>ultrasonic cleaner is safe to use<\/li> <li>prolong polish by removing jewelry when handling harsh chemicals and cleaning products<\/li> <\/ul>",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        },
+        "eaafd0e2-a820-4337-8cf7-28da175d8b19": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Material-4.png",
+            "row_heading": "Gold Plated (18K PVD)",
+            "row_des": "Your plated jewellery is tarnish resistant, sweat\/ regular wear resistant and will last for years and years if cared for correctly. If not cared for correctly, like any metal it will tarnish or dull in colour over time. This jewellery can chemically only change colour when it comes into contact with another substance -like a harsh chemical. <br><b>How to take care of your Gold Plated Jewelry:<\/b><ul> <li>clean with warm water and detergent-free soap<\/li> <li>wipe dry with soft cloth<\/li> <li>keep jewelry away from everyday products like creams, tans, make up, sun tan lotion, body oils, hairspray, deodorant, antibacterial soap that contain harsh chemicals which can destroy plating<\/li> <\/ul>",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        },
+        "5e46d8bf-4490-41fe-b0e1-304cf01b7c2b": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Material-3.png",
+            "row_heading": "Precious Gemstones",
+            "row_des": "It is important that you regularly shine them using a polishing agent to maintain the gems’ luster. <br><b>How to take care of your Precious Gemstones Jewelry:<\/b><ul> <li>clean with a soft bristled brush, warm water and detergent-free soap<\/li> <li>wipe dry with soft cloth<\/li> <li>keep jewelry away from everyday products like creams, tans, make up, sun tan lotion, body oils, hairspray, deodorant, antibacterial soap that contain harsh chemicals or excessive temperatures<\/li> <\/ul>",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        },
+        "61c3a82f-c1d1-40c7-9bb0-e2b0e7da111f": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Material-2.png",
+            "row_heading": "Gemstones",
+            "row_des": "It is important that you regularly shine them using a polishing agent to maintain the gems’ luster.<br><b>How to take care of your Gemstones Jewelry:<\/b><ul> <li>clean with a soft bristled brush, warm water and detergent-free soap<\/li> <li>wipe dry with soft cloth<\/li> <li>keep jewelry away from everyday products like creams, tans, make up, sun tan lotion, body oils, hairspray, deodorant, antibacterial soap that contain harsh chemicals or excessive temperatures<\/li> <\/ul>",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165339600609b49af5-0",
+        "eaafd0e2-a820-4337-8cf7-28da175d8b19",
+        "5e46d8bf-4490-41fe-b0e1-304cf01b7c2b",
+        "61c3a82f-c1d1-40c7-9bb0-e2b0e7da111f"
+      ],
+      "settings": {
+        "show_heading_des": true,
+        "heading": "Care Instructions",
+        "des": "Each Starter Set comes with three additional knobs so that you can adjust your belly bar to fit snuggly as your piercing heals."
+      }
+    },
+    "52d0b4d3-72d6-4b97-8be8-18bd6b26d848": {
+      "type": "the-tea-articles",
+      "blocks": {
+        "template--15748168777907__52d0b4d3-72d6-4b97-8be8-18bd6b26d848-1666611319208fa4a5-0": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/natural-stones-and-their-meaning"
+          }
+        },
+        "cb9f6a18-96b3-4058-982f-03a257ed08a3": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/why-is-moissanite-such-a-hot-stone-for-belly-jewelry"
+          }
+        },
+        "53ecf4c6-ebfd-4b45-9a4f-95cffd43580e": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "after-care\/signs-your-belly-button-piercing-is-healed"
+          }
+        },
+        "4d54ccb9-a84c-4923-8976-89e018f726c4": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "knowledge-base\/why-should-you-avoid-cheap-belly-rings"
+          }
+        }
+      },
+      "block_order": [
+        "template--15748168777907__52d0b4d3-72d6-4b97-8be8-18bd6b26d848-1666611319208fa4a5-0",
+        "cb9f6a18-96b3-4058-982f-03a257ed08a3",
+        "53ecf4c6-ebfd-4b45-9a4f-95cffd43580e",
+        "4d54ccb9-a84c-4923-8976-89e018f726c4"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        "blog_link": "shopify:\/\/pages\/the-tea"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653395998d13e725d",
+    "1653399962eae4e144",
+    "165339636245d3f3f2",
+    "16533960063a1775e1",
+    "52d0b4d3-72d6-4b97-8be8-18bd6b26d848"
+  ]
+}

@@ -1,0 +1,50 @@
+
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+#shopify-section-main-blog{
+height: 100%;
+}
+{%- endstyle -%}
+
+{% section 'page-title' %}
+<!-- {% section 'breadcrumbs' %} -->
+
+  
+<div class="main-blog container section-{{ section.id }}-padding">
+<!--     <h1 class="title--primary">{{ blog.title | escape }}</h1> -->
+   
+  <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">    
+    <div class="pt-5 mt-5">  
+      <div class="container tea-page">
+
+        <div class="row mb-5">
+  	
+          <div class="col-lg-4 tea-cat">
+            {% section 'blog-sidebar'  %}
+          </div>
+    
+          <div class="col-lg-8 blog-detail-right"> 
+            {% section 'main-blog'  %}
+          </div>   
+          
+        </div>
+    
+      </div>
+    </div>
+  </div>
+</div>

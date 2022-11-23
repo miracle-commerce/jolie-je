@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "1653680432e39635e2": {
+      "type": "main-header-banner",
+      "blocks": {
+        "f5953548-c705-4f8f-a29e-9a2b23fa1a37": {
+          "type": "slider",
+          "settings": {
+            "mix_match_banner_image": "shopify:\/\/shop_images\/Web_Mix_Match_Banner_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mix_Match_Mobile_Banner_1.jpg",
+            "heading": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "f5953548-c705-4f8f-a29e-9a2b23fa1a37"
+      ],
+      "settings": {
+      }
+    },
+    "16536800587621b33f": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1654530563734a9b21": {
+      "type": "text-with-images",
+      "disabled": true,
+      "settings": {
+        "heading": "How to wear",
+        "des": "",
+        "heading_left": "Wear it alone",
+        "heading_right": "Add an attachment & make it your own!",
+        "left_image": "shopify:\/\/shop_images\/image_5.png",
+        "image_text1": "Mix & Match between any bar and attachment.",
+        "right_image1": "shopify:\/\/shop_images\/image_6.png",
+        "right_image2": "shopify:\/\/shop_images\/image_7.png",
+        "image_text2": "Mix & Match between any bar and attachment."
+      }
+    },
+    "165550346997ccbb72": {
+      "type": "video-content-left",
+      "settings": {
+        "show_heading_des": false,
+        "section-heading": "",
+        "section-description": "",
+        "video-heading": "The Jolie Belly Rings are versatile.  You can wear them alone or add a charm for extra length & bling!",
+        "video-description": "With their larger and brighter stones, they are sure to get noticed.  But if you are looking for some sparkle or a statement piece, check out the collection of charms.",
+        "video-description-2": "",
+        "btn-name": "Shop Jolie Belly Rings",
+        "btn_link": "shopify:\/\/collections\/jolie-belly-rings",
+        "video_url": "https:\/\/player.vimeo.com\/video\/765709976",
+        "description": ""
+      }
+    },
+    "1655291107cdb78a37": {
+      "type": "video-content-left",
+      "settings": {
+        "show_heading_des": false,
+        "section-heading": "",
+        "section-description": "",
+        "video-heading": "Add sparkle to your belly with Jolie Charms!  Start planning your outfit now, these charms are just about the last touch you need to turn heads.",
+        "video-description": "They are available in an assortment of colors, shapes, and sizes, so you can really mix it up.  Oh, and did I mention they also come in longer lengths with larger stones? Now that's what I call bling!",
+        "video-description-2": "",
+        "btn-name": "Shop Jolie Charms",
+        "btn_link": "shopify:\/\/collections\/jolie-charms",
+        "video_url": "https:\/\/player.vimeo.com\/video\/765709958",
+        "description": ""
+      }
+    },
+    "76507db7-48ea-47ab-a110-05a9f8da6a8d": {
+      "type": "the-tea-articles",
+      "blocks": {
+        "template--15748115071155__76507db7-48ea-47ab-a110-05a9f8da6a8d-166661113340fd2375-0": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/natural-stones-and-their-meaning"
+          }
+        },
+        "c5c608a0-0752-4b21-8bd4-d92719225868": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/Web_Blogs_Small_15.jpg",
+            "show_date": true,
+            "select_article": "inspiration\/why-is-moissanite-such-a-hot-stone-for-belly-jewelry"
+          }
+        },
+        "905a3afd-635d-40c6-8f14-079325c910dd": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "knowledge-base\/pro-s-and-con-s-of-getting-a-belly-button-piercing"
+          }
+        },
+        "5479a5f4-a185-4623-8d71-55ec7e29ceb7": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/20221019-Blog11_Samall-2.jpg",
+            "show_date": true,
+            "select_article": "knowledge-base\/what-is-gold-vermeil"
+          }
+        }
+      },
+      "block_order": [
+        "template--15748115071155__76507db7-48ea-47ab-a110-05a9f8da6a8d-166661113340fd2375-0",
+        "c5c608a0-0752-4b21-8bd4-d92719225868",
+        "905a3afd-635d-40c6-8f14-079325c910dd",
+        "5479a5f4-a185-4623-8d71-55ec7e29ceb7"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/blogs\/inspiration"
+      }
+    }
+  },
+  "order": [
+    "1653680432e39635e2",
+    "16536800587621b33f",
+    "1654530563734a9b21",
+    "165550346997ccbb72",
+    "1655291107cdb78a37",
+    "76507db7-48ea-47ab-a110-05a9f8da6a8d"
+  ]
+}

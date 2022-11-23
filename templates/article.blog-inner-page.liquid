@@ -1,0 +1,71 @@
+{% section 'page-title' %}
+{% comment %}{% section 'breadcrumbs' %}{% endcomment %}
+
+<style>
+
+  .share-block {
+        margin-top: 3%;
+        border-top: 1px solid #DDCCDF;
+        border-bottom: 1px solid #DDCCDF;
+    }
+
+    .share-block ul {
+        display: flex;
+        padding: 4% 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .share-block li {
+        color: #4A234E;
+        padding: 0 4%;
+    }
+
+    .share-block li:after {
+        content: '|';
+        margin-left: 2.4%;
+        position: absolute;
+    }
+
+    .share-block li:after:last-child {
+        content: '';
+    }
+
+    .post-buttons {
+        margin: 4% 0;
+    }
+
+    .previous {
+        color: #4A234E;
+    }
+
+    .previous span {
+        margin-left: 8%;
+    }
+
+    .next {
+        color: #4A234E;
+
+    }
+
+    .next img {
+        margin-left: 8%;
+    }
+
+
+</style>
+
+<div class="container tea-page pt-5 mt-5"> 
+  <div class="row">  	
+    <div class="col-lg-4 tea-cat">
+      
+     {% section 'blog-sidebar'  %}
+    
+    </div>
+    
+      <div class="col-lg-8 blog-detail-right">
+        {% section 'blog-content'  %}
+    </div>
+    
+  </div>
+</div>

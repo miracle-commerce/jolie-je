@@ -1,0 +1,110 @@
+<div class="bg-gray section-spacing">
+   <div class="container p-md-0">
+        <div class="">
+            <h4 class="heading-2">{{ section.settings.style_heading }}</h4>
+        </div>
+        <div class="d-block d-md-flex">
+            <div class="col-md-9 p-0 d-none d-md-block">
+                <p class="">{{ section.settings.style_des }}</p>
+            </div>
+            <div class="col-md-3 text-right text-md-right mt-4 mt-md-0 pr-0 d-none d-md-block">
+                <a class="btn-link float-none float-md-right" href="{{ section.settings.style_link }}">{{ section.settings.btn_name }}</a>
+            </div>
+        </div>
+        <div class="d-block d-md-flex shop-style-slider mt-5">
+            {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+            {% if block.type == "style" %}
+            <div class="">
+                <a href="{{ block.settings.style_link }}" class="object-hover">
+                    <img src="{{ block.settings.style_image | img_url: 'master'}}" alt="{{ block.settings.style_name }}" width="100%">
+                    <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.style_name }}</div>
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+        </div>
+     
+     <div class="col-md-12 text-center d-md-none d-block pt-5 pb-5">
+                <a class="btn-link float-none float-md-right" href="{{ section.settings.style_link }}">{{ section.settings.btn_name }}</a>
+            </div>
+    </div>
+</div>
+  
+
+{% schema %}
+{
+  "name": "Style Edit",
+  "class": "section",
+  "settings": [
+	{
+      "type": "text",
+      "id": "style_heading",
+      "label": "Style Name"
+    },
+	{
+      "type": "text",
+      "id": "style_des",
+      "label": "Style Description",
+		"default": "kjsdhksjd"
+    },
+	{
+      "type": "text",
+      "id": "btn_name",
+      "label": "Button text"
+    },
+	{
+          "type": "url",
+          "id": "style_link",
+          "label": "See all style"
+   	}
+    
+  ],
+  "blocks": [
+ 
+	{
+	  "type": "style",
+      "name": "style",
+      "settings": [
+
+	{
+      "type": "image_picker",
+      "id": "style_image",
+      "label": "Style image"
+    	},
+	{
+      "type": "text",
+      "id": "style_name",
+      "label": "Style name"
+    },
+	{
+       "type": "url",
+       "id": "style_link",
+       "label": "style link"
+    }
+
+	]
+	}	
+    
+  ],
+  "presets": [
+    {
+      "name": "Style Edit",
+      "blocks": [
+      {
+          "type": "style"
+        }
+       
+        
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

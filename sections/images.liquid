@@ -1,0 +1,41 @@
+<div class="section-spacing">
+  <div class="container p-md-0 pb-5">
+    <div class="row">
+    <div class="col-md-6">              
+        <img src="{{ section.settings.col_image1 | img_url: 'master'}}" alt="{{ section.settings.image.alt }}" width="100%">                  
+    </div>
+    
+    <div class="col-md-6">         
+        <img src="{{ section.settings.col_image2 | img_url: 'master'}}" alt="{{ section.settings.image.alt }}" width="100%">                         
+    </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Two column Images",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "col_image1",
+      "label": "Select Image 1"
+    	},
+      {
+      "type": "image_picker",
+      "id": "col_image2",
+      "label": "Select Image 2"
+    	}
+    ],
+     "presets": [
+    {
+      "name": "Two column Images"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

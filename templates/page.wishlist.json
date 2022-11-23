@@ -1,0 +1,82 @@
+{
+  "sections": {
+    "16553012875eaf0cf3": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "16563242372d8fb2f6": {
+      "type": "page-wishlist",
+      "settings": {
+      }
+    },
+    "1656324293fc540187": {
+      "type": "instagram-feed-heading",
+      "settings": {
+      }
+    },
+    "1656324285ab915743": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    },
+    "fb3f574e-60d0-43f0-9a77-ba0f6c474fbe": {
+      "type": "the-tea-articles",
+      "blocks": {
+        "template--15776851689651__fb3f574e-60d0-43f0-9a77-ba0f6c474fbe-1666611554d8cfd6a0-0": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "knowledge-base\/what-to-consider-before-getting-a-belly-button-piercing"
+          }
+        },
+        "f0989e97-a0ac-4874-bdd5-96ef0b6b70e3": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "after-care\/signs-your-belly-button-piercing-is-healed"
+          }
+        },
+        "5acc1796-b9f6-4f6d-a091-bb86698781c6": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "knowledge-base\/what-is-gold-vermeil"
+          }
+        },
+        "2daf39c1-4a6b-4f39-a8fc-e0ea0b40e2e3": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/natural-stones-and-their-meaning"
+          }
+        }
+      },
+      "block_order": [
+        "template--15776851689651__fb3f574e-60d0-43f0-9a77-ba0f6c474fbe-1666611554d8cfd6a0-0",
+        "f0989e97-a0ac-4874-bdd5-96ef0b6b70e3",
+        "5acc1796-b9f6-4f6d-a091-bb86698781c6",
+        "2daf39c1-4a6b-4f39-a8fc-e0ea0b40e2e3"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/pages\/the-tea"
+      }
+    }
+  },
+  "order": [
+    "16553012875eaf0cf3",
+    "16563242372d8fb2f6",
+    "1656324293fc540187",
+    "1656324285ab915743",
+    "fb3f574e-60d0-43f0-9a77-ba0f6c474fbe"
+  ]
+}

@@ -1,0 +1,76 @@
+<style>
+.main-img {
+    background-image: url({{ 'desktop_nov.jpg' | asset_img_url:'master' }});
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.mobile-img {
+    background-image: url({{ 'mobile_nov.png' | asset_img_url:'master' }});
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+  
+  .mobile-img{
+  display:none; 
+  }
+
+  @media only screen and (max-width:767px){
+
+  .mobile-img{
+  display:block; 
+  }
+    .main-img{
+  display:none; 
+  }
+    
+  }
+  
+</style>
+<div class="main-img" onclick="showpassword()" id="main-password-frontend-desktop">
+  
+</div>
+
+<div class="mobile-img" onclick="showpassword()" id="main-password-frontend-mobile">
+ 
+</div>
+
+
+{% schema %}
+  {
+    "name": "Launching Soon",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "desktop",
+      "label": "Desktop Image"	
+      },
+      {
+      "type": "image_picker",
+      "id": "mobile",
+      "label": "Mobile Image"	
+      }
+    ],
+  "presets": [
+    {
+      "name": "Launching Soon"
+    }
+  ]
+    
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+  
+{% endjavascript %}

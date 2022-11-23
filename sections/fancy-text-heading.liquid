@@ -1,0 +1,109 @@
+<style>
+        .warranty-container {
+            position: relative;
+            height: 150px;
+        }
+        .first-heading {
+            position: absolute;
+            text-align: center;
+            width: 99%;
+            font-family: 'Italiana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 100px;
+            text-transform: uppercase;
+            color: #4A234E;
+            opacity: 0.05;
+        }
+        .second-heading {
+            position: absolute;
+            top: 50%;
+            width: 99%;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Italiana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #1C1C1C;
+        }
+  
+  		.bottom-txt{
+        	text-align:center;
+        
+        }
+  
+  
+  .fancy-spacing{
+  
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+  }
+    </style>
+
+    <div class="main-container bg-gray pt-5 pb-5">
+        <div class="container fancy-spacing">
+            <div class="row">
+                <div class="col-sm-12 ">
+                  <a href="{{ section.settings.link }}">
+                    <div class="warranty-container">
+                        <div class="first-heading">{{ section.settings.l_heading }}</div>
+                        <div class="second-heading">{{ section.settings.s_heading }}</div>
+                    </div>
+                    <div class="bottom-txt">
+                        <h1 class="heading-1">{{ section.settings.heading }}</h1>
+                        <p>{{ section.settings.des }}</p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% schema %}
+  {
+    "name": "Fancy Heading & Text",
+    "settings": [
+	{
+      "type": "text",
+      "id": "l_heading",
+      "label": "Large Font"
+    },
+	{
+      "type": "text",
+      "id": "s_heading",
+      "label": "Small Font"
+    },
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "des",
+      "label": "Description"
+    },
+	{
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    }
+	
+	],
+	  "presets": [
+    {
+      "name": "Fancy Heading & Text"
+      
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

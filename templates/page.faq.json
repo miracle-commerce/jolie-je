@@ -1,0 +1,248 @@
+{
+  "sections": {
+    "16553012875eaf0cf3": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1654782639351fe05d": {
+      "type": "faq-section",
+      "blocks": {
+        "a876ead1-2434-4fe3-8d49-dd34dedc4a2a": {
+          "type": "category",
+          "settings": {
+            "category_name": "Shipping"
+          }
+        },
+        "5e6c92f7-c87a-4a91-95cd-cbba60de57da": {
+          "type": "faq",
+          "settings": {
+            "question": "How long does it take to get my order?",
+            "answer": "You can trust that your order will be shipped as quickly as possible. We aim to have enough inventory of all items but we’re always in the process of restocking. If you happen to catch us somewhere between shipments, please do not hesitate to place your order - you will receive priority service the moment new stock arrives. <br><br><b>Shipping timelines:<\/b> <br><br><b>In-Stock: <\/b><br><br>As a rule, all in-stock items will ship within 1 to 2 business days from the date ordered. Once the order is shipped, you will be notified with a tracking number via email. Please allow 3 – 5 business days for your order to be delivered. For international orders outside of North America, it may take slightly longer due to customs. <br><br> <b>Shipping Later:<\/b> <br><br>We know how excited you are about your purchase. We will be fulfilling orders as soon as we have the items in-stock. You will find the estimated ship date on each product page below the \"Add to Bag\" button, so please take note of that. If there are any changes you can be sure we will notify you. <br><br>",
+            "collapse_id": "Shipping"
+          }
+        },
+        "53d29eb7-049f-4c5e-9cc6-ae772b561e83": {
+          "type": "faq",
+          "settings": {
+            "question": "How much does shipping cost?",
+            "answer": "There is no such thing as FREE shipping. It is customary for companies to hide the shipping costs in the price of every item you purchase. <br><br>We are committed to a fair and transparent pricing policy. That way, you know exactly how much you're paying for shipping and there are no hidden markups. When you order multiple items, you will only pay one shipping fee. <br><br>In addition, if you return the item due to quality concerns then rest assured Jolie Co will cover both the shipping and return shipping fees so that it is entirely FREE to you. There will be no hassles. <br><br><b><u>Shipping is only $10 anywhere in the world.<\/u> <\/b>When you <b>buy a bar and charm<\/b> the <b>shipping is FREE<\/b> to you no matter where you are in the world. This is just a reflection of how excited we are to see you wearing them.",
+            "collapse_id": "Shipping"
+          }
+        },
+        "fa8b9efa-21f5-4025-996a-d8e740ba57b2": {
+          "type": "faq",
+          "settings": {
+            "question": "Are there additional duties and taxes?",
+            "answer": "<b>DUTIES AND TAXES Duties on orders from US and Canada are included. <\/b> If you are in Canada taxes are applied at check-out based on the state\/province of the shipping address. <br><br>\n<b>However, if you are in the US there are no additional taxes applied at this time. The price you see for each product is the price you pay at checkout. <\/b><br><br>\nIf your purchase is from Australia or New Zealand, you do not have to pay GST or any other duty unless the value of your order is over $1000 AUD\/NZD. <br><br>\n<b>UK, EU and other international shipments: Your purchase may incur duties and taxes. <\/b>\nThe amount will vary by the material the jewelry is made from, but we are unable to advise you on the costs as they vary by country. <br><br>\nIt is important to note, that paying these fees does not imply you are paying extra and simply means you are paying your government directly instead of having Jolie Co remit these fees on your behalf. <br><br>\nIf you deny the shipment due to duties or other fees, the package will be returned to us, and you will be refunded for the order after deducting the return shipping fees. <br><br>\n<b>Other Transaction fees: <\/b>Jolie Co doesn't charge any additional fees other than the total amount owed for an order. Other international fees may be applied by your bank as we're based out of Canada. Although these fees are likely to be very small, we have no control over how your bank applies them or to refund you these fees should you return the item.",
+            "collapse_id": "Shipping"
+          }
+        },
+        "b8ba2b85-ffa5-4050-8200-a82417f4d3b2": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I track my order?",
+            "answer": "When your order ships an email will be sent to you with the tracking information so that you can track your shipment on the carrier’s website.  If you cannot find the email, be sure to check your spam\/junk folders.  You can also track your order by signing in directly through the <b>Live Chat & Helpdesk.<\/b>  Yes, there’s some self-serve prompts but we are also there to help answer questions which is our preferred method of helping you.",
+            "collapse_id": "Shipping"
+          }
+        },
+        "8f90a63e-689d-4f52-addd-9537a3897a90": {
+          "type": "faq",
+          "settings": {
+            "question": "Why is my package taking so long?",
+            "answer": "If you are placing your order from outside of Canada or the United States, it may be held at Customs in your country. Please also be advised that the COVID-19 pandemic has significantly slowed all international deliveries.",
+            "collapse_id": "Shipping"
+          }
+        },
+        "804a2984-86fe-42ed-b823-ba0c3e374d4c": {
+          "type": "category",
+          "settings": {
+            "category_name": "My Order"
+          }
+        },
+        "a9cf79e5-a437-4d37-8b55-fda62dd728a3": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I find my order number?",
+            "answer": "You can find your order by sign in directly through the <b>Live Chat & Helpdesk<\/b> (icon at the bottom right of the page).  With every order, we send an email confirmation. Be careful checking for these emails in case they end up in the junk\/spam folder!",
+            "collapse_id": "My-Order"
+          }
+        },
+        "bb8f5858-c30e-45e7-a8a2-71bc503c9969": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I change or cancel my order?",
+            "answer": "If you need to change or cancel your order, please do it quickly. Our top priority is to fulfill orders for in-stock items as soon as they come in, so don’t be surprised if we happen to process yours right away.  <br><br> You can make a change or cancel your order by signing in directly through the <b>Live Chat & Helpdesk. <\/b> Yes, there’s some self-serve prompts but we are also there to help answer questions which is our preferred method of helping you. <br><br> <b>In-stock items:<\/b><br><br> We may not be able to accommodate changes after the order has been processed.  <br><br> <b>Shipping Later: <\/b><br><br> You can cancel your order at any time before it is shipped.  But, if you are having second thoughts, don’t shy away from engaging in conversation with us no matter your questions whether related to timing, the fit, or the quality and manufacturing of our products. <br><br> <b>Made to Order: <\/b><br><br> An order for made to order item cannot be cancelled or returned after it is processed.",
+            "collapse_id": "My-Order"
+          }
+        },
+        "1b2f1063-5b9c-4e6d-9586-e68b685f85a6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I change the shipping address after the order is placed?",
+            "answer": "The shipping address cannot be changed after the order is placed. <br><br> <b>FedEx<\/b> <br><br> You can contact the carrier directly with the tracking information provided and you can make the change with them directly.  <br><br> <b>Canada Post<\/b><br><br> Canada Post is not able to accommodate any changes to the address.",
+            "collapse_id": "My-Order"
+          }
+        },
+        "e3ebe7c1-69ec-486d-b9d6-b72e0238ca1c": {
+          "type": "category",
+          "settings": {
+            "category_name": "Returns & Exchanges"
+          }
+        },
+        "79857b28-78fc-4c57-92ef-a21a3fcc2a86": {
+          "type": "faq",
+          "settings": {
+            "question": "What is your return and exchange policy?",
+            "answer": "You can return all items within 14-days of delivery.  If you wish to exchange your item, the best way is to initiate a return then purchase a new item. <br><br>  <b>Some rules apply: <\/b> <br><br>  •\tItems cannot show any signs of wear or damage <br> •\tThey must be packaged in the original box and pouch <br><br> To keep things simple and efficient for you, a pre-paid FedEx return label is included in the package.  It is important you return the items in their original packaging as the return label is based on the dimensions of the Jolie box.  A larger box may increase the shipping costs which will get deducted from your refund.  If the return guidelines above are not followed, then Jolie Co has the right to deny the return and have the items shipped back to you.",
+            "collapse_id": "Returns-&-Exchanges"
+          }
+        },
+        "54a02fb3-e301-4968-b605-7ce50ea6c5f4": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I initiate a return?",
+            "answer": "We are committed to delivering an amazing experience at every step, and you can always expect a timely response and respectful treatment. There will be no hassles. <br><br>  Please do not hesitate to reach out to us via the <b>Live Chat & Helpdesk. <\/b> Yes, there’s some self-serve prompts but we are here to help answer questions - which is our preferred method of helping you!",
+            "collapse_id": "Returns-&-Exchanges"
+          }
+        },
+        "c5518b9e-a77d-4f49-90ad-a76e87b1f6fa": {
+          "type": "faq",
+          "settings": {
+            "question": "How much is the return shipping fee?",
+            "answer": "We are committed to a fair and transparent pricing policy.  Shipping is something that we all pay for in one way or another.  Why pay more just so that your return shipping fees are included? What if you just keep the product – would you not prefer to have your product priced fairly? <br><br> The return shipping fees is $10 – anywhere in the world.<br><br>But if your return is due to <b>quality concerns<\/b> then rest assured Jolie Co will cover the return shipping fees so that it is <b>FREE<\/b> to you.  There will be no hassles.",
+            "collapse_id": "Returns-&-Exchanges"
+          }
+        },
+        "407affb3-fad0-42b2-a150-c1264bde13d9": {
+          "type": "category",
+          "settings": {
+            "category_name": "Product Information"
+          }
+        },
+        "09b48c89-395e-4a9e-949a-4036c69c0681": {
+          "type": "faq",
+          "settings": {
+            "question": "How is the jewelry made?",
+            "answer": "<b>Craftmanship:<\/b><br><br> All pieces are handcrafted with care, using an ancient old “lost-wax” technique of jewelry making. This process combines both cast and handmade elements like sanding and buffing, putting an artisan's personal connection and love of their craft on display.<br><br> There are many considerations to manufacturing fine navel jewelry. It’s everything from the materials and the quality of stones to ensuring a consistent curvature of the bar and threading.  Although you tend to be drawn to the look and feel of a belly ring or maybe just the sparkle, your experience is ultimately dictated by how comfortable it is to wear.<br><br> We are extremely critical of all these considerations.  Quality craftmanship is not just a promise…it’s an integral part of every single aspect of manufacturing. It’s about combining processes, state-of-the-art equipment, and the skill of master artisans.<br><br> But above all this, there is yet one more consideration.  It is our commitment to an ethical approach to business and environment friendly processes. We are proud to have partnered with an organization that is certified by Sedex and does more than just share this commitment - approximately 40% of the energy used to manufacture our products is generated via solar panels.<br><br> <b>Materials: <\/b><br><br> All alloys used in the mix of our 14k solid gold and the 925 silver which is 100% recycled are sourced through one of the largest and most accredited precious metal refiners in the United States.  You can be certain the materials adhere to the highest standards, such as Responsible Jewelry Council (RJC), Responsible Minerals Initiative (RMI – RMAP), SCS: Global Services and Conflict Free Gold. <br><br> <b>Stones: <\/b><br><br> Semi-Precious Stones<br><br> Our semi-precious stones are all ethically sourced from conflict-free zones.  We have direct relationships with reputable gemologists to ensure efficient sourcing of all the top grade semi-precious gemstones.  They are carefully inspected before use.  <br><br> Moissanite Stones<br><br> Moissanite stones are created in a laboratory.  Our colorless and near flawless clarity moissanite stones, originate from a reputable provider in China.  We inspect each stone to ensure it meets our specifications. At present, many Asian providers of moissanite stones issue GRA certificates, however there is much controversy surrounding the authenticity of these certificates.  For this reason, we have elected to rely on our own internal verification.  We will not be providing a GRA certificate to you, but you can rest assured you are getting top-quality moissanite stones as described.",
+            "collapse_id": "Product-Information"
+          }
+        },
+        "26b36178-15d6-4506-b161-09ec7463c028": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "question": "What is rhodium plated 14k white gold?",
+            "answer": "Our 14k white gold is sourced from the United States through the largest and most accredited precious metal refiner in the United States. You can be certain it adheres to the highest standards, such as the Responsible Jewelry Council (RJC), Responsible Minerals Initiative (RMI – RMAP), SCS: Global Services and Conflict Free Gold. <br><br>White gold is a beautiful, modern alternative to traditional yellow gold. But many people don't realize that white gold isn't actually pure white. Like most other types of gold used in jewelry, white gold is an alloy of gold and other metals. Our 14k White Gold consists of 58.5% of pure gold and is Nickel-Free. <br><br>So where does the white color come from? It's actually from the thin layer of rhodium plating that gives white gold jewelry its high luster and bright white color. Rhodium plating also has the benefit of lasting longer on white gold. And because rhodium does not contain allergens, it's a great choice for those with sensitive skin. So, if you're looking for a beautiful, modern option, white gold is the perfect choice. <br><br>Because Jolie Co also rhodium plates all its 925 sterling silver charms you can easily match them up with a 14k solid white gold bar. They may look identical, but your pocket will sure thank you.",
+            "collapse_id": "Product-Information"
+          }
+        },
+        "333aabb0-8592-437a-ab8b-02584b0f2db3": {
+          "type": "faq",
+          "settings": {
+            "question": "What is gold vermeil?",
+            "answer": "Gold vermeil is a great option for those who want the look of gold without the price tag, and it's also significantly more durable than gold plating. Vermeil is made by bonding a thick layer of 18k Gold (at least five times higher than regular gold-plated jewelry) to a base of 925 Sterling Silver, making it stronger and giving it the luxurious look and feel of yellow gold. But not all Gold Vermeil is equal.  \nAt Jolie Co we apply a thick 3-micron layer of 18k gold onto a 925 Sterling Silver.  In addition, we also apply a clear e-coating which ensures the piece lasts longer when exposed to the elements.  <br><br>The 14k gold vermeil charms can be matched with a 14k solid yellow gold bar – they may look identical, but your pocket will sure thank you.",
+            "collapse_id": "Product-Information"
+          }
+        },
+        "51c93229-ba15-4bbe-962c-bdc5b8b80ae8": {
+          "type": "faq",
+          "settings": {
+            "question": "What is rhodium plated 925 sterling silver?",
+            "answer": "925 sterling silver is a popular choice for jewelry and known not to cause allergic reactions. But it can tarnish over time and is not as durable as some other metals. Rhodium is a rare metal and commonly used in fine jewelry. The rhodium plating both strengthens and protects delicate metals from corrosion and tarnishing by creating a beautiful reflective white finish. Rhodium has a higher luster and whiteness which gives sterling silver a modern look. In addition, we also apply a clear e-coating which ensures the piece lasts longer when exposed to the elements.<br><br>  Because Jolie Co applies a rhodium plating on all of its 14k white gold bars, you can easily match them up with a rhodium plated 925 sterling silver charm. They may look identical, but your pocket will surely thank us for it!",
+            "collapse_id": "Product-Information"
+          }
+        },
+        "ef46e17d-67d7-4f5e-a180-079ece9442ef": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the difference between internally & externally threaded belly bars?",
+            "answer": "For anyone considering a new piercing, it is important to be aware of the different types of threading available. A professional piercer will always recommend an internally threaded belly bar as it provides a smoother insertion since there are no threads on the outside of the barbell to catch on raw tissue. They are also more difficult to manufacture which is why the external threading is much more common in low-priced belly bars. <br><br> Externally threaded belly bars tend to be much more susceptible to irritation and infection as the threads are like little, tiny knives and can catch on the delicate tissue, leading to cuts, scrapes, and inflammation.  In addition, bacteria can easily become trapped in the nooks and crannies of the threading, increasing the risk of infection. <br><br> You may use externally threaded body jewelry if your piercing is well-healed.  However internally threaded belly bars are always the safer and recommended option.",
+            "collapse_id": "Product-Information"
+          }
+        },
+        "26ee47b1-7e96-4296-a2d5-d80db2e27292": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the safest belly jewelry to wear?",
+            "answer": "Whether you are just getting pierced or looking for a change, you need to consider the material the jewelry is made of and the type of threading. Check out our “What you need to know” blog posts. <br><br> Everyone reacts to metal sensitivities differently, there are some symptoms to watch out for. <b>Itching, redness, swelling, soreness, and warmth <\/b>at the exposed area are all signs that you’re allergic to the metals in your jewelry.  <br><br> Regardless of whether you know how your skin reacts to certain materials the wises choice is to always choose a material that is less likely to give you a reaction. Your piece will be more comfortable to wear.  <br><br> The type of threading is equally important as externally threaded belly bars tend to be much more susceptible to irritation and infection as the threads are like little, tiny knives and can catch on the delicate tissue, leading to cuts, scrapes, and inflammation.  In addition, bacteria can easily become trapped in the nooks and crannies of the threading, increasing the risk of infection. <br><br>  <b>For new piercings: <\/b><br><br> You should never use any type of plated materials or those that contain nickel.  The safest materials for new piercings are 14k solid gold, implant grade 316L or 316LVM surgical steel compliant to ASTM F138, and titanium grade 5 TI6AL4V alloy or grade 23 Ti6AL4V ELI alloy compliant to ASTM F136.  <br><br> And remember, your professional piercing studio has a responsibility to educate you on the materials and types of threading before you get pierced.  But some piercers are flat out busy and don’t take the time to explain or even worse just profit driven.  And so – do your own research – it is your body and the ultimate responsibility to protect yourself is on you! <br><br> <b>For healed piercings: <\/b><br><br> Many believe that any material is safe to wear once your piercing has healed and that is simply not true.  For example, not all surgical steel meets the safe specifications as set out by ASTM.  <br><br> So many “gold plated belly rings” compete for your attention but gold plating is an extremely challenging and complex process.  Don't get fooled by cheap gold-plated jewelry. It’s not safe or practical. The thin layers of gold plating wear out quickly and the flaking and exposure to the underlying materials can cause irritation and infections no matter where you are in your piercing journey.  <br><br> Do you research and carefully review the materials no matter where you are in your piercing journey – especially if you are hypersensitive.",
+            "collapse_id": "Product-Information"
+          }
+        },
+        "5aef952b-4b60-477b-8479-570a8bf505b9": {
+          "type": "faq",
+          "settings": {
+            "question": "How is your jewelry packaged?",
+            "answer": "Each piece of jewelry is sanitized and handled with gloves before being placed in the custom Jolie pouch and box.",
+            "collapse_id": "Product-Information"
+          }
+        },
+        "50adf502-0ade-4a75-9d37-3b5fe0587583": {
+          "type": "category",
+          "settings": {
+            "category_name": "Warranty"
+          }
+        },
+        "f9f5d742-230e-4e2b-b1b2-dad580a78881": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer warranty?",
+            "answer": "At Jolie Co, we know that jewelry is meant to be worn and loved. It's important to us that you're satisfied with your purchase. We pride ourselves on our ability to offer a higher level of craftmanship and quality control, which is reflected in our 18-month warranty. <br><br>\nImportant to note that the 14k solid gold jewelry is extremely durable and designed to last significantly longer. Please see our answers to FAQ’s on materials used. <br><br>\nThe warranty does not cover lost items, scratches or damages that may come with normal wear and tear or improper use. Vermeil and Rhodium plating can come off with excessive use and exposure to the elements which is why we have opted for a 18-month warranty across all items. If anything happens to your jewelry during this time, just contact us and we'll work together to find a resolution.",
+            "collapse_id": "Warranty"
+          }
+        },
+        "4fe9119e-5d9a-4213-a6d3-ab9a77786b8f": {
+          "type": "category",
+          "settings": {
+            "category_name": "Payments"
+          }
+        },
+        "29c76800-d54f-4e5e-98d6-7f09fedecbd2": {
+          "type": "faq",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<b>Shop Pay <\/b><br><br>\nIs a payment processing system similar to PayPal however it is fully integrated with our website and offers an accelerated checkout especially for reorders. <br><br>\n<b>PayPal <\/b><br><br>\nWe accept PayPal as an option for payment during checkout. Simply click the PayPal option during checkout where you will be asked to log into your PayPal account and once completed you will be redirected to the Jolie Co site. Please note, the shipping address cannot be different from that on your PayPal account.",
+            "collapse_id": "Payments"
+          }
+        }
+      },
+      "block_order": [
+        "a876ead1-2434-4fe3-8d49-dd34dedc4a2a",
+        "5e6c92f7-c87a-4a91-95cd-cbba60de57da",
+        "53d29eb7-049f-4c5e-9cc6-ae772b561e83",
+        "fa8b9efa-21f5-4025-996a-d8e740ba57b2",
+        "b8ba2b85-ffa5-4050-8200-a82417f4d3b2",
+        "8f90a63e-689d-4f52-addd-9537a3897a90",
+        "804a2984-86fe-42ed-b823-ba0c3e374d4c",
+        "a9cf79e5-a437-4d37-8b55-fda62dd728a3",
+        "bb8f5858-c30e-45e7-a8a2-71bc503c9969",
+        "1b2f1063-5b9c-4e6d-9586-e68b685f85a6",
+        "e3ebe7c1-69ec-486d-b9d6-b72e0238ca1c",
+        "79857b28-78fc-4c57-92ef-a21a3fcc2a86",
+        "54a02fb3-e301-4968-b605-7ce50ea6c5f4",
+        "c5518b9e-a77d-4f49-90ad-a76e87b1f6fa",
+        "407affb3-fad0-42b2-a150-c1264bde13d9",
+        "09b48c89-395e-4a9e-949a-4036c69c0681",
+        "26b36178-15d6-4506-b161-09ec7463c028",
+        "333aabb0-8592-437a-ab8b-02584b0f2db3",
+        "51c93229-ba15-4bbe-962c-bdc5b8b80ae8",
+        "ef46e17d-67d7-4f5e-a180-079ece9442ef",
+        "26ee47b1-7e96-4296-a2d5-d80db2e27292",
+        "5aef952b-4b60-477b-8479-570a8bf505b9",
+        "50adf502-0ade-4a75-9d37-3b5fe0587583",
+        "f9f5d742-230e-4e2b-b1b2-dad580a78881",
+        "4fe9119e-5d9a-4213-a6d3-ab9a77786b8f",
+        "29c76800-d54f-4e5e-98d6-7f09fedecbd2"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "des": ""
+      }
+    }
+  },
+  "order": [
+    "16553012875eaf0cf3",
+    "1654782639351fe05d"
+  ]
+}

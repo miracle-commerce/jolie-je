@@ -1,0 +1,211 @@
+             
+{%- paginate blog.articles by 6 -%}
+             
+    {%- for article in blog.articles -%}
+     
+    <div class="row mb-5 bor-bottom">      
+      <div class="col-lg-4">    
+        <img src="{{ article.image.src | image_url }}" width="100%" class="img-fluid"/>   
+      </div>
+       
+      <div class="col-lg-8">    
+        <p>{{ article.tags }}</p>    
+        <h3 class=" heading-3 pb-3 pt-3"> {{ article.title | truncate: 50 | escape }}</h3>          
+        <p class="pb-5">{{ article.content | strip_html | truncatewords: 15 }}</p>        
+        <div class="float-right">       
+          <a class="btn-link" href="{{ article.url }}">Read all</a>       
+        </div>       
+      </div>         
+    </div>
+         
+    {% endfor %} 
+
+{% if blog.articles.size < 1 %}
+<div class="text-center h-100">
+<img src="https://cdn.shopify.com/s/files/1/0623/8991/1731/files/not_found.png" class="img-fluid"/>
+  </div>
+{% endif %}
+    
+    {%- if paginate.pages > 1 -%}      
+    {%- render 'pagination', paginate: paginate -%}   
+    {%- endif -%}               
+    {%- endpaginate -%}
+
+
+
+{% comment %}
+
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<!--     <h1 class="title--primary">{{ blog.title | escape }}</h1> -->
+  <div class="main-blog page-width section-{{ section.id }}-padding">
+
+
+   <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+      
+  
+
+  <div class="pt-5 mt-5">
+
+  <div class="container tea-page">
+  
+  <div class="row mb-5">
+  	
+ <div class="col-lg-4 tea-cat">
+   
+      {% section 'blog-sidebar'  %}
+
+   </div>
+    
+<!--      <div class="col-lg-8">
+      {%- paginate blog.articles by 6 -%}
+          
+      {%- for article in blog.articles -%}
+
+       <div class="row mb-5">
+       
+         <div class="col-lg-4">
+          <img src="{{ article.image.src | image_url }}" width="100%" class="img-fluid"/>
+         </div>
+         <div class="col-lg-8">
+          
+      <p >{{ article.tags }}</p>
+      <h4 class="heading-4"> {{ article.title | truncate: 50 | escape }}</h4>
+           <div>{{ article.content | strip_html | truncatewords: 30 }}</div>
+           <div class="float-right">
+           <a class="b-button" href="{{ article.url }}">Read all</a>
+           </div>
+         </div>
+       
+       </div>
+          {% endfor %}
+
+       {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+       
+         {%- endpaginate -%}
+       
+    </div> -->
+    
+    {% endcomment %}
+    
+
+
+{% schema %}
+{
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "t:sections.main-blog.settings.layout.options__1.label"
+        },
+        {
+          "value": "collage",
+          "label": "t:sections.main-blog.settings.layout.options__2.label"
+        }
+      ],
+      "default": "collage",
+      "label": "t:sections.main-blog.settings.layout.label",
+      "info": "t:sections.main-blog.settings.layout.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label",
+      "info": "t:sections.main-blog.settings.image_height.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-blog.settings.paragraph.content"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,113 @@
+<div class="section-spacing">
+<div class="mt-md-5 pt-md-5 mb-md-5 pb-md-5 bg-gray">
+  <div class="pt-5 mt-5 mb-5 pb-5">
+  <div class="container story p-0 p-md-0 mt-5 mt-md-0">
+        <div class="d-block d-md-flex story-top mb-4 mb-md-0">
+            <div class="col-sm-5 p-4 p-md-0 story-top-left ">
+                <a href="#" class="shop-col-bottom-collection-link">
+                    <img src="{{ section.settings.about_me_img | img_url: 'master'}}" width="465">
+                </a>
+            </div>
+            <div class="col-sm-7 story-top-right left-space pr-0">
+                <h2 class="heading-2 jolie-color">{{ section.settings.heading }}</h2>
+                <p class="pt-5 dark-font-color">{{ section.settings.sdes }}</p>
+                <p class="pt-5 pb-5">{{ section.settings.des }}</p>
+                <a href="{{ section.settings.btn_link }}" class="story-top-right-link">{{ section.settings.btn_name }}</a>
+            </div>
+        </div>
+
+        <div class="d-block d-md-flex story-bottom mb-4 mb-md-0 mt-5 mt-md-0">
+            <div class="col-sm-3 p-md-0 story-bottom-left ">
+            </div>
+            <div class="col-sm-4 p-md-0 story-bottom-center ">
+                <a href="#" class="shop-col-bottom-collection-link">
+                    <img src="{{ section.settings.about_crystal_img | img_url: 'master'}}" width="100%">
+                </a>
+            </div>
+            <div class="col-sm-5 story-bottom-right pr-0">
+                <h2 class="heading-2 jolie-color">{{ section.settings.heading_cry }} </h2>
+                <p class="pb-5">{{ section.settings.des_cry }}</p>
+                <a href="{{ section.settings.btn_link_cry }}" class="btn-link">{{ section.settings.btn_name_cry }}</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "About Me",
+    "settings": [
+	{
+      "type": "image_picker",
+      "id": "about_me_img",
+      "label": "Image"
+    },
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "sdes",
+      "label": "Short Description"
+    },
+	{
+      "type": "text",
+      "id": "des",
+      "label": "Description"
+    },
+	{
+      "type": "text",
+      "id": "btn_name",
+      "label": "Button Label"
+    },
+	{
+       "type": "url",
+       "id": "btn_link",
+       "label": "Button link"
+   	},
+{
+      "type": "image_picker",
+      "id": "about_crystal_img",
+      "label": "Image"
+    },
+	{
+      "type": "text",
+      "id": "heading_cry",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "des_cry",
+      "label": "Description"
+    },
+	{
+      "type": "text",
+      "id": "btn_name_cry",
+      "label": "Button Label"
+    },
+	{
+       "type": "url",
+       "id": "btn_link_cry",
+       "label": "Button link"
+   	}
+	
+
+	],
+	"presets": [
+    {
+      "name": "About Me"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

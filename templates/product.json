@@ -1,0 +1,281 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "cf4b8bae-774b-4288-bae8-dafe7602d8ce": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "55985b03-66ac-46b8-94cb-bb122f23663c": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "83d07008-4273-4263-b702-2231a2099e26": {
+          "type": "delivery",
+          "settings": {
+            "d_icon": "shopify:\/\/shop_images\/car_1fc2f90c-ce0d-41a6-8745-48cd3cbdef85.png",
+            "d_text": "$10 Shipping",
+            "r_icon": "shopify:\/\/shop_images\/history.png",
+            "r_text": "14 Day Return",
+            "w_icon": "shopify:\/\/shop_images\/verified_14b8bde4-71aa-415a-b2a7-546f0c088797.png",
+            "w_text": "18-Month Warranty"
+          }
+        },
+        "4421cc7a-a461-48d8-bd0c-a77cf4242045": {
+          "type": "fair-pricing",
+          "settings": {
+            "fair_heading": "Price Comparison",
+            "retail": "{{product.metafields.custom.estimated_retail_price | metafield_tag}}"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Gemstone",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.product_gemstone.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials and Craftsmanship",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.product_materials.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "c14b582a-3adc-4a97-912e-d1f0ef108807": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Styling",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.design_concept.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "c00c3582-f44b-49fe-9754-e5868fdb160c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.product_care_instructions.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "8cc65419-eeec-42c8-b9ff-59dd6bb34c0d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warranty",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.product_warranty.value }}<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "vendor",
+        "price",
+        "quantity_selector",
+        "cf4b8bae-774b-4288-bae8-dafe7602d8ce",
+        "buy_buttons",
+        "55985b03-66ac-46b8-94cb-bb122f23663c",
+        "share",
+        "83d07008-4273-4263-b702-2231a2099e26",
+        "4421cc7a-a461-48d8-bd0c-a77cf4242045",
+        "description",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "c14b582a-3adc-4a97-912e-d1f0ef108807",
+        "c00c3582-f44b-49fe-9754-e5868fdb160c",
+        "8cc65419-eeec-42c8-b9ff-59dd6bb34c0d"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "medium",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "7d63a4d7-c61f-4b45-93d3-d8fe96020745": {
+      "type": "complete-the-look",
+      "settings": {
+        "heading": "Complete the look",
+        "show_vendor": true,
+        "show_secondary_image": true
+      }
+    },
+    "16558260306018af38": {
+      "type": "apps",
+      "blocks": {
+        "1f100915-51cf-4112-a906-b00eefa30014": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1f100915-51cf-4112-a906-b00eefa30014"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "165659387415ed94b1": {
+      "type": "instagram-feed-heading",
+      "settings": {
+      }
+    },
+    "16565938800def5cc5": {
+      "type": "apps",
+      "blocks": {
+        "ada149f0-5d76-426b-97e9-a07479715108": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "ada149f0-5d76-426b-97e9-a07479715108"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "165659392402a284f7": {
+      "type": "the-tea",
+      "blocks": {
+        "16565939247be4e8d4-0": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/20221019-Blog5_BottomOfPage_7cc926eb-219a-44a4-825f-27e5ce4c5fff.jpg",
+            "blog_name": "Why is moissanite such a hot stone for belly jewelry?",
+            "blog_link": "shopify:\/\/blogs\/inspiration\/why-is-moissanite-such-a-hot-stone-for-belly-jewelry",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "0a3732fd-ae8c-4681-9394-f1965a3f6a21": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/20221019-Blog11_Samall-2.jpg",
+            "blog_name": "What is Gold Vermeil?",
+            "blog_link": "shopify:\/\/blogs\/knowledge-base\/what-is-gold-vermeil",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "fa823556-6fb9-410c-b6c7-ab40d12b0837": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/Blog7_57276adc-34c2-41a4-ba9a-65d80389ddcb.jpg",
+            "blog_name": "Natural stones and their meaning.",
+            "blog_link": "shopify:\/\/blogs\/inspiration\/natural-stones-and-their-meaning",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        },
+        "b82ccd45-42b4-4af8-860b-2b4b3fce1ebf": {
+          "type": "articles",
+          "settings": {
+            "blog_image": "shopify:\/\/shop_images\/Measure_Blog_SM_1908a7d6-8957-4068-991f-5e4a3f465f42.jpg",
+            "blog_name": "What size should my belly ring be?",
+            "blog_link": "shopify:\/\/blogs\/knowledge-base\/what-size-should-my-belly-ring-be",
+            "no_of_articles": "",
+            "blog_new": ""
+          }
+        }
+      },
+      "block_order": [
+        "16565939247be4e8d4-0",
+        "0a3732fd-ae8c-4681-9394-f1965a3f6a21",
+        "fa823556-6fb9-410c-b6c7-ab40d12b0837",
+        "b82ccd45-42b4-4af8-860b-2b4b3fce1ebf"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/blogs\/inspiration"
+      }
+    },
+    "7224a4e1-a838-467a-b352-4e60e909b21b": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h1",
+        "products_to_show": 9,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7d63a4d7-c61f-4b45-93d3-d8fe96020745",
+    "16558260306018af38",
+    "165659387415ed94b1",
+    "16565938800def5cc5",
+    "165659392402a284f7",
+    "7224a4e1-a838-467a-b352-4e60e909b21b"
+  ]
+}

@@ -1,0 +1,297 @@
+
+    <style>
+        .heading-hr:before {
+            content: "";
+            display: block;
+            width: 67%;
+            height: 1px;
+            background: #DDCCDF;
+            right: 10%;
+            position: absolute;
+            margin-top: 1%;
+        }
+
+        .product-tag {
+            position: absolute;
+            right: 2em;
+            top: 1em;
+            background: #F8F8F8;
+            padding: 2% 2%;
+            border-radius: 37%;
+            font-size: 13px;
+            color: #1E0E1F;
+        }
+
+        .product-grid:hover .product-grid-hover {
+            display: block;
+        }
+
+        .product-grid-hover {
+            display: none;
+            position: absolute;
+            top: 0;
+            background: #fff;
+            min-height: 390px;
+            z-index: 2;
+            padding: 3%;
+            width: 255px;
+            cursor: pointer;
+        }
+
+        .product-grid-hover .product-sizes-tag {
+            position: absolute;
+            right: 0.5em;
+            top: 13em;
+            width: 100%;
+            text-align: right;
+        }
+
+        .product-grid-hover .product-sizes-tag span {
+            background: #fff;
+            padding: 9px 5px;
+            border-radius: 18%;
+            font-size: 11px;
+            color: #1E0E1F;
+            margin-right: 2%;
+            border: 1px solid;
+        }
+
+        .product-grid-hover .product-description .product-title {
+            font-size: 11px;
+            color: black;
+        }
+
+        .product-grid-hover .product-description {
+            margin-top: 1em;
+        }
+
+        .product-grid-hover .product-description .product-price {
+            font-size: 11px;
+            color: black;
+        }
+
+        .product-grid-hover .product-detail {
+            font-size: 11px;
+        }
+
+        .product-color-tags span {
+            border: 1px solid #F8F8F8;
+            padding: 1px 10px;
+            border-radius: 50%;
+            margin-right: 3%;
+        }
+    </style>
+
+
+
+    <div class="shopify-section favourite ">
+       
+        <div class="container">
+
+            <div class="row ">
+
+                <div class="col-lg-12 p-0 text-left">
+                    <h4 class="heading-2 ">My favourite</h4>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-8 p-0">
+                    <p class="">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+
+            </div>
+          <div class="row mt-5">
+           <div id="wishlist-products" data-id="{{ section.id }}" class="pb-5 w-100
+              grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+              grid--{{ section.settings.columns_desktop }}-col-desktop">
+              
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+  
+
+{% schema %}
+  {
+    "name": "Wishlist Page",
+    "settings": [
+		
+	],
+	"presets": [
+    {
+      "name": "Wishlist Page"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+  const egWishlistFormatMoneyHelper = (cents, format) => {
+        if (typeof cents === 'string') {
+            // eslint-disable-next-line no-param-reassign
+            cents = cents.replace('.', '');
+        }
+        let value = '';
+        const placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+        const formatString = (format || document.querySelector('#eg-wishlist-drawer').dataset.moneyFormat);
+
+        function defaultOption(opt, def) {
+            return (typeof opt === 'undefined' ? def : opt);
+        }
+
+        function formatWithDelimiters(number, precision, thousands, decimal) {
+            // eslint-disable-next-line no-param-reassign
+            precision = defaultOption(precision, 2);
+            // eslint-disable-next-line no-param-reassign
+            thousands = defaultOption(thousands, ',');
+            // eslint-disable-next-line no-param-reassign
+            decimal = defaultOption(decimal, '.');
+
+            if (Number.isNaN(number) || number == null) { return 0; }
+
+            // eslint-disable-next-line no-param-reassign
+            number = (number / 100.0).toFixed(precision);
+
+            const parts = number.split('.');
+            // eslint-disable-next-line prefer-template
+            const dollars = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands);
+            // eslint-disable-next-line no-param-reassign
+            cents = parts[1] ? (decimal + parts[1]) : '';
+
+            return dollars + cents;
+        }
+
+        // eslint-disable-next-line default-case
+        switch (formatString.match(placeholderRegex)[1]) {
+        case 'amount': value = formatWithDelimiters(cents, 2); break;
+        case 'amount_no_decimals': value = formatWithDelimiters(cents, 0); break;
+        case 'amount_with_comma_separator': value = formatWithDelimiters(cents, 2, '.', ','); break;
+        case 'amount_no_decimals_with_comma_separator': value = formatWithDelimiters(cents, 0, '.', ','); break;
+        }
+
+        return formatString.replace(placeholderRegex, value);
+    };
+
+
+        let wishlist = JSON.parse(localStorage.getItem('eg_wishlist_v1')) || []
+       
+
+        if (wishlist.length === 0) {
+            drawerEmpty.style.display = 'block'
+            drawerProductList.style.display = 'none'
+        } else {
+            let wishlistProductsListItems = '';
+
+            wishlist.forEach((product) => {
+console.log(product);
+                wishlistProductsListItems += `
+<div class="col-md-3 pl-0">
+                  
+
+
+<div class="card-wrapper underline-links-hover" data-product-handle="{{ card_product.handle }}">
+    <div class="card border-0 card--card card--media color-background-1 gradient" style="--ratio-percent: 100%;" swatch-generated="orb-belly-bar">
+      <div class="card__inner  ratio" style="--ratio-percent: 100%;">
+        <div class="card__media">
+            <div class="media h-100 media--transparent media--hover-effect">
+              <img srcset="${product.featured_image}" src="${product.featured_image}" alt="Orb Belly Bar" class="motion-reduce position-relative">   
+            </div>
+        </div>
+        
+        <div class="card__content p-0 ">
+          <div class="card__information">
+            <h3 class="card__heading">
+              <a href="/products/orb-belly-bar" class="full-unstyled-link">
+                ${product.title}
+              </a>
+            </h3>
+          </div>
+          <div class="card__badge bottom right"></div>
+        </div>
+      
+          
+     </div>
+      
+      <div class="card__content p-0">
+        <div class="card__information parent">
+          <div class="d-flex p-price-n-title">
+          
+            <div class="col-md-5 p-0">
+            <h3 style="" class="card__heading h5" id="title-template--15745295941811__product-grid-7206174130355">
+            <a href="/collections/shop-all/products/orb-belly-bar" class="full-unstyled-link">
+            ${product.title}
+            </a>
+            
+          </h3>
+            </div>
+            <div class="col-md-7 p-0">
+              <div class="card-price"> 
+<div class="price ">
+  <div class="price__container float-right"><div class="price__regular">
+      <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      <span class="price-item price-item--regular">
+        <span class="money done" ws-price="195" ws-currency="CAD"> ${egWishlistFormatMoneyHelper(product.price)}</span>
+      </span>
+    </div>
+    <div class="price__sale">
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+        <span>
+          <s class="price-item price-item--regular">
+            
+              
+            
+          </s>
+        </span><span class="visually-hidden visually-hidden--inline">Sale price</span>
+      <span class="price-item price-item--sale price-item--last">
+        <span class="money done" ws-price="195" ws-currency="CAD"> ${egWishlistFormatMoneyHelper(product.compare_at_price)}</span>
+      </span>
+    </div>
+    <small class="unit-price caption hidden">
+      <span class="visually-hidden">Unit price</span>
+      <span class="price-item price-item--last">
+        <span></span>
+        <span aria-hidden="true">/</span>
+        <span class="visually-hidden empty-space">&nbsp;per&nbsp;</span>
+        <span>
+        </span>
+      </span>
+    </small>
+  </div>
+ 
+</div>
+</div>
+            </div>
+          </div>
+          
+          <div class="card-information child"><span class="visually-hidden">Vendor:</span>
+              <div class="caption-with-letter-spacing light">${product.vendor}</div><span class="caption-large light"></span></div>
+        
+          
+ 
+        </div><div class="card__badge bottom right"></div>
+      </div>
+      
+    </div>
+  </div>
+                </div>
+                 
+                `;
+            });
+
+$('#wishlist-products').prepend(wishlistProductsListItems);
+
+ 		};
+     
+{% endjavascript %}

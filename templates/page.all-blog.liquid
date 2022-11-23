@@ -1,0 +1,113 @@
+<style>
+  
+  .bor-bottom{
+  display: none;
+  }
+  
+  .btn-link_more {
+    border: 1px solid #1C1C1C;
+    align-items: center;
+    padding: 14px 32px;
+    background: #1C1C1C;
+    color: #fff;
+}
+  
+  .btn-link_more:hover {
+    background: transparent;
+    border: 1px solid #1c1c1c;
+  }
+  
+</style>
+
+
+{% assign blog_handles = "news,empowerment,after-care,inspiration,studios" | split: "," %}
+ 
+{%- section 'page-title' -%}
+  
+ {% comment %} {%- section 'breadcrumbs' -%}   {% endcomment %}
+
+<div class="pt-5 mt-5">
+  
+  <div class="container tea-page">  
+    <div class="row mb-5">    
+      <div class="col-lg-4 tea-cat">
+      
+        {% section 'blog-sidebar'  %}
+              
+    </div>
+    
+    
+      <div class="col-lg-8 blog-detail-right">      
+       
+        <div >
+        
+        {% for handle in blog_handles %}  
+        
+        {% for article in blogs[handle].articles %}
+
+       
+        <div class="row mb-5 bor-bottom">
+          
+          <div class="col-lg-4">
+         
+            <img src="{{ article.image.src | image_url }}" width="100%" class="img-fluid"/>
+         
+          </div>
+         
+          <div class="col-lg-8">
+          
+            <p>{{ article.tags }}</p>
+      
+            <h3 class=" heading-3 pb-3"> {{ article.title | escape }}</h3>
+
+<!--              <h3 class=" heading-3 pb-3"> {{ article.title | truncate: 50 | escape }}</h3> -->
+         
+            <p class="pb-5">{{ article.content | strip_html | truncatewords: 15 }}</p>
+                  
+            <div class="float-right">
+           
+              <a class="btn-link" href="{{ article.url }}">Read all</a>
+         
+            </div>
+         
+          </div>
+             
+        </div>
+         
+        {% endfor %}
+               
+        {% endfor %}
+             
+      </div>
+    <div class="text-center">
+         <a href="#" id="loadMore" class="btn-link_more">Load More</a>
+        </div>
+        
+      </div>
+      
+     
+  
+    </div>  
+
+  </div>
+
+</div>
+
+
+<script>
+  
+  $(document).ready(function(){
+  $(".bor-bottom").slice(0, 4).css('display', 'flex');
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".bor-bottom:hidden").slice(0, 4).slideDown().css('display', 'flex');
+    if($(".bor-bottom:hidden").length == 0) {
+      $("#loadMore").text("No Content").addClass("noContent");
+    }
+  });
+  
+})
+  
+  
+  
+</script>

@@ -1,0 +1,586 @@
+{
+  "current": {
+    "bell_icon": "shopify:\/\/pages\/contact-us",
+    "tea_cup": "shopify:\/\/blogs\/inspiration",
+    "enabel_top_search": true,
+    "txt1": "Jolie Belly Rings",
+    "search1": "shopify:\/\/collections\/jolie-belly-rings",
+    "txt2": "Belly Charms",
+    "search2": "shopify:\/\/collections\/jolie-charms",
+    "txt3": "Moissanite",
+    "search3": "shopify:\/\/collections\/luminescence",
+    "packaging_text": "Keep your belly charm collection handy.",
+    "packaging_text1": "With every order you get a Jolie Pouch so that you can effortlessly change your look on the go.",
+    "packaging_text2": "<b>There's a belly charm for any occasion.<\/b>",
+    "packaging_image": "shopify:\/\/shop_images\/Jolie_Packaging_White_049a273d-b3a2-411a-8c59-ba136a64f2f5.jpg",
+    "f_text": "Keep your belly charm collection handy.",
+    "f_text1": "With every order you get a Jolie Pouch so that you can effortlessly change your look on the go.",
+    "f_text2": "<b>There's a belly charm for any occasion.<\/b>",
+    "f_image": "shopify:\/\/shop_images\/Packaging_Photo_with_white_back.webp",
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#121212",
+    "gradient_accent_1": "",
+    "colors_accent_2": "#334fb4",
+    "gradient_accent_2": "",
+    "colors_text": "#1c1c1c",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#ffffff",
+    "gradient_background_1": "",
+    "colors_background_2": "#f3f3f3",
+    "gradient_background_2": "",
+    "type_header_font": "monotype_italian_old_style_n4",
+    "heading_scale": 100,
+    "type_body_font": "roboto_n4",
+    "body_scale": 100,
+    "page_width": 1200,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 8,
+    "spacing_grid_vertical": 8,
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 0,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_blur": 5,
+    "card_style": "card",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "background-1",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": -18,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 0,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "bottom right",
+    "badge_corner_radius": 40,
+    "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "background-1",
+    "accent_icons": "text",
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "https:\/\/www.pinterest.ca\/joliecojewelry\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/joliecojewelry\/",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@joliecojewelry\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/logo_color.png",
+    "currency_code_enabled": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_color.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_accent_color": "#121212",
+    "checkout_button_color": "#121212",
+    "f_text2head": "There's a belly charm for any occasion.",
+    "d_price": "150",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "2e9a3daa-f64f-41f7-8d85-72a5c3cdccbc": {
+            "type": "announcement",
+            "settings": {
+              "text": "Sign up for EXCLUSIVE early access to our   BLACK FRIDAY and HOLIDAY offers.",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
+          "31318b0a-febb-4797-82d7-0fd108039613": {
+            "type": "announcement",
+            "settings": {
+              "text": "Get FREE shipping when you buy a belly ring and charm.",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Personalize your belly ring.  Add a charm for extra bling and length.",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "2e9a3daa-f64f-41f7-8d85-72a5c3cdccbc",
+          "31318b0a-febb-4797-82d7-0fd108039613",
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/logo_color.png",
+          "logo_width": 90,
+          "logo_position": "top-center",
+          "menu": "left-menu",
+          "rightmenu": "right-menu",
+          "mobilemenu": "mobile-menu",
+          "menu_type_desktop": "mega",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "margin_bottom": 0
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading1": "Assistance",
+              "menu": "footer-menu-1",
+              "heading2": "Jolie Co",
+              "menu2": "footer-menu-2"
+            }
+          },
+          "9432fe47-44cb-48f1-ba5e-993195c1f77a": {
+            "type": "jolie_experience",
+            "settings": {
+              "i_image": "shopify:\/\/shop_images\/Letter.png",
+              "i_txt": "Contact Us",
+              "i_des": "",
+              "ilink": "shopify:\/\/pages\/contact-us"
+            }
+          },
+          "fc6f3243-affa-4b0a-bcd4-af5f014ab120": {
+            "type": "jolie_experience",
+            "settings": {
+              "i_image": "shopify:\/\/shop_images\/car.png",
+              "i_txt": "Fair Pricing",
+              "i_des": "",
+              "ilink": "shopify:\/\/pages\/fair-pricing"
+            }
+          },
+          "5cd15a9d-68a3-4261-9daf-9a97a5b694b7": {
+            "type": "jolie_experience",
+            "settings": {
+              "i_image": "shopify:\/\/shop_images\/info.png",
+              "i_txt": "14 Day Returns",
+              "i_des": "",
+              "ilink": "https:\/\/jolie-co.com\/pages\/faq#Returns-and-Exchanges"
+            }
+          },
+          "8b8a9606-6a22-4834-9d45-df256a3a2976": {
+            "type": "jolie_experience",
+            "settings": {
+              "i_image": "shopify:\/\/shop_images\/shopping-bag.png",
+              "i_txt": "Handcrafted",
+              "i_des": "",
+              "ilink": "https:\/\/jolie-co.com\/pages\/faq#Product-Information"
+            }
+          },
+          "09b9ef77-0368-41d5-9b0e-17a07e17b368": {
+            "type": "jolie_experience",
+            "settings": {
+              "i_image": "shopify:\/\/shop_images\/verified.png",
+              "i_txt": "18 Month Warranty",
+              "i_des": "",
+              "ilink": "https:\/\/jolie-co.com\/pages\/faq#Warranty"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "9432fe47-44cb-48f1-ba5e-993195c1f77a",
+          "fc6f3243-affa-4b0a-bcd4-af5f014ab120",
+          "5cd15a9d-68a3-4261-9daf-9a97a5b694b7",
+          "8b8a9606-6a22-4834-9d45-df256a3a2976",
+          "09b9ef77-0368-41d5-9b0e-17a07e17b368"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Don't miss a thing!",
+          "newsletter_heading2": "Sign up for early access to our BLACK FRIDAY and HOLIDAY promotions",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": true,
+          "margin_top": 48,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo_color_f67722cc-4a16-4aa1-825a-68ab9c5f2721.png",
+          "logo_max_width": 100,
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "eg-wishlist-drawer": {
+        "type": "eg-wishlist-drawer",
+        "settings": {
+          "drawer_width": "400",
+          "header_title": "My Favorites",
+          "display_btn_pdp": true,
+          "display_btn_lists": true,
+          "product_img_orientation": "square",
+          "text_wishlist": "Wishlist",
+          "text_add": "",
+          "text_remove": "",
+          "text_empty": "Your wishlist is currently empty."
+        }
+      },
+      "page-title": {
+        "type": "page-title",
+        "settings": {
+          "heading": "The Tea",
+          "des": ""
+        }
+      },
+      "breadcrumbs": {
+        "type": "breadcrumbs",
+        "settings": {
+        }
+      },
+      "blog-sidebar": {
+        "type": "blog-sidebar",
+        "blocks": {
+          "02b0e024-41bc-4c59-9ef9-de6c7c20cb3c": {
+            "type": "Categories",
+            "settings": {
+              "heading": "Inspiration",
+              "b_link": "inspiration"
+            }
+          },
+          "96b7744c-2f4c-4631-bbc8-a930b95d7743": {
+            "type": "Categories",
+            "settings": {
+              "heading": "Knowledge Base",
+              "b_link": "knowledge-base"
+            }
+          },
+          "d9384f24-e572-415d-a698-6ffc203d984b": {
+            "type": "Categories",
+            "settings": {
+              "heading": "Aftercare",
+              "b_link": "after-care"
+            }
+          },
+          "a92e0f39-1857-47a0-aee8-fedc8dc2e12a": {
+            "type": "Categories",
+            "settings": {
+              "heading": "Studios",
+              "b_link": "studios"
+            }
+          }
+        },
+        "block_order": [
+          "02b0e024-41bc-4c59-9ef9-de6c7c20cb3c",
+          "96b7744c-2f4c-4631-bbc8-a930b95d7743",
+          "d9384f24-e572-415d-a698-6ffc203d984b",
+          "a92e0f39-1857-47a0-aee8-fedc8dc2e12a"
+        ],
+        "settings": {
+          "title": "Featured Article",
+          "bb": "shopify:\/\/blogs\/inspiration\/fine-belly-jewelry-what-s-the-fuss"
+        }
+      },
+      "main-blog": {
+        "type": "main-blog",
+        "settings": {
+          "layout": "collage",
+          "show_image": true,
+          "image_height": "medium",
+          "show_date": true,
+          "show_author": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "blog-content": {
+        "type": "blog-content",
+        "settings": {
+        }
+      },
+      "the-tea-test": {
+        "type": "the-tea-test",
+        "blocks": {
+          "9a087090-9eb1-473b-b10f-99084051150b": {
+            "type": "articles",
+            "settings": {
+              "blog_name": "",
+              "blog_link": "knowledge-base",
+              "no_of_articles": "",
+              "blog_new": ""
+            }
+          }
+        },
+        "block_order": [
+          "9a087090-9eb1-473b-b10f-99084051150b"
+        ],
+        "settings": {
+          "blog_heading": "vdf",
+          "blog_des": "dfv",
+          "blog_link": ""
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "6048552914641687618": {
+        "type": "shopify:\/\/apps\/currency-converter-switcher\/blocks\/app-embed\/065e70d9-d1e0-4d56-a8a3-a58701e43093",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "7852001879152684052": {
+        "type": "shopify:\/\/apps\/free-preorder-pre-order-now\/blocks\/app-embed\/65cd8805-0aca-4c8e-bb61-e7fc7d77f9bb",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#ffffff",
+      "colors_accent_1": "#121212",
+      "gradient_accent_1": "",
+      "colors_accent_2": "#334fb4",
+      "gradient_accent_2": "",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#ffffff",
+      "gradient_background_1": "",
+      "colors_background_2": "#f3f3f3",
+      "gradient_background_2": "",
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "background-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 0,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "accent-2",
+      "sold_out_badge_color_scheme": "inverse",
+      "accent_icons": "text",
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "text": "Welcome to our store",
+                "color_scheme": "background-1",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "color_scheme": "background-1",
+            "logo_width": 90,
+            "logo_position": "middle-left",
+            "menu": "main-menu",
+            "show_line_separator": true,
+            "enable_sticky_header": true,
+            "margin_bottom": 0
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Quick links",
+                "menu": "footer"
+              }
+            },
+            "footer-1": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Info",
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "text",
+              "settings": {
+                "heading": "Our mission",
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "color_scheme": "background-1",
+            "newsletter_enable": true,
+            "newsletter_heading": "Subscribe to our emails",
+            "show_social": true,
+            "enable_country_selector": false,
+            "enable_language_selector": false,
+            "payment_enable": true,
+            "margin_top": 48,
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "logo_max_width": 100,
+            "color_scheme": "background-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        }
+      }
+    }
+  }
+}

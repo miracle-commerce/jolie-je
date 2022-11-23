@@ -1,0 +1,130 @@
+<div class="pb-5 mb-5">
+  <div class="container p-md-0 ">
+        <div class="mt-md-5 pt-md-5">
+            <h2 class="heading-2">{{ section.settings.cat_heading }}</h2>
+        </div>
+        <div class="d-block d-md-flex ">
+            <div class="col-md-9 p-0 d-none d-md-block">
+                <p class="">{{ section.settings.cat_des }}</p>
+            </div>
+            <div class="col-md-3 text-right text-md-right mt-4 mt-md-0 pr-0 d-none d-md-block">
+                <a class="btn-link float-none float-md-right" href="{{ section.settings.categories_link }}">{{ section.settings.btn_name }}</a>
+            </div>
+        </div>
+        <div class="d-none d-md-flex shop-category-slider mt-5 mb-5">
+          
+            {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+            {% if block.type == "category" %}
+            <div class="">
+                <a href="{{ block.settings.cat_link }}" class="object-hover">
+                    <img src="{{ block.settings.cat_image | img_url: 'master'}}" alt="{{ block.settings.cat_name }}" width="100%">
+                  <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.cat_name }} ></div>
+                </a>             
+            </div>
+          
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+        </div>
+
+     <div class="d-block d-md-none mt-5 mb-5">
+          <div class="row">
+            {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+            {% if block.type == "category" %}
+            <div class="col-6">
+                <a href="{{ block.settings.cat_link }}" class="object-hover">
+                    <img src="{{ block.settings.cat_image | img_url: 'master'}}" width="100%">
+                  <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.cat_name }} ></div>
+                </a>
+              
+              
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            </div>
+        </div>
+    
+     <div class="col-md-12 d-block d-md-none text-center pt-0 pt-md-5">
+                <a class="btn-link float-none float-md-right" href="{{ section.settings.categories_link }}">{{ section.settings.btn_name }}</a>
+            </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Shop Categories",
+  "class": "section",
+  "settings": [
+	{
+      "type": "text",
+      "id": "cat_heading",
+      "label": "Category Name"
+    },
+	{
+      "type": "text",
+      "id": "cat_des",
+      "label": "Category Description"
+    },
+	{
+      "type": "text",
+      "id": "btn_name",
+      "label": "Button text"
+    },
+	{
+          "type": "url",
+          "id": "categories_link",
+          "label": "See all categories link"
+   	}
+    
+  ],
+  "blocks": [
+ 
+	{
+	  "type": "category",
+      "name": "Category",
+      "settings": [
+
+	{
+      "type": "image_picker",
+      "id": "cat_image",
+      "label": "Category image"
+    	},
+	{
+      "type": "text",
+      "id": "cat_name",
+      "label": "Category name"
+    },
+	{
+       "type": "url",
+       "id": "cat_link",
+       "label": "Category link"
+    }
+	
+
+	]
+	}	 
+  ],
+  "presets": [
+    {
+      "name": "Shop Categories",
+      "blocks": [
+      {
+          "type": "category"
+        }
+       
+        
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

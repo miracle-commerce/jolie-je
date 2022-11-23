@@ -1,0 +1,69 @@
+<div class="bg-gray">
+  <div class="pt-5 mt-5 mb-0 pb-0 mb-md-5 pb-md-5">
+    <div class="container story p-4 p-md-0 mt-5 mt-md-0">
+        <div class="row mb-4 mb-md-0">
+            <div class="col-sm-6">
+                <a href="#" class="">
+                    <img src="{{ section.settings.about_me_img | img_url: 'master'}}" class="img-fluid float-right" width="100%">
+                </a>
+              <a href="#" class="overlap-image-idea-me">
+                {% if section.settings.about_crystal_img %}
+                    <img src="{{ section.settings.about_crystal_img | img_url: 'master'}}" >
+ {% endif %}
+              </a>
+            </div>
+            <div class="col-sm-6 pl-4 pl-md-5 jolie-bg mt-5 mt-md-0">
+           {% comment %}   {% include 'breadcrumbs' %} {% endcomment %}
+                <h2 class="heading-2">{{ section.settings.heading }}</h2>
+                <p class="">{{ section.settings.description }}</p>
+               
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Idea Page About",
+    "settings": [
+	{
+      "type": "image_picker",
+      "id": "about_me_img",
+      "label": "Image"
+    },
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+
+	{
+      "type": "liquid",
+      "id": "description",
+      "label": "Description"
+    },
+	{
+      "type": "image_picker",
+      "id": "about_crystal_img",
+      "label": "Image"
+    }
+	
+
+	],
+	"presets": [
+    {
+      "name": "Idea Page About"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+
+

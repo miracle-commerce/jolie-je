@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "1653390534ab4232cf": {
+      "type": "page-title",
+      "settings": {
+        "heading": "The Jolie Experience",
+        "des": "Your belly jewelry is more than just an accessory - it's a reflection of your personal style. And when you invest in quality jewelry, you want to be sure that you're getting the best possible value for your money."
+      }
+    },
+    "165367719529bd290d": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1653304274745e4108": {
+      "type": "left-image-right-content",
+      "blocks": {
+        "ad6fe85e-3d09-4884-9955-0bbff04492b1": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Web_The_Idea_Pics_9.jpg",
+            "row_heading": "We want every step of your Jolie Co experience to be memorable, from start to finish.",
+            "row_des": "The experience with Jolie Co lies in every touch point with the company. Quality service is not just about doing everything right - it's also how you respond when things go wrong. The quality commitment is everything from the service you receive to the quality of the very items you purchase. An elevated experience is what you should expect and demand.  <br><br> <strong>That's what we call white glove service!<\/strong>",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        },
+        "ebc3b8c7-b80a-476f-87c0-68a12296af13": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Web_The_Idea_Pics_12.jpg",
+            "row_heading": "Commitment to Quality Materials & Craftmanship",
+            "row_des": "Quality craftmanship is not just a promise…it’s an integral part of every single aspect of manufacturing. It’s about combining processes, state-of-the-art equipment, and the skill of master artisans. <br><br>But quality goes beyond craftmanship, it’s everything from the materials and stones to the very commitment to a positive experience when you buy a Jolie Co product. <br><br>  >> We only use fine precious metals which are 100% recycled and certified by SCS and Sedex.  <br> >> Unlike diamonds, our top grade moissanites stones are created in a lab and inherently conflict-free.  <br> >> We adhere to strict ethical and sustainable sourcing for all our AAA quality semi-precious stones.  <br> >> Lastly, almost 40% of the energy used to create our products is generated via solar panels. <br><br> When you buy from Jolie Co, you're not just getting a beautiful piece of jewelry -<b> you're also supporting great people! <\/b> <br><br>",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        },
+        "e374abc7-8c9d-4985-abfd-e275a1af0796": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Web_The_Idea_Pics_10_57f44819-c5e2-40e9-ac26-f0155b1473af.jpg",
+            "row_heading": "Packaging",
+            "row_des": "Packaging is an integral part of the experience. Each item is carefully sanitized and handled with gloves before being placed in our branded packaging. <br><br><b> We want you to experience the joy of receiving a Jolie Co package. <\/b><br><br>  If the item is a gift and you wish to include a personalized note, make sure to add your message on the checkout page – there’s no charge for this.",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        },
+        "381290c5-7ace-47ba-ac68-4f3056996fd9": {
+          "type": "Row",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/Web_The_Idea_Pics_13.jpg",
+            "row_heading": "Aftercare",
+            "row_des": "Your purchase is just the beginning of our journey together.  <br><br> Whether you have a concern with your item, be it the fit or (perhaps you didn't like what was shipped) please reach out via the chat box on our website. Your order will be automatically pulled up and you can take specific actions such as initiating a return or service inquiry. <br><br> But don’t stop there, if you have some specific input how we can do things better (whether service or manufacturing) drop me a <b>DM on IG @itsalyssajolie.<\/b>  <br><br> We aim to respond to you within just a few hours of getting your communication, but if we ever drop the ball and take a little longer, we thank you for your patience. <br><br>",
+            "btn-name": "",
+            "btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ad6fe85e-3d09-4884-9955-0bbff04492b1",
+        "ebc3b8c7-b80a-476f-87c0-68a12296af13",
+        "e374abc7-8c9d-4985-abfd-e275a1af0796",
+        "381290c5-7ace-47ba-ac68-4f3056996fd9"
+      ],
+      "settings": {
+        "show_heading_des": true,
+        "heading": "",
+        "des": ""
+      }
+    },
+    "585bed34-a2b6-4f68-9734-a8b9d32015a4": {
+      "type": "the-tea-articles",
+      "blocks": {
+        "template--15748148527283__585bed34-a2b6-4f68-9734-a8b9d32015a4-166661164976c78199-0": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "blog_image": "shopify:\/\/shop_images\/Blog7Small_e3e35917-0758-4633-bc4f-a706c7504b0c.jpg",
+            "show_date": true,
+            "select_article": "inspiration\/natural-stones-and-their-meaning"
+          }
+        },
+        "45f4f2af-b8a6-4107-b2c3-324879f97888": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/Web_Blogs_Small_15.jpg",
+            "show_date": true,
+            "select_article": "inspiration\/why-is-moissanite-such-a-hot-stone-for-belly-jewelry"
+          }
+        },
+        "605a9aaf-d19b-4712-a73b-1a57cc887445": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "knowledge-base\/what-to-consider-before-getting-a-belly-button-piercing"
+          }
+        },
+        "c8fd06bc-a202-4cad-be51-f0463ef7368a": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/20221019-Fine_Jewelry_Small_5baa5823-b506-4501-9dea-da2437a617e6.jpg",
+            "show_date": true,
+            "select_article": "inspiration\/fine-belly-jewelry-what-s-the-fuss"
+          }
+        }
+      },
+      "block_order": [
+        "template--15748148527283__585bed34-a2b6-4f68-9734-a8b9d32015a4-166661164976c78199-0",
+        "45f4f2af-b8a6-4107-b2c3-324879f97888",
+        "605a9aaf-d19b-4712-a73b-1a57cc887445",
+        "c8fd06bc-a202-4cad-be51-f0463ef7368a"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/blogs\/inspiration"
+      }
+    }
+  },
+  "order": [
+    "1653390534ab4232cf",
+    "165367719529bd290d",
+    "1653304274745e4108",
+    "585bed34-a2b6-4f68-9734-a8b9d32015a4"
+  ]
+}

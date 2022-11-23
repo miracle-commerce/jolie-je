@@ -1,0 +1,174 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="bg-gray section-spacing">
+        <div class="container p-4 p-md-0">
+
+            <div class=" ">
+                <div class="col-md-12 p-0 p-md-0">
+                    <h2 class="heading-2">{{ section.settings.blog_heading }}</h2>
+                </div>
+
+            </div>
+
+            <div class="d-block d-md-flex">
+
+                <div class="col-md-9 p-0 p-md-0">
+                    <p class="">{{ section.settings.blog_des }}</p>
+                </div>
+
+                <div class="col-md-3 pr-0">
+                    <a class="btn-link" href="{{ section.settings.blog_link }}">See all</a>
+                </div>
+
+            </div>
+
+            <div class="d-none d-md-flex the-tea-section mt-5">
+
+                {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
+                {% if block.type == "articles" %}
+
+               {%- assign article = block.settings.select_article -%}
+
+                <div class="col-sm-3 the-tea-section-items mb-5 mb-md-0">
+                    <h6 class="numeric heading-6">0{{ forloop.index }}</h6>
+
+                    <a href="{{ article.url }}">
+                      {%- if block.settings.custom_image -%}
+                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%">
+                      {% else %}
+                        <img src="{{ article.image.src | img_url: 'original' }}" width="100%">
+                      {% endif %}
+                        <h4 class="tea-head">{{article.title}}</h4>
+                       {%- if block.settings.show_date -%}
+                          <p class="tea-text1">{{ article.published_at | date: "%b %d, %Y" }}</p>
+                             {% endif %}
+
+                    </a>
+
+                </div>
+
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="d-block d-md-none the-tea-section mt-5 ">
+                <div class="row w-100">
+                    {% if section.blocks.size > 0 %}
+                    {% for block in section.blocks %}
+                    {% if block.type == "articles" %}
+
+                   {%- assign article = block.settings.select_article -%}
+                  
+                    <div class="col-6 the-tea-section-items mb-5 mb-md-0">
+                        <h6 class="numeric heading-6">0{{ forloop.index }}</h6>
+
+                        <a href="{{ article.url }}">
+                      {%- if block.settings.custom_image -%}
+                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%">
+                      {% else %}
+                        <img src="{{ article.image.src | img_url: 'original' }}" width="100%">
+                      {% endif %}
+                        <h4 class="tea-head">{{article.title}}</h4>
+                           {%- if block.settings.show_date -%}
+                          <p class="tea-text1">{{ article.published_at | date: "%b %d, %Y" }}</p>
+                             {% endif %}
+
+                    </a>
+
+                    </div>
+
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% schema %}
+{
+  "name": "The Tea Articles",
+  "class": "section",
+  "settings": [
+	{
+      "type": "text",
+      "id": "blog_heading",
+      "label": "Tea Name"
+    },
+	{
+      "type": "text",
+      "id": "blog_des",
+      "label": "Collection Description"
+    },
+	{
+          "type": "url",
+          "id": "blog_link",
+          "label": "See all collection"
+   	}
+    
+  ],
+  "blocks": [
+ 
+	{
+	  "type": "articles",
+      "name": "Articles",
+      "settings": [
+        {
+        "type": "checkbox",
+        "id": "custom_image",
+        "default": true,
+        "label": "Custom Image"
+      },
+    	{
+      "type": "image_picker",
+      "id": "blog_image",
+      "label": "Blog image"
+    	},
+        {
+        "type": "checkbox",
+        "id": "show_date",
+        "default": true,
+        "label": "Show Date"
+      },
+        {
+          "type": "article",
+          "id": "select_article",
+          "label": "Select Article"
+        }
+
+		]
+      
+		}
+  ],
+  "presets": [
+    {
+      "name": "The Tea Articles",
+      "blocks": [
+      {
+          "type": "articles"
+        }
+       
+        
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,174 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "279e742a-4b27-46ef-ac4c-6912860e1954": {
+      "type": "style-edit-gallery",
+      "blocks": {
+        "template--15748120543411__279e742a-4b27-46ef-ac4c-6912860e1954-1666090772d778ce3b-0": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/KimK.jpg",
+            "heading1": "Orb Moissanite Belly Ring",
+            "link_1": "shopify:\/\/products\/orb-belly-bar",
+            "sub_heading1": "Duo 'Emerald' Moissanite Charm",
+            "link_2": "shopify:\/\/products\/copy-of-duo-ash-moissanite-charm",
+            "image2": "shopify:\/\/shop_images\/Web_Style_Edit_Small_Pic.jpg",
+            "heading2": "Emerald Moissanite Belly Ring",
+            "link_3": "shopify:\/\/products\/emerald-belly-ring",
+            "sub_heading2": "Duo 'Heart' Rose Quartz Charm",
+            "link_4": "shopify:\/\/products\/copy-of-duo-ash-topaz-charm-1"
+          }
+        },
+        "d5a651e7-a224-465e-9f55-836218e923a6": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Black_Bikini_with_white_shirt.jpg",
+            "heading1": "Orb Moissanite Belly Ring",
+            "link_1": "shopify:\/\/products\/orb-belly-bar",
+            "sub_heading1": "XTRA Sparkle 'Heart' Moissanite Charm",
+            "link_2": "shopify:\/\/products\/copy-of-copy-of-copy-of-xtra-sparkle-heart-gemstone-charm",
+            "image2": "shopify:\/\/shop_images\/PradeSUN.jpg",
+            "heading2": "Orb Topaz Belly Ring",
+            "link_3": "shopify:\/\/products\/orb-topaz-belly-ring",
+            "sub_heading2": "Mini 'Tear' Rose-Quartz Charm",
+            "link_4": "shopify:\/\/products\/teardrop-mini-rose-quartz-charm"
+          }
+        },
+        "0953e444-ed60-4b7d-9b98-4afd01fd7264": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Web_Style_Edit_Medium_Pic_1.jpg",
+            "heading1": "Teardrop Topaz Belly Ring",
+            "link_1": "shopify:\/\/products\/teardrop-topaz-belly-ring",
+            "sub_heading1": "XTRA Sparkle 'Emerald' Gemstone Charm",
+            "link_2": "shopify:\/\/products\/xtra-sparkle-emerald-gemstone-charm-silver",
+            "image2": "shopify:\/\/shop_images\/Web_Style_Edit_Small_Pic_3.jpg",
+            "heading2": "Heart Moissanite Belly Ring",
+            "link_3": "shopify:\/\/products\/heart-belly-bar-white-gold",
+            "sub_heading2": "Mini 'Tear' Tanzanite Charm Silver",
+            "link_4": "shopify:\/\/products\/copy-of-mini-tear-peridot-charm-silver"
+          }
+        },
+        "05f3e53c-da24-4d85-a7c4-637d1b45e877": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Harbour.jpg",
+            "heading1": "Teardrop Moissanite Belly Ring",
+            "link_1": "shopify:\/\/products\/teardrop-belly-ring",
+            "sub_heading1": "XTRA Sparkle 'Tear' Moissanite Charm",
+            "link_2": "shopify:\/\/products\/xtra-fire-gemstone-charm",
+            "image2": "shopify:\/\/shop_images\/Fix_blue_jeans.jpg",
+            "heading2": "Teardrop Moissanite Belly Ring",
+            "link_3": "shopify:\/\/products\/teardrop-topaz-belly-ring",
+            "sub_heading2": "XTRA Sparkle 'Tear' Gemstone Charm",
+            "link_4": "shopify:\/\/products\/xtra-fire-gemstone-charm"
+          }
+        },
+        "c7b6b930-bdc4-48db-912c-283a8d2f22d3": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Web_Style_Edit_Small_Pic_1.jpg",
+            "heading1": "Heart Moissanite Belly Ring",
+            "link_1": "shopify:\/\/products\/heart-belly-bar-white-gold",
+            "sub_heading1": "Duo 'Heart' Moissanite Charm Silver",
+            "link_2": "shopify:\/\/products\/copy-of-duo-ash-moissanite-charm-silver-1",
+            "image2": "shopify:\/\/shop_images\/Web_Style_Edit_Medium_Pic_4.jpg",
+            "heading2": "Orb Topaz Belly Ring",
+            "link_3": "shopify:\/\/products\/orb-topaz-belly-ring",
+            "sub_heading2": "Mini 'Tear' Sky-Blue Topaz Charm",
+            "link_4": "shopify:\/\/products\/teardrop-mini-blue-topaz-charm"
+          }
+        },
+        "6a45327c-4218-4cd0-a7f7-f5a865aed878": {
+          "type": "Gallery",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Web_Style_Edit_Medium_Pic_5.jpg",
+            "heading1": "Orb Moissanite Belly Ring",
+            "link_1": "shopify:\/\/products\/orb-belly-bar",
+            "sub_heading1": "Duo 'Emerald' Topaz Charm",
+            "link_2": "shopify:\/\/products\/copy-of-duo-ash-moissanite-charm",
+            "image2": "shopify:\/\/shop_images\/Web_Style_Edit_Small_Pic_4.jpg",
+            "heading2": "Ash Topaz Belly Ring",
+            "link_3": "shopify:\/\/products\/asscher-belly-ring-2",
+            "sub_heading2": "Duo 'Emerald' Topaz Charm",
+            "link_4": "shopify:\/\/products\/copy-of-duo-ash-topaz-charm"
+          }
+        }
+      },
+      "block_order": [
+        "template--15748120543411__279e742a-4b27-46ef-ac4c-6912860e1954-1666090772d778ce3b-0",
+        "d5a651e7-a224-465e-9f55-836218e923a6",
+        "0953e444-ed60-4b7d-9b98-4afd01fd7264",
+        "05f3e53c-da24-4d85-a7c4-637d1b45e877",
+        "c7b6b930-bdc4-48db-912c-283a8d2f22d3",
+        "6a45327c-4218-4cd0-a7f7-f5a865aed878"
+      ],
+      "settings": {
+        "sty_heading": "",
+        "sty_des": ""
+      }
+    },
+    "105f5d86-4094-4267-9093-090841dcda3d": {
+      "type": "the-tea-articles",
+      "blocks": {
+        "template--15748120543411__105f5d86-4094-4267-9093-090841dcda3d-1666611912b4da3aa5-0": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/fine-belly-jewelry-what-s-the-fuss"
+          }
+        },
+        "02ccafe0-f8a1-4312-af79-777d51c8588d": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/Blog7Small_9ff32d1f-4348-41c5-a013-77fb7e7c002f.jpg",
+            "show_date": true,
+            "select_article": "inspiration\/natural-stones-and-their-meaning"
+          }
+        },
+        "4eebe319-54dc-443a-9a18-08da368efe16": {
+          "type": "articles",
+          "settings": {
+            "custom_image": false,
+            "show_date": true,
+            "select_article": "inspiration\/why-is-moissanite-such-a-hot-stone-for-belly-jewelry"
+          }
+        },
+        "91c11b10-2149-41bb-bcea-1ce85905249b": {
+          "type": "articles",
+          "settings": {
+            "custom_image": true,
+            "blog_image": "shopify:\/\/shop_images\/20221019-Blog11_Samall-2.jpg",
+            "show_date": true,
+            "select_article": "knowledge-base\/what-is-gold-vermeil"
+          }
+        }
+      },
+      "block_order": [
+        "template--15748120543411__105f5d86-4094-4267-9093-090841dcda3d-1666611912b4da3aa5-0",
+        "02ccafe0-f8a1-4312-af79-777d51c8588d",
+        "4eebe319-54dc-443a-9a18-08da368efe16",
+        "91c11b10-2149-41bb-bcea-1ce85905249b"
+      ],
+      "settings": {
+        "blog_heading": "The Tea",
+        "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
+        "blog_link": "shopify:\/\/blogs\/inspiration"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "279e742a-4b27-46ef-ac4c-6912860e1954",
+    "105f5d86-4094-4267-9093-090841dcda3d"
+  ]
+}

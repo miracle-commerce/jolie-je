@@ -1,0 +1,183 @@
+<style>
+  
+.style-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.style-column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+
+.style-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .style-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .style-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+} */
+  
+</style>
+
+<div class="container">
+ 
+<div class="row pl-4 p-md-0">                  
+   <h2 class="heading-2">{{ section.settings.sty_heading }}</h2>        
+</div>        
+<div class="row shop-cat-top">         
+  <div class="col-md-12 p-md-0">                     
+    <p class="">{{ section.settings.sty_des }}</p>         
+  </div>
+</div>    
+</div>
+
+
+<div class="container">
+  <div class="row style-row"> 
+    
+     {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+            {% if block.type == "Gallery" %}
+    
+    <div class="column style-column text-center jolie-style-edit">   
+      <div class="sty-img"><img class="style-edit-image" src="{{ block.settings.image1 | img_url: 'master'}}" alt="{{ block.settings.heading1 }}" style="width:100%"></div>
+      <h6 class="style-edit-title" style="margin: 0px"> <a href="{{block.settings.link_1}}" >{{ block.settings.heading1 }}</a></h6>   
+      <h6 class="style-edit-subtitle"><a href="{{block.settings.link_2}}" style="text-align: center; margin: 5px 0 5px;">{{ block.settings.sub_heading1	}}</a></h6>
+  
+      <div class="sty-img"><img class="style-edit-image" src="{{ block.settings.image2 | img_url: 'master'}}" alt="{{ block.settings.heading2 }}" style="width:100%"></div> 
+      <h6 class="style-edit-title" style="margin: 0px"><a href="{{block.settings.link_3}}">{{ block.settings.heading2 }}</a></h6>   
+      <h6 class="style-edit-subtitle"><a href="{{block.settings.link_4}}" style="text-align: center; margin: 5px 0 5px;">{{ block.settings.sub_heading2 }}</a></h6>
+    </div>
+ 
+    
+      {% endif %}
+            {% endfor %}
+            {% endif %}
+  </div>
+
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Style Edit Gallery",
+    "settings": [
+	{
+      "type": "text",
+      "id": "sty_heading",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "sty_des",
+      "label": "Description"
+    }
+	],
+	 "blocks": [
+ 
+	{
+	  "type": "Gallery",
+      "name": "Image",
+      "settings": [
+
+	{
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image"	
+    },
+	{
+      "type": "text",
+      "id": "heading1",
+      "label": "Heading"
+    },  
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "Heading Link "
+    },
+	{
+      "type": "text",
+      "id": "sub_heading1",
+      "label": "Subtitle"
+    },
+     {
+      "type": "url",
+      "id": "link_2",
+      "label": "Subtitle Link "
+    },
+	{
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image"
+    },
+	{
+      "type": "text",
+      "id": "heading2",
+      "label": "Heading"
+    },
+      {
+      "type": "url",
+      "id": "link_3",
+      "label": "Heading Link"
+    },
+	{
+      "type": "text",
+      "id": "sub_heading2",
+      "label": "Subtitle"
+    },
+     {
+      "type": "url",
+      "id": "link_4",
+      "label": "Subtitle Link"
+    }
+
+	]
+
+	}
+
+  ],
+	"presets": [
+    {
+      "name": "Style Edit Gallery",
+		  "blocks": [
+      {
+          "type": "Gallery"
+        }
+       
+        
+      ]
+	}
+  ]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

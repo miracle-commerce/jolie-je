@@ -1,0 +1,82 @@
+<div id="insta-section">
+  
+  <div class="container d-block d-md-none">
+<div class="row banner-bottom-text pt-3 pb-3">
+   <div class="col-lg-4 col-md-6 text-center center-content">
+      <div >
+        <a class="heading-1" href="{{ section.settings.link}}" target="_blank"> {{ section.settings.center_text}}</a>
+      </div>
+   </div>
+   <div class="col-6 text-right center-content insta-section-mob-text-border">
+      <div class="heading-6">
+         {{ section.settings.left_text}}
+      </div>
+   </div>
+  
+   <div class="col-6 text-left center-content">
+      <div class="heading-6">
+         {{ section.settings.right_text}}
+      </div>
+   </div>
+	</div>
+</div>
+  
+<div class="container d-none d-md-block">
+<div class="row banner-bottom-text pt-3 pb-3">
+   <div class="col-lg-4 col-md-6 center-content text-lg-right text-xs-center designed-by">
+      <div class="heading-1">
+         {{ section.settings.left_text}}
+      </div>
+   </div>
+   <div class="col-lg-4 col-md-6 text-center center-content">
+      <div >
+        <a class="heading-1" href="{{ section.settings.link}}" target="_blank"> {{ section.settings.center_text}}</a>
+      </div>
+   </div>
+   <div class="col-lg-4 col-md-6 text-xs-left center-content text-lg-left">
+      <div class="heading-6">
+         {{ section.settings.right_text}}
+      </div>
+   </div>
+	</div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Instagram Section",
+    "settings": [
+	{
+      "type": "text",
+      "id": "left_text",
+      "label": "Left Text"  
+     },
+		{
+      "type": "text",
+      "id": "center_text",
+      "label": "Center Text"  
+     },
+	{
+      "type": "text",
+      "id": "right_text",
+      "label": "Right Text"  
+     },
+	{
+       "type": "url",
+       "id": "link",
+       "label": "Instagram Link"
+        }
+
+	],
+	"presets": [
+    {
+      "name": "Instagram Section"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

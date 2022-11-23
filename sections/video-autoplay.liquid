@@ -1,0 +1,52 @@
+{% comment %} <div>
+  <div data-h="video-" data-testid="video" >
+  <iframe data-testid="video-iframe" width="100%" height="640" src="https://player.vimeo.com/video/451211513?autoplay=1&amp;loop=1&amp;controls=0&amp;autopause=0&amp;muted=1"></iframe>
+  </div>
+
+
+    <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/762359820?autoplay=1&amp;autopause=0&amp;loop=1&amp;player_id=0&amp;app_id=58479;muted=1;background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="final edit 01">  
+    </iframe>
+  </div>
+
+  
+</div> {% endcomment %}
+
+<div class="container p-0">
+  
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?autoplay=1&amp;autopause=0&amp;loop=1&amp;player_id=0&amp;app_id=58479;muted=1;background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="final edit 01">  
+    </iframe>
+  </div>
+  
+</div>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+{% schema %}
+  {
+    "name": "Video autoplay",
+    "settings": [
+      {
+   "id": "video_url",
+   "type": "video_url",
+   "label": "Video URL",
+   "accept":  ["vimeo"],
+   "default": "https://player.vimeo.com/video/746642106",
+  "info": "Place the link here",
+   "placeholder": "Place you Vimeo video url here"
+}
+    ],
+    "presets": [
+    {
+      "name": "Video autoplay"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
