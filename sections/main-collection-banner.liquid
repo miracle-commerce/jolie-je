@@ -57,7 +57,7 @@
     
       <div class="col-6 col-md-3">
         <a href="{{ collection.url }}">
-          <img src="{{ collection_image | img_url: '480x' }}" class="img-fluid"/>
+          {{collection_image | image_url: width: 255 | image_tag: widths: '158, 255', loading: "lazy", alt: collection.title, class:"img-fluid"}}
           <h3 class="text-center pt-3"> {{ collection.title }}</h3>
         </a>
       </div>

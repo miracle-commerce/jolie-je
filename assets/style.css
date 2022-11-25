@@ -1499,11 +1499,11 @@ ul.swatch-view.swatch-view-custom-image.swatch-align-left .swatch-selected {
 .caption-with-letter-spacing.light{
 
  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-color: #a6a6a6;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a6a6a6;
   text-transform: capitalize !important
 
 }

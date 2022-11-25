@@ -281,3 +281,8 @@ a.product-title {
   max-width: 100%;
   height: auto; 
 }
+
+.the-tea-blog-item-image{
+  max-width: 100%; 
+  height: auto;
+}
