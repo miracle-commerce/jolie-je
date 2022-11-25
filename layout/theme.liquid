@@ -1,34 +1,32 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-
-{% include "starapps-core" %}
-
-  <link rel="stylesheet" href="https://obscure-escarpment-2240.herokuapp.com/stylesheets/bcpo-front.css">
-  <script>var bcpo_product={{ product | json }}; {% if product.metafields.bcpo.bcpo_data %}var bcpo_data={{ product.metafields.bcpo.bcpo_data }};{% endif %} {% if shop.metafields.bcpo.bcpo_settings %}var bcpo_settings={{ shop.metafields.bcpo.bcpo_settings }};{% endif %}var inventory_quantity = [];{% for v in product.variants %}inventory_quantity.push({{v.inventory_quantity}});{% endfor %}if(bcpo_product) { for (var i = 0; i < bcpo_product.variants.length; i += 1) { bcpo_product.variants[i].inventory_quantity = inventory_quantity[i]; }}window.bcpo = window.bcpo || {}; bcpo.cart = {{cart | json}}; bcpo.ogFormData = FormData;</script>
+    {% include "starapps-core" %}
+    <link rel="stylesheet" href="https://obscure-escarpment-2240.herokuapp.com/stylesheets/bcpo-front.css">
+    <script>var bcpo_product={{ product | json }}; {% if product.metafields.bcpo.bcpo_data %}var bcpo_data={{ product.metafields.bcpo.bcpo_data }};{% endif %} {% if shop.metafields.bcpo.bcpo_settings %}var bcpo_settings={{ shop.metafields.bcpo.bcpo_settings }};{% endif %}var inventory_quantity = [];{% for v in product.variants %}inventory_quantity.push({{v.inventory_quantity}});{% endfor %}if(bcpo_product) { for (var i = 0; i < bcpo_product.variants.length; i += 1) { bcpo_product.variants[i].inventory_quantity = inventory_quantity[i]; }}window.bcpo = window.bcpo || {}; bcpo.cart = {{cart | json}}; bcpo.ogFormData = FormData;</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-<!--     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin> -->
 
-<!--     Bootstrap 4 -->
+    <!--     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin> -->
+
+    <!--     Bootstrap 4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-  
-<!-- Custom Stylesheet  --> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+      
+    <!-- Custom Stylesheet  --> 
     {{ 'style.css' | asset_url | stylesheet_tag }}
-    
-<!-- Slick Slider CSS -->
+        
+    <!-- Slick Slider CSS -->
     {{ 'slick.css' | asset_url | stylesheet_tag }}	
     {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
-    
-    
+        
+        
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -52,12 +50,12 @@
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <!-- starapps_scripts_start -->
-<!-- This code is automatically managed by StarApps Studio -->
-<!-- Please contact support@starapps.studio for any help -->
-<script type="text/javascript" src="https://bcdn.starapps.studio/apps/vtk/jolie-je/script-1668632909.js?shop={{shop.permanent_domain}}" async></script>
-<!-- starapps_scripts_end -->
-{{ content_for_header }}
-  <script id="vopo-head">(function () { if (((document.documentElement.innerHTML.includes('asyncLoad') && !document.documentElement.innerHTML.includes('\\/obscure' + '-escarpment-2240')) || (window.bcpo && bcpo.disabled)) && !window.location.href.match(/[&?]yesbcpo/)) return; var script = document.createElement('script'); script.src = "https://obscure-escarpment-2240.herokuapp.com/js/best_custom_product_options.js?shop={{shop.permanent_domain}}"; var vopoHead = document.getElementById('vopo-head'); vopoHead.parentNode.insertBefore(script, vopoHead); })();</script>
+    <!-- This code is automatically managed by StarApps Studio -->
+    <!-- Please contact support@starapps.studio for any help -->
+    <script type="text/javascript" src="https://bcdn.starapps.studio/apps/vtk/jolie-je/script-1668632909.js?shop={{shop.permanent_domain}}" async></script>
+    <!-- starapps_scripts_end -->
+    {{ content_for_header }}
+    <script id="vopo-head">(function () { if (((document.documentElement.innerHTML.includes('asyncLoad') && !document.documentElement.innerHTML.includes('\\/obscure' + '-escarpment-2240')) || (window.bcpo && bcpo.disabled)) && !window.location.href.match(/[&?]yesbcpo/)) return; var script = document.createElement('script'); script.src = "https://obscure-escarpment-2240.herokuapp.com/js/best_custom_product_options.js?shop={{shop.permanent_domain}}"; var vopoHead = document.getElementById('vopo-head'); vopoHead.parentNode.insertBefore(script, vopoHead); })();</script>
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -231,23 +229,17 @@
     {%- endif -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    if (Shopify.designMode) {
-      document.documentElement.classList.add('shopify-design-mode');
-    }
+      if (Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
     </script>
     
-    
-     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<!--      <script src="{{ 'custom.js' | asset_url }}"></script> -->
- 
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--      <script src="{{ 'custom.js' | asset_url }}"></script> -->    
     {% render 'judgeme_core' %}
-    
-{% render 'delivery_coder' %} 
-
-  
-  {% include 'analyzify-gtm-body' %}
-</head>
+    {% render 'delivery_coder' %} 
+    {% include 'analyzify-gtm-body' %}
+  </head>
 
   <body class="gradient {{ template.name }}_template" >
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -271,7 +263,6 @@
     </main>
 
     {% section 'footer' %}
-
     {% section 'eg-wishlist-drawer' %}
     
     <ul hidden>
@@ -312,34 +303,35 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-<!--     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+	  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{{ 'slick.min.js' | asset_url }}"></script> 
     <script type="text/javascript" src="{{ 'custom-jquery.js' | asset_url }}"></script>
     
     {{ 'custom-style.css' | asset_url | stylesheet_tag }}
      
     
-  {% render 'pb_currency' %}
-{% include 'swymSnippet' %}
+    {% render 'pb_currency' %}
+    {% include 'swymSnippet' %}
 
-<!-- Back in Stock helper snippet -->
-{% render 'back-in-stock-helper' %}
-<!-- End Back in Stock helper snippet -->
-{% include 'subscribe-it-helper' %}
+    <!-- Back in Stock helper snippet -->
+    {% render 'back-in-stock-helper' %}
+    <!-- End Back in Stock helper snippet -->
+    {% include 'subscribe-it-helper' %}
  
 
-   <!--Gorgias Chat Widget Start--><script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=21948"></script>
-<script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",_.SHOPIFY_CUSTOMER_ID="{{customer.id}}",_.SHOPIFY_CUSTOMER_EMAIL="{{customer.email}}"}(window||{});</script><!--Gorgias Chat Widget End-->
- 
-  <script>
-GorgiasChat.init().then(function() {
-GorgiasChat.hidePoweredBy(true)
-})
-</script>
+    <!--Gorgias Chat Widget Start-->
+    <script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=21948"></script>
+    <script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",_.SHOPIFY_CUSTOMER_ID="{{customer.id}}",_.SHOPIFY_CUSTOMER_EMAIL="{{customer.email}}"}(window||{});</script>
+    <!--Gorgias Chat Widget End--> 
+    <script>
+      GorgiasChat.init().then(function() {
+      GorgiasChat.hidePoweredBy(true)
+      })
+    </script>
     
-<!-- CRITEO START -->
-{% render 'criteo-tracking' %}
-<!-- CRITEO END -->
-</body>
+    <!-- CRITEO START -->
+    {% render 'criteo-tracking' %}
+    <!-- CRITEO END -->
+  </body>
 </html>
