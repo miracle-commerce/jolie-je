@@ -364,9 +364,9 @@
             {% if block.type == "jolie_experience" %}
           
             <div class="col-6 col-md" id="f_item_{{ forloop.index }}">
-              <img class="icon-image" src="{{ block.settings.i_image | img_url: 'master'}}" width="32px">
-                <a href="{{ block.settings.ilink }}"> <p class="heading">{{ block.settings.i_txt }}</p> </a>
-                <p class="text">{{ block.settings.i_des }}</p>
+              {{block.settings.i_image | image_url: width: 32 | image_tag: class: 'icon-image'}}
+              <a href="{{ block.settings.ilink }}"> <p class="heading">{{ block.settings.i_txt }}</p> </a>
+              <p class="text">{{ block.settings.i_des }}</p>
             </div>
           
           {% endif %}
