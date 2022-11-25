@@ -17,7 +17,7 @@
             {% if block.type == "collection" %}
             <div class="">
                 <a href="{{ block.settings.col_link }}" class="object-hover">
-                    <img src="{{ block.settings.col_image | img_url: 'master'}}" alt="{{ block.settings.col_name }}" width="100%" loading="lazy">
+                    {{block.settings.col_image | image_url: width: 535 | image_tag: widths: '360, 535', alt: block.settings.col_name, loading: 'lazy'}}
                     <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.col_name }}</div>
                 </a>
             </div>

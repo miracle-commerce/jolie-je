@@ -5,7 +5,7 @@
         <div class="d-block d-md-flex story-top mb-4 mb-md-0">
             <div class="col-sm-5 p-4 p-md-0 story-top-left ">
                 <a href="#" class="shop-col-bottom-collection-link">
-                    <img src="{{ section.settings.about_me_img | img_url: 'master'}}" width="465" loading="lazy">
+                  {{section.settings.about_me_img | image_url: width: 465 | image_tag: widths: '300, 465', loading: "lazy"}}
                 </a>
             </div>
             <div class="col-sm-7 story-top-right left-space pr-0">
@@ -21,7 +21,7 @@
             </div>
             <div class="col-sm-4 p-md-0 story-bottom-center ">
                 <a href="#" class="shop-col-bottom-collection-link">
-                    <img src="{{ section.settings.about_crystal_img | img_url: 'master'}}" width="100%" loading="lazy">
+                  {{section.settings.about_crystal_img | image_url: width: 545 | image_tag: widths: '345, 545', loading: "lazy"}}
                 </a>
             </div>
             <div class="col-sm-5 story-bottom-right pr-0">

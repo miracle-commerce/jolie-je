@@ -740,7 +740,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
           <hr class="mb-5 mt-5">
         <div class="col-md-12 pl-0 pr-0 d-flex flex-row align-items-center">
             <div class="col-md-4 col-3 pl-0 pr-0">
-                <img src=" {{ settings.f_image  | image_url }}" class="img-fluid rounded-3" alt="Shopping item" style="width: 100%;" loading="lazy">
+                {{settings.f_image | image_url: width: 237 | image_tag: widths: '125, 154, 237', loading: "lazy", alt: 'Shopping item', class: "wishlist-drawer-shopping-item-image"}}
             </div>
             <div class="col-md-8 col-9 pr-0">
               <p class="packaging_top_text">{{ settings.f_text }}</p>    
