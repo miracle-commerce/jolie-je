@@ -191,12 +191,11 @@
     <script type="lazyload2" data-src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
       
     <!-- Custom Stylesheet  -->
-    
-    {{ 'style.css' | asset_url | stylesheet_tag }}
-        
+    <link rel="stylesheet" data-href="{{ 'style.css' | asset_url }}">
+            
     <!-- Slick Slider CSS -->
-    {{ 'slick.css' | asset_url | stylesheet_tag }}	
-    {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" data-href="{{ 'slick.css' | asset_url }}">
+    <link rel="stylesheet" data-href="{{ 'slick-theme.css' | asset_url }}">
 
     <script type="lazyload2" data-src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <!-- starapps_scripts_start -->
@@ -205,16 +204,15 @@
     <script type="lazyload2" data-src="https://bcdn.starapps.studio/apps/vtk/jolie-je/script-1668632909.js?shop={{shop.permanent_domain}}" async></script>
     <!-- starapps_scripts_end -->
 
-
     {% comment %} {{ content_for_header }} {% endcomment %}
     {{ content_for_header | replace : ' href=', ' data-href=' | replace : "addEventListener('load'", "addEventListener('wnw_load'" | replace : 'DOMContentLoaded', 'DOMContentLoaded2' | replace : 'defer="defer" src=', 'type="lazyload2" defer="defer" data-src=' }}
 
     {% comment %} <script id="vopo-head">(function () { if (((document.documentElement.innerHTML.includes('asyncLoad') && !document.documentElement.innerHTML.includes('\\/obscure' + '-escarpment-2240')) || (window.bcpo && bcpo.disabled)) && !window.location.href.match(/[&?]yesbcpo/)) return; var script = document.createElement('script'); script.src = "https://obscure-escarpment-2240.herokuapp.com/js/best_custom_product_options.js?shop={{shop.permanent_domain}}"; var vopoHead = document.getElementById('vopo-head'); vopoHead.parentNode.insertBefore(script, vopoHead); })();</script> {% endcomment %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" data-href="{{'base.css' | asset_url}}">
 
     {%- if settings.predictive_search_enabled -%}
-      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+      <link rel="stylesheet" data-href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
