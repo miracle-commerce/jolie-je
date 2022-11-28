@@ -204,7 +204,11 @@
     <!-- Please contact support@starapps.studio for any help -->
     <script type="text/javascript" src="https://bcdn.starapps.studio/apps/vtk/jolie-je/script-1668632909.js?shop={{shop.permanent_domain}}" async></script>
     <!-- starapps_scripts_end -->
-    {{ content_for_header }}
+
+
+    {% comment %} {{ content_for_header }} {% endcomment %}
+    {{ content_for_header | replace : ' href=', ' data-href=' | replace : "addEventListener('load'", "addEventListener('wnw_load'" | replace : 'DOMContentLoaded', 'DOMContentLoaded2' | replace : 'defer="defer" src=', 'type="lazyload2" defer="defer" data-src=' }}
+
     {% comment %} <script id="vopo-head">(function () { if (((document.documentElement.innerHTML.includes('asyncLoad') && !document.documentElement.innerHTML.includes('\\/obscure' + '-escarpment-2240')) || (window.bcpo && bcpo.disabled)) && !window.location.href.match(/[&?]yesbcpo/)) return; var script = document.createElement('script'); script.src = "https://obscure-escarpment-2240.herokuapp.com/js/best_custom_product_options.js?shop={{shop.permanent_domain}}"; var vopoHead = document.getElementById('vopo-head'); vopoHead.parentNode.insertBefore(script, vopoHead); })();</script> {% endcomment %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
