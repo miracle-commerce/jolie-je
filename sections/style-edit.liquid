@@ -11,13 +11,13 @@
                 <a class="btn-link float-none float-md-right" href="{{ section.settings.style_link }}">{{ section.settings.btn_name }}</a>
             </div>
         </div>
-        <div class="d-block d-md-flex shop-style-slider mt-5">
+        <div class="d-block d-md-block shop-style-slider mt-5">
             {% if section.blocks.size > 0 %}
             {% for block in section.blocks %}
             {% if block.type == "style" %}
             <div class="">
-                <a href="{{ block.settings.style_link }}" class="object-hover">
-                    <img src="{{ block.settings.style_image | img_url: 'master'}}" alt="{{ block.settings.style_name }}" width="100%">
+                <a href="{{ block.settings.style_link }}" class="object-hover shop-style-slider__item"> 
+                    {{block.settings.style_image | image_url: width: 535 | image_tag: widths: '320, 535', loading: 'lazy', alt: block.settings.style_image}}
                     <div class="heading-6 text-center pt-5 pb-5">{{ block.settings.style_name }}</div>
                 </a>
             </div>
@@ -102,9 +102,3 @@
   ]
 }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}

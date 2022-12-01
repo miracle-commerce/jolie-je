@@ -253,3 +253,74 @@ a.product-title {
     line-height: initial;
     padding-bottom: 5px;
 }
+
+.shop-category--mobile__image{
+  max-width: 100%;
+  height: auto; 
+}
+
+.shop-style-slider{
+  width: 100%; 
+}
+
+.shop-style-slider img{
+  max-width: 100%; 
+  height: auto;
+  display: initial;  
+}
+#mini-cart-footer .shopping-item-image, .wishlist-drawer-shopping-item-image, .header-shopping-item-image{
+  max-width: 100%; 
+  height: auto; 
+}
+
+.shop-style-slider__item{
+  display: block; 
+}
+
+.shop-col-bottom-collection-link img{
+  max-width: 100%;
+  height: auto; 
+}
+
+.the-tea-blog-item-image{
+  max-width: 100%; 
+  height: auto;
+}
+
+.the-tea-section-items img{
+  max-width: 100%; 
+  height: auto; 
+}
+
+.insta-feed-link img{
+  max-width: 100%; 
+  height: auto;
+}
+
+/* Custom Styles for the menu drawer */
+.js .grandsubmenu{
+  position: static;
+  transform: initial;
+  visibility: visible;
+}
+
+.js .grandsubmenu .menu-drawer__menu-item{
+  padding: 1.1rem 3.2rem 1.1rem 6rem;
+}
+.grand-menu-drawer-title{
+  font-weight: 600;
+}
+
+.collection-banner-items__wrapper{
+  margin-right: 0px; 
+  margin-left: 0px; 
+  overflow-x: hidden; 
+}
+
+.collection-banner-item{
+  padding: 0 5px;
+}
+
+.product-form__submit.button.loading{
+  position: static;
+}

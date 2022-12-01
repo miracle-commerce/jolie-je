@@ -50,9 +50,9 @@
 
                     <a href="{{ myblog.url }}">
                        {%- if block.settings.custom_image -%}
-                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%">
+                        {{block.settings.blog_image | image_url: width: 270 | image_tag: widths: '150, 270', loading: "lazy"}}
                          {% else %}
-                        <img src="{{ myblog.image.src | img_url: 'original' }}" width="100%">
+                         {{block.settings.blog_image | image_url: width: 270 | image_tag: widths: '150, 270', loading: "lazy"}}
                       {% endif %}
                         <h4 class="tea-head">{{myblog.title }}</h4>
                         <p class="tea-text1">{{ myblog.articles_count }} articles</p>
@@ -82,11 +82,11 @@
                         <h6 class="numeric heading-6">0{{ forloop.index }}</h6>
 
                         <a href="{{ myblog.url }}">
-                       {%- if block.settings.custom_image -%}
-                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%">
-                         {% else %}
-                        <img src="{{ myblog.image.src | img_url: 'original' }}" width="100%">
-                      {% endif %}
+                        {%- if block.settings.custom_image -%}
+                          {{block.settings.blog_image | image_url: width: 270 | image_tag: widths: '150, 270', loading: "lazy"}}                        
+                        {% else %}
+                          {{block.settings.blog_image | image_url: width: 270 | image_tag: widths: '150, 270', loading: "lazy"}}                        
+                        {% endif %}
                         <h4 class="tea-head">{{myblog.title }}</h4>
                         <p class="tea-text1">{{ myblog.articles_count }} articles</p>
                         <p class="tea-text2">{{ block.settings.blog_new }}</p>

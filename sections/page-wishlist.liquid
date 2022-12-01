@@ -133,11 +133,7 @@
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-
+<script>
   const egWishlistFormatMoneyHelper = (cents, format) => {
         if (typeof cents === 'string') {
             // eslint-disable-next-line no-param-reassign
@@ -146,11 +142,11 @@
         let value = '';
         const placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
         const formatString = (format || document.querySelector('#eg-wishlist-drawer').dataset.moneyFormat);
-
+  
         function defaultOption(opt, def) {
             return (typeof opt === 'undefined' ? def : opt);
         }
-
+  
         function formatWithDelimiters(number, precision, thousands, decimal) {
             // eslint-disable-next-line no-param-reassign
             precision = defaultOption(precision, 2);
@@ -158,21 +154,21 @@
             thousands = defaultOption(thousands, ',');
             // eslint-disable-next-line no-param-reassign
             decimal = defaultOption(decimal, '.');
-
+  
             if (Number.isNaN(number) || number == null) { return 0; }
-
+  
             // eslint-disable-next-line no-param-reassign
             number = (number / 100.0).toFixed(precision);
-
+  
             const parts = number.split('.');
             // eslint-disable-next-line prefer-template
             const dollars = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands);
             // eslint-disable-next-line no-param-reassign
             cents = parts[1] ? (decimal + parts[1]) : '';
-
+  
             return dollars + cents;
         }
-
+  
         // eslint-disable-next-line default-case
         switch (formatString.match(placeholderRegex)[1]) {
         case 'amount': value = formatWithDelimiters(cents, 2); break;
@@ -180,28 +176,28 @@
         case 'amount_with_comma_separator': value = formatWithDelimiters(cents, 2, '.', ','); break;
         case 'amount_no_decimals_with_comma_separator': value = formatWithDelimiters(cents, 0, '.', ','); break;
         }
-
+  
         return formatString.replace(placeholderRegex, value);
     };
-
-
+  
+  
         let wishlist = JSON.parse(localStorage.getItem('eg_wishlist_v1')) || []
        
-
+  
         if (wishlist.length === 0) {
             drawerEmpty.style.display = 'block'
             drawerProductList.style.display = 'none'
         } else {
             let wishlistProductsListItems = '';
-
+  
             wishlist.forEach((product) => {
-console.log(product);
+  console.log(product);
                 wishlistProductsListItems += `
-<div class="col-md-3 pl-0">
+  <div class="col-md-3 pl-0">
                   
-
-
-<div class="card-wrapper underline-links-hover" data-product-handle="{{ card_product.handle }}">
+  
+  
+  <div class="card-wrapper underline-links-hover" data-product-handle="{{ card_product.handle }}">
     <div class="card border-0 card--card card--media color-background-1 gradient" style="--ratio-percent: 100%;" swatch-generated="orb-belly-bar">
       <div class="card__inner  ratio" style="--ratio-percent: 100%;">
         <div class="card__media">
@@ -238,7 +234,7 @@ console.log(product);
             </div>
             <div class="col-md-7 p-0">
               <div class="card-price"> 
-<div class="price ">
+  <div class="price ">
   <div class="price__container float-right"><div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">Regular price</span>
       <span class="price-item price-item--regular">
@@ -269,9 +265,9 @@ console.log(product);
       </span>
     </small>
   </div>
- 
-</div>
-</div>
+  
+  </div>
+  </div>
             </div>
           </div>
           
@@ -279,7 +275,7 @@ console.log(product);
               <div class="caption-with-letter-spacing light">${product.vendor}</div><span class="caption-large light"></span></div>
         
           
- 
+  
         </div><div class="card__badge bottom right"></div>
       </div>
       
@@ -289,9 +285,8 @@ console.log(product);
                  
                 `;
             });
-
-$('#wishlist-products').prepend(wishlistProductsListItems);
-
- 		};
-     
-{% endjavascript %}
+  
+  $('#wishlist-products').prepend(wishlistProductsListItems);
+  
+     };
+</script>

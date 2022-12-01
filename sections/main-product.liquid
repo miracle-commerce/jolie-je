@@ -23,7 +23,7 @@
     }
   {%- endstyle -%}
 
-  <script>(function () { if ((!document.documentElement.innerHTML.match(/asyncLoad/) || document.documentElement.innerHTML.includes('\\/obscure' + '-escarpment-2240')) && (!window.bcpo || !bcpo.disabled) && window.bcpo_data && bcpo_data.virtual_options && bcpo_data.virtual_options.length) { return; } var script = document.createElement('script'); script.src = "{{ 'product-form.js' | asset_url }}"; document.head.appendChild(script); })();</script>
+  <script type="lazyload2">(function () { if ((!document.documentElement.innerHTML.match(/asyncLoad/) || document.documentElement.innerHTML.includes('\\/obscure' + '-escarpment-2240')) && (!window.bcpo || !bcpo.disabled) && window.bcpo_data && bcpo_data.virtual_options && bcpo_data.virtual_options.length) { return; } var script = document.createElement('script'); script.src = "{{ 'product-form.js' | asset_url }}"; document.head.appendChild(script); })();</script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
   {%- if first_3d_model -%}
@@ -410,7 +410,7 @@
               </details>
             </share-button>
             </div>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            <script type="lazyload2" data-src="{{ 'share.js' | asset_url }}" defer="defer"></script>
             
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
@@ -572,7 +572,7 @@
   
               
               
-            <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+            <script type="lazyload2" data-src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid
@@ -714,15 +714,15 @@
   {%- endfor -%}
 
   {%- if product.media.size > 0 -%}
-    <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
+    <script type="lazyload2" data-src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
+    <script type="lazyload2" data-src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
   {%- if first_3d_model -%}
     <script type="application/json" id="ProductJSON-{{ product.id }}">
       {{ product.media | where: 'media_type', 'model' | json }}
     </script>
-    <script src="{{ 'product-model.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
 
   <script>

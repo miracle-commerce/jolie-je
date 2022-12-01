@@ -364,9 +364,9 @@
             {% if block.type == "jolie_experience" %}
           
             <div class="col-6 col-md" id="f_item_{{ forloop.index }}">
-              <img class="icon-image" src="{{ block.settings.i_image | img_url: 'master'}}" width="32px">
-                <a href="{{ block.settings.ilink }}"> <p class="heading">{{ block.settings.i_txt }}</p> </a>
-                <p class="text">{{ block.settings.i_des }}</p>
+              {{block.settings.i_image | image_url: width: 32 | image_tag: class: 'icon-image'}}
+              <a href="{{ block.settings.ilink }}"> <p class="heading">{{ block.settings.i_txt }}</p> </a>
+              <p class="text">{{ block.settings.i_des }}</p>
             </div>
           
           {% endif %}
@@ -387,7 +387,7 @@
 
             <div class="col-lg-2 text-center text-md-left footer-bottom-c1">
                <a href="{{ shop.url }}"> 
-                 <img src="https://cdn.shopify.com/s/files/1/0623/8991/1731/files/logo_color.png?v=1652350398" alt="Jolie Co Jewelry" width="135px" />
+                 <img src="https://cdn.shopify.com/s/files/1/0623/8991/1731/files/logo_color.png?v=1652350398" alt="Jolie Co Jewelry" width="135px" loading="lazy"/>
                </a>
             </div>
 

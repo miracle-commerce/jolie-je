@@ -46,7 +46,7 @@
                     <h6 class="numeric heading-6">0{{ forloop.index }}</h6>
 
                     <a href="{{ block.settings.blog_link }}">
-                        <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%">
+                        {{block.settings.blog_image | image_url: width: 260 | image_tag: widths: '150, 255', loading: "lazy", alt: blck.settings.blog_name, class: 'the-tea-blog-item-image'}}
                         <h4 class="tea-head">{{ block.settings.blog_name }}</h4>
                         <p class="tea-text1">{{ block.settings.no_of_articles }}</p>
                         <p class="tea-text2">{{ block.settings.blog_new }}</p>
@@ -70,11 +70,10 @@
                         <h6 class="numeric heading-6">0{{ forloop.index }}</h6>
 
                         <a href="{{ block.settings.blog_link }}">
-                            <img src="{{ block.settings.blog_image | img_url: 'master'}}" width="100%">
+                          {{block.settings.blog_image | image_url: width: 260 | image_tag: widths: '150, 255', loading: "lazy", alt: blck.settings.blog_name, class: 'the-tea-blog-item-image'}}
                             <h4 class="tea-head">{{ block.settings.blog_name }}</h4>
                             <p class="tea-text1">{{ block.settings.no_of_articles }}</p>
                             <p class="tea-text2">{{ block.settings.blog_new }}</p>
-
                         </a>
 
                     </div>

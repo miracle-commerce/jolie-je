@@ -84,9 +84,9 @@
   }
 {%- endstyle -%}
 
-<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+<script type="lazyload2" data-src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
+<script type="lazyload2" data-src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
+<script type="lazyload2" data-src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
@@ -129,28 +129,29 @@
                                   {{ link.title | escape }}
                                 </button>
                                 <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                  {% assign grand_has_submenu_index = 0 %}
                                   {%- for childlink in link.links -%}
                                     <li>
                                       {%- if childlink.links == blank -%}
-                                        <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                        <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}  grand-menu-drawer-title"{% if childlink.current %} aria-current="page"{% endif %}>
                                           {{ childlink.title | escape }}
                                         </a>
                                       {%- else -%}
-                                        <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
-                                          <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                        <details id="Details-menu-drawer-submenu-{{ forloop.index }}" {% if grand_has_submenu_index == 0 %}open{% endif %} class="grand-menu-drawer-submenu" data-grand-menu="true">
+                                          <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset grand-menu-drawer-title">
                                             {{ childlink.title | escape }}
                                             {% render 'icon-arrow' %}
                                             {% render 'icon-caret' %}
                                           </summary>
-                                          <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce">
-                                            <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                          <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce grandsubmenu">
+                                            {% comment %} <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                                               {% render 'icon-arrow' %}
                                               {{ childlink.title | escape }}
-                                            </button>
+                                            </button> {% endcomment %}
                                             <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                               {%- for grandchildlink in childlink.links -%}
                                                 <li>
-                                                  <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                                  <a href="{{ grandchildlink.url }}" class="grandlink menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                                     {{ grandchildlink.title | escape }}
                                                   </a>
                                                 </li>
@@ -158,6 +159,7 @@
                                             </ul>
                                           </div>
                                         </details>
+                                        {% assign grand_has_submenu_index = grand_has_submenu_index | plus: 1 %}
                                       {%- endif -%}
                                     </li>
                                   {%- endfor -%}
@@ -386,12 +388,12 @@
     {%- if request.page_type == 'index' -%}
       <h1 class="header__heading">
     {%- endif -%}
-        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset header-logo--wrapper">
           {%- if section.settings.logo != blank -%}
             {%- assign image_size_2x = section.settings.logo_width | times: 2 | at_most: 5760 -%}
             <img srcset="{{ section.settings.logo | image_url: width: section.settings.logo_width }} 1x, {{ section.settings.logo | image_url: width: image_size_2x }} 2x"
               src="{{ section.settings.logo | image_url: width: section.settings.logo_width }}"
-              loading="lazy"
+              
               class="header__heading-logo"
               width="{{ section.settings.logo.width }}"
               height="{{ section.settings.logo.height }}"
@@ -880,7 +882,7 @@
         <hr class="mb-5 mt-5">
         <div class="col-md-12 pl-0 pr-0 d-flex flex-row align-items-center">
             <div class="col-md-4 pl-0 pr-0">
-                <img src=" {{ settings.packaging_image  | image_url }}" class="img-fluid rounded-3" alt="Shopping item" style="width: 100%;" />
+                {{settings.packaging_image  | image_url: width: 237 | image_tag: widths: '125, 154, 237', loading: "lazy", alt: 'Shopping item', class: "header-shopping-item-image"}}
             </div>
             <div class="col-md-8 pr-0">
               <p class="packaging_top_text">{{ settings.packaging_text }}</p>  
@@ -1199,47 +1201,47 @@
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 
-{% javascript %}
+<script type="lazyload2">
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
     }
-
+  
     connectedCallback() {
       this.header = document.getElementById('shopify-section-header');
       this.headerBounds = {};
       this.currentScrollTop = 0;
       this.preventReveal = false;
       this.predictiveSearch = this.querySelector('predictive-search');
-
+  
       this.onScrollHandler = this.onScroll.bind(this);
       this.hideHeaderOnScrollUp = () => this.preventReveal = true;
-
+  
       this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
       window.addEventListener('scroll', this.onScrollHandler, false);
-
+  
       this.createObserver();
     }
-
+  
     disconnectedCallback() {
       this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
       window.removeEventListener('scroll', this.onScrollHandler);
     }
-
+  
     createObserver() {
       let observer = new IntersectionObserver((entries, observer) => {
         this.headerBounds = entries[0].intersectionRect;
         observer.disconnect();
       });
-
+  
       observer.observe(this.header);
     }
-
+  
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+  
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
-
+  
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         if (this.preventHide) return;
         requestAnimationFrame(this.hide.bind(this));
@@ -1248,49 +1250,49 @@
           requestAnimationFrame(this.reveal.bind(this));
         } else {
           window.clearTimeout(this.isScrolling);
-
+  
           this.isScrolling = setTimeout(() => {
             this.preventReveal = false;
           }, 66);
-
+  
           requestAnimationFrame(this.hide.bind(this));
         }
       } else if (scrollTop <= this.headerBounds.top) {
         requestAnimationFrame(this.reset.bind(this));
       }
-
+  
       this.currentScrollTop = scrollTop;
     }
-
+  
     hide() {
       //this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
       this.header.classList.add('shopify-section-header-sticky');
       this.closeMenuDisclosure();
       this.closeSearchModal();
     }
-
+  
     reveal() {
       this.header.classList.add('shopify-section-header-sticky', 'animate');
       this.header.classList.remove('shopify-section-header-hidden');
     }
-
+  
     reset() {
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
     }
-
+  
     closeMenuDisclosure() {
       this.disclosures = this.disclosures || this.header.querySelectorAll('header-menu');
       this.disclosures.forEach(disclosure => disclosure.close());
     }
-
+  
     closeSearchModal() {
       this.searchModal = this.searchModal || this.header.querySelector('details-modal');
       this.searchModal.close(false);
     }
   }
-
+  
   customElements.define('sticky-header', StickyHeader);
-{% endjavascript %}
+</script>
 
 <script type="application/ld+json">
   {

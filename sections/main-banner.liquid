@@ -1,4 +1,4 @@
-<div class="container-fluid main-banner p-4 p-md-0 bg-gray" id="main-slider">
+<div class="container-fluid main-banner p-4 p-md-0" id="main-slider">
   
   {% if section.blocks.size > 0 %}
   {% for block in section.blocks %}
@@ -20,7 +20,8 @@
         <h2 class="main-banner-heading mb-5 mb-md-0 d-none d-md-block"> {{ block.settings.custom_liquid }}</h2>
           <p class="btn-banner mt-3 mt-md-5"><a href="{{ block.settings.button_link }}" class="main-banner-link"> {{ block.settings.button_label | escape }}</a></p>
           <p class="col-img-banner mt-5"><a href="{{ block.settings.button_link }}" class="main-banner-collection-link">
-            <img class="main-banner-collection-img" src="{{ block.settings.col_img | image_url: width:159 }}" alt="{{ block.settings.custom_liquid }}" /></a></p>
+            {% assign banner_image_alt = block.settings.custom_liquid | strip_html %}
+            {{ block.settings.col_img | image_url: width: 161 | image_tag: alt: banner_image_alt, class: 'main-banner-collection-img'}}</a></p>
          </div>  
       </div>
       

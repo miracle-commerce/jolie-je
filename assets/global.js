@@ -294,6 +294,8 @@ class MenuDrawer extends HTMLElement {
     this.addEventListener('keyup', this.onKeyUp.bind(this));
     this.addEventListener('focusout', this.onFocusOut.bind(this));
     this.bindEvents();
+    this.firstGrandChildSubmenu = this.querySelector('.grand-menu-drawer-submenu');
+    console.log(this.firstGrandChildSubmenu);
   }
 
   bindEvents() {
@@ -316,6 +318,7 @@ class MenuDrawer extends HTMLElement {
     const parentMenuElement = detailsElement.closest('.has-submenu');
     const isOpen = detailsElement.hasAttribute('open');
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const grandDetailsElements = this.querySelectorAll("details.grand-menu-drawer-submenu");
 
     function addTrapFocus() {
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
@@ -326,6 +329,14 @@ class MenuDrawer extends HTMLElement {
       if(isOpen) event.preventDefault();
       isOpen ? this.closeMenuDrawer(event, summaryElement) : this.openMenuDrawer(summaryElement);
     } else {
+      // Close other opend details elements
+      if(detailsElement.classList.contains("grand-menu-drawer-submenu")){
+        grandDetailsElements.forEach((grandDetailsElement) => {
+          if(grandDetailsElement !== detailsElement && grandDetailsElement.hasAttribute('open')){
+            this.closeSubmenu(grandDetailsElement);
+          }
+        })
+      }
       setTimeout(() => {
         detailsElement.classList.add('menu-opening');
         summaryElement.setAttribute('aria-expanded', true);
