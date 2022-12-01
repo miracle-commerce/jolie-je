@@ -296,3 +296,14 @@ a.product-title {
   max-width: 100%; 
   height: auto;
 }
+
+/* Custom Styles for the menu drawer */
+.js .grandsubmenu{
+  position: static;
+  transform: initial;
+  visibility: visible;
+}
+
+.js .grandsubmenu .menu-drawer__menu-item{
+  padding: 1.1rem 3.2rem 1.1rem 6rem;
+}

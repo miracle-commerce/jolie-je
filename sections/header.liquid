@@ -129,6 +129,7 @@
                                   {{ link.title | escape }}
                                 </button>
                                 <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                  {% assign grand_has_submenu_index = 0 %}
                                   {%- for childlink in link.links -%}
                                     <li>
                                       {%- if childlink.links == blank -%}
@@ -136,21 +137,21 @@
                                           {{ childlink.title | escape }}
                                         </a>
                                       {%- else -%}
-                                        <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
+                                        <details id="Details-menu-drawer-submenu-{{ forloop.index }}" {% if grand_has_submenu_index == 0 %}open{% endif %} class="grand-menu-drawer-submenu" data-grand-menu="true">
                                           <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
                                             {{ childlink.title | escape }}
                                             {% render 'icon-arrow' %}
                                             {% render 'icon-caret' %}
                                           </summary>
-                                          <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce">
-                                            <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                          <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce grandsubmenu">
+                                            {% comment %} <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                                               {% render 'icon-arrow' %}
                                               {{ childlink.title | escape }}
-                                            </button>
+                                            </button> {% endcomment %}
                                             <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                               {%- for grandchildlink in childlink.links -%}
                                                 <li>
-                                                  <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                                  <a href="{{ grandchildlink.url }}" class="grandlink menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                                     {{ grandchildlink.title | escape }}
                                                   </a>
                                                 </li>
@@ -158,6 +159,7 @@
                                             </ul>
                                           </div>
                                         </details>
+                                        {% assign grand_has_submenu_index = grand_has_submenu_index | plus: 1 %}
                                       {%- endif -%}
                                     </li>
                                   {%- endfor -%}
