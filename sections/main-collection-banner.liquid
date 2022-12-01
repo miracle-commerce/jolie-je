@@ -44,7 +44,7 @@
 </div>
 
 <div class="container p-0 mb-5">
-  <div class="row">
+  <div class="row collection-banner-items__wrapper">
         
      {%- for collection in collections limit: 4 -%}
        {%- if collection.image -%}
@@ -55,7 +55,7 @@
         {%- assign collection_image = blank -%}
       {%- endif -%}
     
-      <div class="col-6 col-md-3">
+      <div class="col-3 collection-banner-item">
         <a href="{{ collection.url }}">
           {{collection_image | image_url: width: 255 | image_tag: widths: '158, 255', loading: "lazy", alt: collection.title, class:"img-fluid"}}
           <h3 class="text-center pt-3"> {{ collection.title }}</h3>

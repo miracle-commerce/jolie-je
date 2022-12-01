@@ -310,3 +310,13 @@ a.product-title {
 .grand-menu-drawer-title{
   font-weight: 600;
 }
+
+.collection-banner-items__wrapper{
+  margin-right: 0px; 
+  margin-left: 0px; 
+  overflow-x: hidden; 
+}
+
+.collection-banner-item{
+  padding: 0 5px;
+}
