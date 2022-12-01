@@ -307,3 +307,6 @@ a.product-title {
 .js .grandsubmenu .menu-drawer__menu-item{
   padding: 1.1rem 3.2rem 1.1rem 6rem;
 }
+.grand-menu-drawer-title{
+  font-weight: 600;
+}

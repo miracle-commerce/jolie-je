@@ -138,7 +138,7 @@
                                         </a>
                                       {%- else -%}
                                         <details id="Details-menu-drawer-submenu-{{ forloop.index }}" {% if grand_has_submenu_index == 0 %}open{% endif %} class="grand-menu-drawer-submenu" data-grand-menu="true">
-                                          <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                          <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset grand-menu-drawer-title">
                                             {{ childlink.title | escape }}
                                             {% render 'icon-arrow' %}
                                             {% render 'icon-caret' %}
