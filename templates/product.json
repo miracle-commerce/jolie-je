@@ -115,6 +115,11 @@
             "content": "<p>{{ product.metafields.custom.product_warranty.value }}<\/p>",
             "page": ""
           }
+        },
+        "94cea553-ab79-425e-9896-f623651bf0dc": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -133,7 +138,8 @@
         "collapsible-row-3",
         "c14b582a-3adc-4a97-912e-d1f0ef108807",
         "c00c3582-f44b-49fe-9754-e5868fdb160c",
-        "8cc65419-eeec-42c8-b9ff-59dd6bb34c0d"
+        "8cc65419-eeec-42c8-b9ff-59dd6bb34c0d",
+        "94cea553-ab79-425e-9896-f623651bf0dc"
       ],
       "settings": {
         "enable_sticky_info": true,
