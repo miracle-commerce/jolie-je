@@ -221,7 +221,8 @@
       }
     </script>
     
-    <script type="lazyload2" data-src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!--     <script type="lazyload2" data-src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    -->
+    <script type="lazyload2" data-src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
     <!--      <script src="{{ 'custom.js' | asset_url }}"></script> -->    
     {% render 'judgeme_core' %}
     {% render 'delivery_coder' %} 
@@ -229,6 +230,8 @@
   </head>
 
   <body class="gradient {{ template.name }}_template" >
+<script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} {% if product.first_available_variant.price %}window.KlarnaThemeGlobals.data_purchase_amount = {{ product.first_available_variant.price }};{% endif %}window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
+
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>

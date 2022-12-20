@@ -157,14 +157,14 @@
     "16558260306018af38": {
       "type": "apps",
       "blocks": {
-        "1f100915-51cf-4112-a906-b00eefa30014": {
+        "814e6d2a-6f52-4b93-9b97-b3276d86ff84": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
       },
       "block_order": [
-        "1f100915-51cf-4112-a906-b00eefa30014"
+        "814e6d2a-6f52-4b93-9b97-b3276d86ff84"
       ],
       "settings": {
         "include_margins": true

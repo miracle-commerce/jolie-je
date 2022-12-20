@@ -127,6 +127,7 @@
         "blocks": {
           "2e9a3daa-f64f-41f7-8d85-72a5c3cdccbc": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Sign up for EXCLUSIVE early access to our HOLIDAY offers.",
               "color_scheme": "accent-1",
@@ -136,15 +137,24 @@
           "31318b0a-febb-4797-82d7-0fd108039613": {
             "type": "announcement",
             "settings": {
-              "text": "Get FREE shipping when you buy a belly ring and charm.",
+              "text": "FREE 2-day shipping on orders over $200.",
               "color_scheme": "accent-1",
               "link": ""
             }
           },
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Personalize your belly ring.  Add a charm for extra bling and length.",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
+          "6f1ba604-62a9-4513-97b5-e1486d009f74": {
+            "type": "announcement",
+            "settings": {
+              "text": "Everything in-stock.  Ships from CANADA same day.",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -153,7 +163,8 @@
         "block_order": [
           "2e9a3daa-f64f-41f7-8d85-72a5c3cdccbc",
           "31318b0a-febb-4797-82d7-0fd108039613",
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "6f1ba604-62a9-4513-97b5-e1486d009f74"
         ],
         "settings": {
         }
@@ -244,9 +255,9 @@
           "color_scheme": "background-1",
           "newsletter_enable": true,
           "newsletter_heading": "Don't miss a thing!",
-          "newsletter_heading2": "Sign up for early access to <br>our HOLIDAY promotions.",
+          "newsletter_heading2": "Sign up for exclusive offers.",
           "show_social": true,
-          "enable_country_selector": false,
+          "enable_country_selector": true,
           "enable_language_selector": false,
           "payment_enable": true,
           "margin_top": 48,
