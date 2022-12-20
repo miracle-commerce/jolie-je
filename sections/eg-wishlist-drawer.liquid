@@ -535,6 +535,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     initWishlist();
 
     // Wishlist Buttons
+    var wishBtnClicked = false;
     window.onClickEgWishlistButton = async (btn, event) => {
         event.preventDefault();
 
@@ -570,13 +571,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
               
             })
         }
-
+        wishBtnClicked = true;
         localStorage.setItem(localStorageKey, JSON.stringify(wishlist))
         initWishlist()
         buildWishlistDrawer()
     };
 
     // Build Wishlist Drawer
+    
+    var wishlistProdCount = [0];
     const buildWishlistDrawer = () => {
         const drawer = document.querySelector('#eg-wishlist-drawer')
 
@@ -585,15 +588,32 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const drawerProductList = drawer.querySelector('#eg-wishlist-drawer-product-list')
 
         drawerProductList.innerHTML = ''
-
+          
         if (wishlist.length === 0) {
             drawerEmpty.style.display = 'block'
             drawerProductList.style.display = 'none'
         } else {
             let buildProductListItems = '';
-
-            wishlist.forEach((product) => {
+            var beforeLoop = wishlistProdCount[0];
+            wishlist.forEach((product, idx, array) => {
               console.log(product);
+                 if (idx === array.length - 1){
+                      wishlistProdCount = [];
+                      wishlistProdCount.push(array.length);
+                      if(wishlistProdCount[0] > beforeLoop){
+                        if(wishBtnClicked){
+                         window.dataLayer.push({
+                            event: 'ee_wishlist',
+                            product_name: product.title,
+                            product_id: product.id,
+                            product_price: (product.price / 100).toFixed(2).toString(),
+                            product_brand: product.vendor,
+                            variant_id: product.first_va,
+                        });
+                        }
+                      }
+                 }
+              
                 buildProductListItems += `
 
             <div class="row p-4">
