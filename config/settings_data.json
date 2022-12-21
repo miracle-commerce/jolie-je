@@ -137,7 +137,7 @@
           "31318b0a-febb-4797-82d7-0fd108039613": {
             "type": "announcement",
             "settings": {
-              "text": "FREE 2-day shipping on orders over $200.",
+              "text": "FREE 3-day shipping on orders over $200.",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -395,12 +395,6 @@
       "6048552914641687618": {
         "type": "shopify:\/\/apps\/currency-converter-switcher\/blocks\/app-embed\/065e70d9-d1e0-4d56-a8a3-a58701e43093",
         "disabled": true,
-        "settings": {
-        }
-      },
-      "7852001879152684052": {
-        "type": "shopify:\/\/apps\/free-preorder-pre-order-now\/blocks\/app-embed\/65cd8805-0aca-4c8e-bb61-e7fc7d77f9bb",
-        "disabled": false,
         "settings": {
         }
       }
