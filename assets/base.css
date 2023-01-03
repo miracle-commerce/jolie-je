@@ -2960,3 +2960,11 @@ details-disclosure > details {
 video {
     width: 100%;
 }
+.jdgm-prev-badge__text {
+  display: block !important;
+}
+
+@media screen and (max-width: 768px) {
+  .jdgm-prev-badge__text {
+  text-align: center !important;
+  }}

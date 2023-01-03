@@ -6,8 +6,8 @@
         "59b25fcd-a2fe-4da3-a681-b7556dcb79d3": {
           "type": "Slider",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC_4343-Edit_copy3.jpg",
-            "custom_liquid": "Fine Belly<br>\nJewelry & <br>Accessories",
+            "image": "shopify:\/\/shop_images\/DSC_4972_Size3.webp",
+            "custom_liquid": "Fine Belly <br>\nJewelry &<br>\nAccessories",
             "button_label": "Shop the collections",
             "button_link": "shopify:\/\/collections\/shop-all",
             "col_img": "shopify:\/\/shop_images\/Jolie_Logo_4.jpg"
@@ -32,10 +32,9 @@
     },
     "165969973023f637c8": {
       "type": "new-arrival",
-      "disabled": true,
       "settings": {
         "heading": "New Arrivals",
-        "new_arrivals_description": "Please check in regularly as there are many new designs in development.  I hope you like what we have created.",
+        "new_arrivals_description": "",
         "new_arrival_link": "shopify:\/\/collections\/new-arrivals",
         "heading_size": "h1",
         "products_to_show": 4,

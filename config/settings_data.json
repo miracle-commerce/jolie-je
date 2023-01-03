@@ -104,7 +104,7 @@
     "social_facebook_link": "",
     "social_pinterest_link": "https:\/\/www.pinterest.ca\/joliecojewelry\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/joliecojewelry\/",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@joliecojewelry\/",
+    "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
     "social_youtube_link": "",
@@ -125,19 +125,21 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "2e9a3daa-f64f-41f7-8d85-72a5c3cdccbc": {
+          "6f1ba604-62a9-4513-97b5-e1486d009f74": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Sign up for EXCLUSIVE early access to our HOLIDAY offers.",
+              "available_location": "all",
+              "text": "Everything In-Stock. Ships from CANADA",
               "color_scheme": "accent-1",
               "link": ""
             }
           },
           "31318b0a-febb-4797-82d7-0fd108039613": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
-              "text": "FREE 3-day shipping on orders over $200.",
+              "available_location": "us",
+              "text": "FREE 3-day shipping on orders over $200",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -146,25 +148,37 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "Personalize your belly ring.  Add a charm for extra bling and length.",
+              "available_location": "can",
+              "text": "FREE 3-day shipping on orders over $200",
               "color_scheme": "accent-1",
               "link": ""
             }
           },
-          "6f1ba604-62a9-4513-97b5-e1486d009f74": {
+          "6dd2c83a-074b-41be-9b16-4ed800abf812": {
             "type": "announcement",
             "settings": {
-              "text": "Everything in-stock.  Ships from CANADA same day.",
+              "available_location": "us",
+              "text": "No Taxes charged in US at this time",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
+          "6d5c40ab-0374-45fc-8050-254f3176d1b3": {
+            "type": "announcement",
+            "settings": {
+              "available_location": "all",
+              "text": "Fine navel jewelry for the active lifestyle.",
               "color_scheme": "accent-1",
               "link": ""
             }
           }
         },
         "block_order": [
-          "2e9a3daa-f64f-41f7-8d85-72a5c3cdccbc",
+          "6f1ba604-62a9-4513-97b5-e1486d009f74",
           "31318b0a-febb-4797-82d7-0fd108039613",
           "announcement-bar-0",
-          "6f1ba604-62a9-4513-97b5-e1486d009f74"
+          "6dd2c83a-074b-41be-9b16-4ed800abf812",
+          "6d5c40ab-0374-45fc-8050-254f3176d1b3"
         ],
         "settings": {
         }

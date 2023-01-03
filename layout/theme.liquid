@@ -201,8 +201,10 @@
     <!-- starapps_scripts_start -->
     <!-- This code is automatically managed by StarApps Studio -->
     <!-- Please contact support@starapps.studio for any help -->
-    {% comment %} <script src="https://bcdn.starapps.studio/apps/vtk/jolie-je/script-1668632909.js?shop={{shop.permanent_domain}}" async></script> {% endcomment %}
-    <!-- starapps_scripts_end -->
+    {% comment %}  {% endcomment %}
+    
+<script type="text/javascript" src="https://bcdn.starapps.studio/apps/vtk/jolie-je/script-1671674078.js?shop={{shop.permanent_domain}}" async></script>
+<!-- starapps_scripts_end -->
 
     {% comment %} {{ content_for_header }} {% endcomment %}
     {{ content_for_header | replace : ' href=', ' data-href=' | replace : "addEventListener('load'", "addEventListener('wnw_load'" | replace : 'DOMContentLoaded', 'DOMContentLoaded2' | replace : 'defer="defer" src=', 'type="lazyload2" defer="defer" data-src=' }}
@@ -223,9 +225,10 @@
     </script>
 
     <!--      <script src="{{ 'custom.js' | asset_url }}"></script> -->    
-    {% render 'judgeme_core' %}
+    
     {% render 'delivery_coder' %} 
     {% include 'analyzify-gtm-body' %}
+      {% render 'judgeme_core' %}
   </head>
 
   <body class="gradient {{ template.name }}_template" >

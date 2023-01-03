@@ -2,14 +2,14 @@
 
 
 <!-- Google Tag Manager -->
-<script type="lazyload2">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','{{ shop.metafields.gtm.tracking_id }}');</script>
 <!-- End Google Tag Manager -->
 
-<script type="lazyload2">
+<script>
     window.dataLayer = window.dataLayer || [];
     window.analyzify = {
         "pageFly" : false, //Set this true if you are using PageFly in your website
@@ -327,28 +327,30 @@
             window.findElemInPath = function(pth_arr, attr_obj) {
                 var i;
                 var btn_found = null;
+                if(pth_arr){
+                    for (i = 0; i < pth_arr.length; i++) {
+                        for (var k in attr_obj) {
+                            if (attr_obj.hasOwnProperty(k)) {
+                                var attribute_name = k;
+                                var attribute_values = attr_obj[k];
 
-                for (i = 0; i < pth_arr.length; i++) {
-                    for (var k in attr_obj) {
-                        if (attr_obj.hasOwnProperty(k)) {
-                            var attribute_name = k;
-                            var attribute_values = attr_obj[k];
-
-                            if (pth_arr[i].hasAttribute !== undefined) {
-                                if (pth_arr[i].hasAttribute(attribute_name) == true) {
-                                    attribute_values.forEach(function(selected_value) {
-                                        if (pth_arr[i].getAttribute(attribute_name).indexOf(selected_value) > -1) {
-                                            analyzify.log(selected_value + " found in " + attribute_name + " attribute list.");
-                                            btn_found = pth_arr[i];
-                                            found_element.push(pth_arr[i]);
-                                            found_atc_element_form.push(pth_arr[i].closest("form[action='/cart/add']"));
-                                        }
-                                    });
+                                if (pth_arr[i].hasAttribute !== undefined) {
+                                    if (pth_arr[i].hasAttribute(attribute_name) == true) {
+                                        attribute_values.forEach(function(selected_value) {
+                                            if (pth_arr[i].getAttribute(attribute_name).indexOf(selected_value) > -1) {
+                                                analyzify.log(selected_value + " found in " + attribute_name + " attribute list.");
+                                                btn_found = pth_arr[i];
+                                                found_element.push(pth_arr[i]);
+                                                found_atc_element_form.push(pth_arr[i].closest("form[action='/cart/add']"));
+                                            }
+                                        });
+                                    }
                                 }
                             }
                         }
                     }
                 }
+
                 return btn_found;
             }
 
