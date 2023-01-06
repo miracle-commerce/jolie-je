@@ -663,14 +663,14 @@
 
               
     
-<!--   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
+<product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
-      <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
 
       <div class="product-media-modal__content gradient" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
+        <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
         
         
-        {%- liquid
+        {% comment %} {%- liquid
           if product.selected_or_first_available_variant.featured_media != null
             assign media = product.selected_or_first_available_variant.featured_media
             render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
@@ -689,10 +689,15 @@
               render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image
             endunless
           -%}
-        {%- endfor -%}
+        {%- endfor -%} {% endcomment %}
+        {% for media in product.media %}
+          {%- if media.alt contains 'details-image' -%}
+            {% render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image %}
+          {%- endif -%}
+        {% endfor %}
       </div>
     </div>
-  </product-modal>
+  </product-modal><!--   
 {% comment %}Start automatically added Judge.me widget{% endcomment %}
   {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
 {% comment %}End automatically added Judge.me widget{% endcomment %}

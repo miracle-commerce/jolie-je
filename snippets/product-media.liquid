@@ -26,12 +26,12 @@
             {%- if media.preview_image.width >= 2890 -%}{{ media.preview_image | image_url: width: 2890 }} 2890w,{%- endif -%}
             {%- if media.preview_image.width >= 4096 -%}{{ media.preview_image | image_url: width: 4096 }} 4096w,{%- endif -%}
             {{ media.preview_image | image_url }} {{ media.preview_image.width }}w"
-    sizes="(min-width: 750px) calc(100vw - 22rem), 1100px"
+    sizes="(max-width: 768px) calc(100vw - 30px), 1100px"
     src="{{ media.preview_image | image_url: width: 1445 }}"
     alt="{{ media.alt | escape }}"
     loading="lazy"
-    width="1100"
-    height="{{ 1100 | divided_by: media.preview_image.aspect_ratio | ceil }}"
+    width="{%- if media.preview_image.width >= 1100 -%}1100{%- else -%}{{media.preview_image.width}}{%- endif -%}"
+    height="{%- if media.preview_image.width >= 1100 -%}{{ 1100 | divided_by: media.preview_image.aspect_ratio | ceil }}{%- else -%}{{media.preview_image.height}}{%- endif -%}"
     data-media-id="{{ media.id }}"
     {% if variant_image %}class="product__media-item--variant"{% endif %}
   >

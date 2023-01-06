@@ -2160,11 +2160,11 @@ opacity: 0.75;
     color: #4a234e!important;
 }
 
-@media (min-width: 990px){
+/* @media (min-width: 990px){
  .product-media-modal__content img{
     width: 500px !important
   }
-}
+} */
 
 div.product__info-wrapper .pack .swatches{
   display: inline-block
@@ -2230,9 +2230,9 @@ p.packaging_bottom_text{
 
 /* Product image zoom on hover */
 
-button.product__media-toggle.quick-add-hidden {
+/* button.product__media-toggle.quick-add-hidden {
     display: none;
-}
+} */
 
 .product__media.media.media--transparent.gradient.global-media-settings img:hover {
     transform: scale(1.8);
