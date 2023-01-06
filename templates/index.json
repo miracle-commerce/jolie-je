@@ -34,7 +34,7 @@
       "type": "new-arrival",
       "settings": {
         "heading": "New Arrivals",
-        "new_arrivals_description": "",
+        "new_arrivals_description": "The Moonstone has been treasured across cultures for generations. It's said to bring good fortune and provide protection, as well as to open the doors of destiny for those seeking change or insight into their future paths.",
         "new_arrival_link": "shopify:\/\/collections\/new-arrivals",
         "heading_size": "h1",
         "products_to_show": 4,
