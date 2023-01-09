@@ -20,6 +20,17 @@
           "settings": {
           }
         },
+        "8ceeea30-5133-4c78-8ea2-8541995d2cd7": {
+          "type": "shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "locale_option": "geolocation",
+            "locale_fallback": "",
+            "theme": "light",
+            "topPadding": "0",
+            "bottomPadding": "0"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -37,15 +48,15 @@
             "show_dynamic_checkout": false
           }
         },
-        "55985b03-66ac-46b8-94cb-bb122f23663c": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
+          }
+        },
+        "55985b03-66ac-46b8-94cb-bb122f23663c": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
           }
         },
         "83d07008-4273-4263-b702-2231a2099e26": {
@@ -56,7 +67,7 @@
             "r_icon": "shopify:\/\/shop_images\/history.png",
             "r_text": "14 Day Return",
             "w_icon": "shopify:\/\/shop_images\/verified_14b8bde4-71aa-415a-b2a7-546f0c088797.png",
-            "w_text": "18-Month Warranty"
+            "w_text": "12-Month Warranty"
           }
         },
         "4421cc7a-a461-48d8-bd0c-a77cf4242045": {
@@ -126,11 +137,12 @@
         "title",
         "vendor",
         "price",
+        "8ceeea30-5133-4c78-8ea2-8541995d2cd7",
         "quantity_selector",
         "cf4b8bae-774b-4288-bae8-dafe7602d8ce",
         "buy_buttons",
-        "55985b03-66ac-46b8-94cb-bb122f23663c",
         "share",
+        "55985b03-66ac-46b8-94cb-bb122f23663c",
         "83d07008-4273-4263-b702-2231a2099e26",
         "4421cc7a-a461-48d8-bd0c-a77cf4242045",
         "description",

@@ -104,7 +104,7 @@
     "social_facebook_link": "",
     "social_pinterest_link": "https:\/\/www.pinterest.ca\/joliecojewelry\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/joliecojewelry\/",
-    "social_tiktok_link": "",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@joliecojewelry",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
     "social_youtube_link": "",
@@ -129,7 +129,7 @@
             "type": "announcement",
             "settings": {
               "available_location": "all",
-              "text": "Everything In-Stock. Ships from CANADA",
+              "text": "All Items In-stock Ship in 1-Day",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -163,6 +163,15 @@
               "link": ""
             }
           },
+          "f6d3ea90-b1ec-41b0-b709-2bed5dc3732a": {
+            "type": "announcement",
+            "settings": {
+              "available_location": "all",
+              "text": "New Custom Program - see Delivery Timelines",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
           "6d5c40ab-0374-45fc-8050-254f3176d1b3": {
             "type": "announcement",
             "settings": {
@@ -178,6 +187,7 @@
           "31318b0a-febb-4797-82d7-0fd108039613",
           "announcement-bar-0",
           "6dd2c83a-074b-41be-9b16-4ed800abf812",
+          "f6d3ea90-b1ec-41b0-b709-2bed5dc3732a",
           "6d5c40ab-0374-45fc-8050-254f3176d1b3"
         ],
         "settings": {
@@ -251,7 +261,7 @@
             "type": "jolie_experience",
             "settings": {
               "i_image": "shopify:\/\/shop_images\/verified.png",
-              "i_txt": "18 Month Warranty",
+              "i_txt": "12 Month Warranty",
               "i_des": "",
               "ilink": "https:\/\/jolie-co.com\/pages\/faq#Warranty"
             }
@@ -269,7 +279,7 @@
           "color_scheme": "background-1",
           "newsletter_enable": true,
           "newsletter_heading": "Don't miss a thing!",
-          "newsletter_heading2": "Sign up for exclusive offers.",
+          "newsletter_heading2": "Stay up-to-date with our  monthly new product launches.  And save.",
           "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": false,
