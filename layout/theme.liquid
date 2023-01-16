@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-  
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
         
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -198,13 +199,6 @@
     <link rel="stylesheet" data-href="{{ 'slick-theme.css' | asset_url }}">
 
     <script type="lazyload2" data-src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <!-- starapps_scripts_start -->
-    <!-- This code is automatically managed by StarApps Studio -->
-    <!-- Please contact support@starapps.studio for any help -->
-    {% comment %}  {% endcomment %}
-    
-<script type="text/javascript" src="https://bcdn.starapps.studio/apps/vtk/jolie-je/script-1671674078.js?shop={{shop.permanent_domain}}" async></script>
-<!-- starapps_scripts_end -->
 
     {% comment %} {{ content_for_header }} {% endcomment %}
     {{ content_for_header | replace : ' href=', ' data-href=' | replace : "addEventListener('load'", "addEventListener('wnw_load'" | replace : 'DOMContentLoaded', 'DOMContentLoaded2' | replace : 'defer="defer" src=', 'type="lazyload2" defer="defer" data-src=' }}
