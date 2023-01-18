@@ -129,7 +129,7 @@
             "type": "announcement",
             "settings": {
               "available_location": "all",
-              "text": "All Items In-stock Ship in 1-Day",
+              "text": "All Items In-stock Ship in 1-Day.",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -158,7 +158,7 @@
             "type": "announcement",
             "settings": {
               "available_location": "us",
-              "text": "No Taxes charged in US at this time",
+              "text": "No Taxes charged in US at this time.",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -167,7 +167,7 @@
             "type": "announcement",
             "settings": {
               "available_location": "all",
-              "text": "New Custom Program - see Delivery Timelines",
+              "text": "Custom sizes are now available.",
               "color_scheme": "accent-1",
               "link": ""
             }

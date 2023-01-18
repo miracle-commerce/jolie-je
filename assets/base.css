@@ -2968,3 +2968,8 @@ video {
   .jdgm-prev-badge__text {
   text-align: center !important;
   }}
+
+.new-arrivals{
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
