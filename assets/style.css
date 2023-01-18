@@ -2580,3 +2580,7 @@ h3#title-template--15745295941811__product-grid-7273720905907 {
 #shopify-section-template--16063670976691__16551087635205c807 .bg-gray{
   display: block;
 }
+
+.pack{
+  display: flex !important;
+}
