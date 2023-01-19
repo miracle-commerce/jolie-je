@@ -6,9 +6,9 @@
         "59b25fcd-a2fe-4da3-a681-b7556dcb79d3": {
           "type": "Slider",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Web_Home-Page_Banner-Pic-_3.webp",
+            "image": "shopify:\/\/shop_images\/Web_Home-Page_Banner-Pic-_5.webp",
             "custom_liquid": "Fine Belly <br>\nJewelry &<br>\nAccessories",
-            "button_label": "Shop the collections",
+            "button_label": "Shop Valentine's Day collection",
             "button_link": "shopify:\/\/collections\/shop-all",
             "col_img": "shopify:\/\/shop_images\/Jolie_Logo_4.jpg"
           }
