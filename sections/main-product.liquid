@@ -373,7 +373,7 @@
         
           {%- when 'share' -%}
             <div class="pack">
-              <share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }}>
+              <share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden pdp-share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
                 {% render 'icon-share' %}
                 {% comment %}{{ block.settings.share_label | escape }} {% endcomment %}

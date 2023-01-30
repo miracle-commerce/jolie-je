@@ -180,6 +180,24 @@
               "color_scheme": "accent-1",
               "link": ""
             }
+          },
+          "ed7b1cde-99ce-47e6-a2b7-0ecf04d379b1": {
+            "type": "announcement",
+            "settings": {
+              "available_location": "uk",
+              "text": "Prices reduced to account for DUTIES to UK.",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
+          "8e0ed53b-3741-4830-b701-3289714133ab": {
+            "type": "announcement",
+            "settings": {
+              "available_location": "au",
+              "text": "NO Taxes or Duties to Australia",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
@@ -188,7 +206,9 @@
           "announcement-bar-0",
           "6dd2c83a-074b-41be-9b16-4ed800abf812",
           "f6d3ea90-b1ec-41b0-b709-2bed5dc3732a",
-          "6d5c40ab-0374-45fc-8050-254f3176d1b3"
+          "6d5c40ab-0374-45fc-8050-254f3176d1b3",
+          "ed7b1cde-99ce-47e6-a2b7-0ecf04d379b1",
+          "8e0ed53b-3741-4830-b701-3289714133ab"
         ],
         "settings": {
         }
