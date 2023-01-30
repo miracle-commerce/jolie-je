@@ -128,7 +128,7 @@
         "c14b582a-3adc-4a97-912e-d1f0ef108807": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Styling",
+            "heading": "Belly Ring Sizing",
             "icon": "none",
             "content": "<p>{{ product.metafields.custom.design_concept.value }}<\/p>",
             "page": ""

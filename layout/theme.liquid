@@ -327,7 +327,18 @@
     <!-- CRITEO START -->
     {% render 'criteo-tracking' %}
     <!-- CRITEO END -->
-
+    {% if template.name == 'product' %}
+    <style>
+      .pack{
+        display: flex !important;
+        flex-wrap: wrap;
+      }
+      variant-swatch-king{
+        flex: 1 1 calc(100% - 100px); 
+        max-width: calc(100% - 100px) !important;
+    }
+    </style>
+    {% endif %}
     {% render 'optimization-js' %}
   </body>
 </html>

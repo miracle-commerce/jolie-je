@@ -129,7 +129,7 @@
             "type": "announcement",
             "settings": {
               "available_location": "all",
-              "text": "All Items In-stock Ship in 1-Day.",
+              "text": "All Items In-stock ship in 1-day.",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -158,7 +158,7 @@
             "type": "announcement",
             "settings": {
               "available_location": "us",
-              "text": "No Taxes charged in US at this time.",
+              "text": "No TAXES charged in US at this time.",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -414,15 +414,7 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "6048552914641687618": {
-        "type": "shopify:\/\/apps\/currency-converter-switcher\/blocks\/app-embed\/065e70d9-d1e0-4d56-a8a3-a58701e43093",
-        "disabled": true,
-        "settings": {
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Default": {

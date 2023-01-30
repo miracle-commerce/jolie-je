@@ -2973,3 +2973,8 @@ video {
   flex-wrap: nowrap;
   overflow: hidden;
 }
+
+.complete-the-loop-slider{
+  flex-wrap: nowrap;
+  overflow: hidden;
+}

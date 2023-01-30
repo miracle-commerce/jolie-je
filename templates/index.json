@@ -6,10 +6,10 @@
         "59b25fcd-a2fe-4da3-a681-b7556dcb79d3": {
           "type": "Slider",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Web_Home-Page_Banner-Pic-_5.webp",
+            "image": "shopify:\/\/shop_images\/Web_Home-Page_Banner-Pic-_6.webp",
             "custom_liquid": "Fine Belly <br>\nJewelry &<br>\nAccessories",
             "button_label": "Shop Valentine's Day collection",
-            "button_link": "shopify:\/\/collections\/shop-all",
+            "button_link": "shopify:\/\/collections\/valentines-day",
             "col_img": "shopify:\/\/shop_images\/Jolie_Logo_4.jpg"
           }
         }
@@ -34,7 +34,7 @@
       "type": "new-arrival",
       "settings": {
         "heading": "New Arrivals",
-        "new_arrivals_description": "The Moonstone has been treasured across cultures for generations. It's said to bring good fortune and provide protection, as well as to open the doors of destiny for those seeking change or insight into their future paths.",
+        "new_arrivals_description": "",
         "new_arrival_link": "shopify:\/\/collections\/new-arrivals",
         "heading_size": "h1",
         "products_to_show": 4,
@@ -166,10 +166,17 @@
             "feed_width": 100,
             "html_area": ""
           }
+        },
+        "75943ff0-31c0-4d7f-8ab0-0b7eee188dfd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
         }
       },
       "block_order": [
-        "258425bb-bfcc-4391-b3dd-b4aa2346b9d0"
+        "258425bb-bfcc-4391-b3dd-b4aa2346b9d0",
+        "75943ff0-31c0-4d7f-8ab0-0b7eee188dfd"
       ],
       "settings": {
         "include_margins": true
@@ -234,7 +241,7 @@
         "818a8766-52c2-440e-9132-30b28ba33fb2"
       ],
       "settings": {
-        "blog_heading": "The Tea",
+        "blog_heading": "The Tea (Blog)",
         "blog_des": "I'm a belly-jewelry “connoisseur” and I want you to be too! Come check out my blog for the latest posts on all things related.",
         "blog_link": "shopify:\/\/pages\/the-tea"
       }
