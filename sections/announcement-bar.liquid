@@ -31,6 +31,12 @@
                   {{announcement_block_content}}
                 {%- elsif localization.country == 'United States' and block.settings.available_location == 'us' -%}
                   {{announcement_block_content}}
+                {%- elsif localization.country == 'Australia' and block.settings.available_location == 'au' -%}
+                  {{announcement_block_content}}
+                {%- elsif localization.country == 'United Kingdom' and block.settings.available_location == 'uk' -%}
+                  {{announcement_block_content}}
+                {%- elsif block.settings.available_location == 'eu' and localization.country.iso_code == 'AT' or localization.country.iso_code == 'BE' or localization.country.iso_code == 'BG' or localization.country.iso_code == 'HR' or localization.country.iso_code == 'CY' or localization.country.iso_code == 'CZ' or localization.country.iso_code == 'DK' or localization.country.iso_code == 'EE' or localization.country.iso_code == 'FI' or localization.country.iso_code == 'FR' or localization.country.iso_code == 'DE' or localization.country.iso_code == 'GR' or localization.country.iso_code == 'HU' or localization.country.iso_code == 'IE' or localization.country.iso_code == 'IT' or localization.country.iso_code == 'LV' or localization.country.iso_code == 'LT' or localization.country.iso_code == 'LU' or localization.country.iso_code == 'MT' or localization.country.iso_code == 'NL' or localization.country.iso_code == 'PL' or localization.country.iso_code == 'PT' or localization.country.iso_code == 'RO' or localization.country.iso_code == 'SK' or localization.country.iso_code == 'SL' or localization.country.iso_code == 'SI' or localization.country.iso_code == 'ES' or localization.country.iso_code == 'SE' -%}
+                  {{announcement_block_content}}
                 {%- endif -%}
               {%- else -%}
                 {{announcement_block_content}}
@@ -149,6 +155,18 @@
             {
               "value":"can", 
               "label":"CAN only"
+            },
+            {
+              "value":"au", 
+              "label":"Australia only"
+            },
+            {
+              "value":"uk", 
+              "label":"UK only"
+            },
+            {
+              "value":"eu", 
+              "label":"EU only"
             }
           ]
         },
